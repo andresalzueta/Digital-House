@@ -1,0 +1,170 @@
+/*Aula-8 22-5-2018*/
+/* ..estilo.css */
+/* regras para mobile first */
+/* regras simplificadas para usar Bootstrap */
+
+*{
+
+  }
+
+body {
+  background-image: url("../images/bg-body.png");
+  font-family: calibri, arial, sans-serif;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+  margin:1px;
+}
+
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.75em;
+}
+
+h3{
+  font-size: 1.7em;
+}
+
+h4{
+  font-size: 1.65em;
+}
+
+h5{
+  font-size: 1.6em;
+}
+
+h6{
+  font-size: 1.5em;
+}
+
+p{
+  font-size: 1.2em;
+  margin:0;
+}
+
+.container {
+}
+
+header, section, div, article, footer{
+}
+
+
+.main-header, .main-footer, .main-nav {
+    text-align:center;
+    font-size: 1.1 em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper-logo {
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.main-nav ul, .main-footer ul{
+  border: none;
+  padding: 0;
+}
+
+.main-nav li, .main-footer li{
+  text-align:center;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.main-nav a, .main-footer a{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border: solid 1px white;
+  font-size: 1.2em;
+  padding: 10px 1px 10px 1px;
+}
+
+.main-nav a{
+  background-color: rgba(33, 33, 33, 0.9); /* cinza escuro*/
+}
+
+.main-footer a{
+    background-color: rgba(180, 60, 30, 0.9); /* vermelho*/
+}
+
+.banner{
+  display: none;
+}
+
+.cont-prod {
+  display: block;
+}
+
+.vip-product {
+  border: solid 1px black;
+}
+
+.product {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border: solid 1px white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(33, 33, 33, 0.9); /* cinza escuro*/
+}
+
+header::after, section::after , article::after, footer::after{
+  clear: both;
+}
+
+@media (min-width: 576px) and (orientation: landscape) {
+/* regras para desktop */
+
+body {
+    width: 100vw;
+    padding: 0%;
+}
+
+.banner{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+}
