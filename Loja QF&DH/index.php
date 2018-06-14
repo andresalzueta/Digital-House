@@ -23,7 +23,7 @@
 			<!-- produtos -->
 			<div class="cont-prod">
 			<section class="vip-products row">
-				<article class="product col-12 col-sm-6 col-md-6 col-lg-4">
+				<article  class="product col-12 col-sm-6 col-md-6 col-lg-4">
 					<img src="#" alt="pdto 01">
 					<h2>Produto 01</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>

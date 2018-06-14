@@ -16,7 +16,7 @@ body{
   padding: 11px 19px 12px 25px;
 }
 .search{
-  padding: 12px 13px 9px 9px;
+  padding: 12px -1px 9px 10px;
   font-size: 14px;
   margin: 14px;
 }
@@ -25,7 +25,7 @@ body{
   font-size: 14px;
   background-color: #bfd3e9;
   border:none;
-  width: 500px;
+  width: 400px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -49,7 +49,7 @@ body{
     text-transform: uppercase;
     text-align: center;
     padding: 2px 0px;
-    margin: 14px;
+    margin: 12px;
     font-size: 14px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -57,16 +57,31 @@ body{
     border-bottom-right-radius: 10px;
   }
 
-  .main-footer li{
+.product a{
+    /* color: #007bff; */
+    color:red!important;
+    background-color: #bfd3e9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 11px 3px 214px;
+}
+
+
+
+.main-footer li{
     display: inline-block;
     text-transform: lowercase;
     text-transform: none;
     text-align: center;
     margin-left: 15px;
-    margin-right: 10px;
-    font-size: 14px;
+    margin-right: 1px;
+    font-size: 12px;
     background-color: #bfd3e9;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    width: 180px;
+    padding: 5px;
 
     }
