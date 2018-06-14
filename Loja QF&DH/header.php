@@ -1,7 +1,7 @@
 		<!-- cabeçalho / menu -->
 <header class="main-header row">
 			<div class="row col-12 col-md-12">
-				<img src="../img/logo2.png" alt="logotipo" class="logo">
+				<img src="img/logo2.png" alt="logotipo" class="logo">
 								<form class="search" method="post" action="pagina_de_resultados.html">
 										<input class="fieldSearch" type="text" name="q" value="Pesquisar...">
 										<input class="buttonSearch" type="submit" value="Pesquisar">
