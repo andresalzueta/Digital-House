@@ -35,7 +35,7 @@
       </a>
       </div>
 				<!-- <div class="banner">
-					<img class="col 12" src="../img/destaqueHome.jpg" alt="banner">
+					<img class="col 12" src="img/destaqueHome.jpg" alt="banner">
 				</div> -->
 			</section>
             <br>
