@@ -1,4 +1,0 @@
-GIT commands
-
-git add HELP.txt
-git commit -m "adicionando arquivo help" 
