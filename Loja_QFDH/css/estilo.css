@@ -1,0 +1,466 @@
+*{
+
+}
+
+body{
+
+}
+
+.main-header .logo{
+  height: 75px;
+  width: 156px;
+
+}
+
+.form-control{
+  font-size: 14px; background-color: #bfd3e940; border:none; width: 302px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding-bottom: 7px; padding-left: 9px; margin-left: 14px; margin-bottom: 0px;margin-top: 0px;
+}
+
+
+
+/* Botões Menu header */
+
+ .btn-ps{
+    background-image:   url(../img/menuProcura2.jpg);
+    width: 10px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    padding: 19px;
+    border: none;
+ }
+
+ .home-img{
+   background-image:   url(../img/menuHome2.jpg);
+   width: 10px;
+   background-size: 35px;
+   background-repeat: no-repeat;
+   padding: 19px;
+   border: none;
+ }
+
+ .duvida-img{
+   background-image:   url(../img/menuDuvida2.jpg);
+   width: 10px;
+   background-size: 35px;
+   background-repeat: no-repeat;
+   padding: 19px;
+   border: none;
+ }
+
+ .entrar-img{
+   background-image:   url(../img/menuEntrar2.jpg);
+   width: 10px;
+   background-size: 35px;
+   background-repeat: no-repeat;
+   padding: 19px;
+   border: none;
+ }
+
+
+
+.fieldSearch{
+  font-size: 14px;
+  background-color: #bfd3e940;
+  border:none;
+  width: 400px;
+
+}
+
+.buttonSearch{
+  color: #007bff;
+  border:none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btnVender{
+  color: #007bff; border-color: #2700ff00;   background-color: #bfd3e940; width: 112px;  height: 39px;border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; height: 37px;
+}
+
+
+.main-nav li{
+    width: 100%;
+    background-color: #bfd3e940;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 0px;
+    margin: 12px;
+    font-size: 14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+.product a{
+    /* color: #007bff; */
+    color:red!important;
+    background-color: #bfd3e940;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 11px 3px 15px;
+}
+
+
+  /* FOOTER CSS */
+
+
+
+
+.main-footer li{
+    display: inline-block;
+    text-transform: lowercase;
+    text-transform: none;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 1px;
+    font-size: 12px;
+    background-color: #bfd3e940;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 180px;
+    padding: 5px;
+
+    }
+
+
+    /* INDEX CSS */
+    .c-widget__title{
+      color: #007bff;
+      font-size: 27px;
+      font-weight: lighter;
+    }
+
+    .sizeImg{
+      width: 150px;
+      height: 150px;
+    }
+
+    .product{
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .vejaBtn{
+      color: #007bff; border-color: #2700ff00;   background-color: #bfd3e940; width: 112px;  height: 39px;border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; height: 37px; top:-14px;
+      position: relative;
+
+    }
+
+    .font-weight-light{
+      font-size: 27px;
+      color: #007bff;
+      position: relative;
+      left: 5px;
+      top: -5px;
+      }
+
+      .Separador .text-center{
+            margin-top: 42px;
+      }
+/*MARCAS FAVORITAS START*/
+      .sizeMarcas{
+        width: 100px;
+        height: 100px;
+      }
+
+      .vip-marcas{
+        padding-right: 210px;
+        padding-left: 210px;
+        margin-right: 34px;
+      }
+
+      .shadow{
+        width: 100px;
+         margin: 0 auto;
+         height: 100px;
+         background-color: #f5f5f5;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 15px;
+       }
+          &.bottom {
+          box-shadow: 0px 15px 10px -15px #111;
+      }
+/*PROMOÇÕES START*/
+
+  .sizeImgPromo{
+    width: 110px;
+    height: 110px;
+    margin-bottom: 30px;
+  }
+
+  .promo{
+    margin-top: 40px;
+  }
+
+  .textPromo{
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+
+
+
+/* FOOTER CSS */
+.footer {
+padding: 50px 0 20px 0;
+/* background-color: #35404f; */
+color: #007bff;
+}
+.footer .title{text-align: left;color:#007bff;font-size:25px;}
+
+
+.footer .social-icon{padding:0px;margin:0px;}
+.footer .social-icon a{display:inline-block;color:#007bff;font-size:25px;padding:5px;}
+.footer .acount-icon a{display:block;color:#007bff;font-size:18px;padding:5px;text-decoration:none;}
+.footer .acount-icon .fa{margin-right:25px;}
+
+
+.footer .category a {
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 1px;
+    border-radius:4px;
+    margin-top: 6px;
+    background-color: #f5f5f5;
+    /* border: solid 1px #007bff; */
+}
+
+.footer .payment{margin:0px;padding:0px;list-style-type:none}
+.footer .payment li{list-style-type:none}
+.footer .payment li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #007bff;
+    float: left;
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+
+/*LOGIN*/
+.userBox{
+  color: #007bff;
+  background-color: #bfd3e940;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+.userBordas{
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+/*PERGUNTAS*/
+.lista_perguntas{
+  list-style-type:none;
+}
+
+/*CONTATO*/
+
+/* @media (max-width:576px) para Header.php */
+
+
+@media (max-width:576px){
+
+  .headerSearch{
+    margin: 0 auto;
+  }
+
+  .input-group{
+    position: relative;
+    right: 127px;
+    margin: 0 auto;
+  }
+
+  .form-control{
+    width: 300  px;
+  }
+
+  .logo{
+    position: relative;
+    left: 69px;
+  }
+
+  .btnVender{
+    margin-left: 35px;
+  }
+
+
+  .navbar{
+
+    width: 318px;
+    margin: 0 auto;"
+  }
+  .nav-item{
+    margin-left: 115px;
+    margin-right: 115px;
+    padding-left: 66px;
+    padding-right: 32px;
+    width: 284px;
+    height: 129px;
+    position: relative;
+    right: 129px;
+  }
+
+  .vip-marcas{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 34px;
+  }
+
+
+  .marcas{
+    position: relative;
+  /* width: 100%; */
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 13px;
+  width: 86px;
+  }
+
+  .btn .btn-primary{
+    position: relative !important;
+  }
+
+  /* @media (max-width:576px) para footer.php */
+  .logoFooter{
+    position: relative;
+    left: 89px;;
+  }
+
+  .minhaConta{
+    text-align: center;
+  }
+  .minhaConta .title{
+    text-align: center;
+  }
+
+  .footerCategorias{
+    text-align: center;
+  }
+  .footerCategorias .title{
+    text-align: center;
+  }
+
+  .footerPagto{
+    text-align: center;
+  }
+  .footerPagto .title{
+    text-align: center;
+  }
+
+
+
+}
+@media (min-width:577px){
+  .input-group{
+    position: relative;
+    left: 300px;
+    margin: auto;
+  }
+
+  .form-control{
+    width: 427px;
+  }
+
+  .logo{
+    position: relative;
+    left: 269px;
+  }
+
+  /* .nav-item{
+    margin-left: 187px;
+    margin-right: 115px;
+    padding-left: 66px;
+    padding-right: 32px;
+    height: 174px;
+    width: 284px;
+    height: 129px;
+  } */
+
+  .vip-marcas{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 34px;
+  }
+
+  .btn-primary{
+    margin-left: 38px;
+  }
+
+  .navbar{
+    margin: auto;
+  }
+
+}
+
+@media (min-width:720px){
+
+
+  .navbar{
+    width: 318px;
+    margin: 0 auto;"
+  }
+
+  .nav-item{
+    position: relative;
+    left: 15px;
+  }
+
+  .logo {
+    position: relative;
+    left: 281px;
+}
+
+.input-group{
+  position: relative;
+  left: 318px;
+  margin: 0 auto;
+}
+
+
+}
+
+@media (min-width:991px){
+
+    .logo{
+      position: relative;
+      left: -129px;
+    }
+
+    .headerSearch{
+      padding-top: 34px;
+      padding-left: 0px;
+      position: relative;
+      right: 240px;
+    }
+
+    .nav-item{
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 5;
+      padding-right: 5;
+    }
+
+
+
+
+}
