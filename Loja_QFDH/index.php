@@ -346,7 +346,7 @@
 
           <nav >
             <a >
-              <img src="img/bannerStyle.jpg" class="img-fluid" alt="Responsive image" style="height: 353px; width: 100%;padding-bottom: 14px; position: relative; bottom:25px">
+              <img src="img/bannerStyle.jpg" class="img-fluid" alt="Responsive image" style="height: 353px; width: 100%;padding-bottom: 14px; position: relative; bottom:25px; margin-bottom: 4%;">
             </a>
           </nav>
           </div>
