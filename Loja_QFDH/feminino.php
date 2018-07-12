@@ -27,130 +27,134 @@
 <div class="container" style="padding-left: 0px; padding-right: 0px; position: relative;  bottom: 70px;">
     <div class="cont-prod">
         <section class="vip-products row" style="margin-top: 70px;">
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
-                <!-- Camisas -->
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
+                <!-- Jaquetas -->
                 <p class="tituloCamisasUn" >Jaquetas</p>    
-                <a href="produtoFeminino.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="jaquetaFeminina.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Jaquetas</p>    
-                <a href="produtoFeminino.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="jaquetaFeminina.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisas" >Jaquetas</p>    
-                <a href="produtoFeminino.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="jaquetaFeminina.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Jaquetas</p>    
-                <a href="produtoFeminino.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="jaquetaFeminina.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Jaquetas</p>    
-                <a href="produtoFeminino.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="jaquetaFeminina.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Jaquetas</p>    
-                <a href="produtoFeminino.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="jaquetaFeminina.php"><img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
+            <div><img src="img/divisor-pagina.png" alt="" class="divisorPagina"></div>
             <!-- Óculos -->
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Óculos</p>    
-                <a href=""><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="oculosFeminino.php"><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Óculos</p>    
-                <a href=""><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="oculosFeminino.php"><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisas" >Óculos</p>    
-                <a href=""><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="oculosFeminino.php"><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Óculos</p>    
-                <a href=""><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="oculosFeminino.php"><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Óculos</p>    
-                <a href=""><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="oculosFeminino.php"><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Óculos</p>    
-                <a href=""><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="oculosFeminino.php"><img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
+            <div><img src="img/divisor-pagina.png" alt="" class="divisorPagina"></div>
              <!-- Social -->
-             <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+             <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Social</p>    
-                <a href=""><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="socialFeminina.php"><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Social</p>    
-                <a href=""><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="socialFeminina.php"><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisas" >Social</p>    
-                <a href=""><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="socialFeminina.php"><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Social</p>    
-                <a href=""><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="socialFeminina.php"><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Social</p>    
-                <a href=""><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="socialFeminina.php"><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Social</p>    
-                <a href=""><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="socialFeminina.php"><img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
+            <div><img src="img/divisor-pagina.png" alt="" class="divisorPagina"></div>
              <!-- Sapatos -->
-             <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+             <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Sapatos</p>    
-                <a href=""><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="sapatoFeminino.php"><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Sapatos</p>    
-                <a href=""><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="sapatoFeminino.php"><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisas" >Sapatos</p>    
-                <a href=""><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="sapatoFeminino.php"><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Sapatos</p>    
-                <a href=""><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="sapatoFeminino.php"><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Sapatos</p>    
-                <a href=""><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="sapatoFeminino.php"><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Sapatos</p>    
-                <a href=""><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="sapatoFeminino.php"><img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
+            <div><img src="img/divisor-pagina.png" alt="" class="divisorPagina"></div>
              <!-- Bolsas -->
-             <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+             <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Bolsas</p>    
-                <a href=""><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="acessoriosFeminino.php"><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Bolsas</p>    
-                <a href=""><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="acessoriosFeminino.php"><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisas" >Bolsas</p>    
-                <a href=""><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="acessoriosFeminino.php"><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Bolsas</p>    
-                <a href=""><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="acessoriosFeminino.php"><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Bolsas</p>    
-                <a href=""><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="acessoriosFeminino.php"><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
-            <article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+            <article  class="product col-6 col-sm-2 col-md-4 col-lg-2">
                 <p class="tituloCamisasUn" >Bolsas</p>    
-                <a href=""><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
+                <a href="acessoriosFeminino.php"><img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg imgConfig efeitoImg" alt="pdto 01"></a>
             </article>
         </section>
     </div>

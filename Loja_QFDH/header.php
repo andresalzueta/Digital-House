@@ -3,7 +3,7 @@
 <header class="main-header row">
 		<div class="headerSearch col-3 col-sm-5 col-md-12 col-lg-4	" style="padding-top: 34px; padding-left:25px;">
 			<div class="input-group">
-				<i class="fas fa-search botaoSearch"></i>
+				<img src="img/searchIcon.png" alt="Search" class="botaoSearch">
 				<input type="text" class="barraDeBusca form-control" placeholder="         Search for...">
 			</div><!-- /input-group -->
 		</div><!-- /.col-lg-6 -->
@@ -11,16 +11,21 @@
 <div>
 		<nav class="navbar navbar-expand-lg navbar-light">
   		<a class="navbar-brand" href="#">
-				<img src="img/logo2.png" alt="logotipo" class="logo">
+				<img src="img/logo/simbolo.png" alt="logotipo" class="logoSimbolo">
+				<img src="img/logo/texto.png" alt="logotipo" class="logoTexto">
 			</a>
-				<a href=""><img src="img/questionIcon.png" alt="Perguntas Frequentes" class="botaoQuestion"></a>
-				<a href=""><img src="img/userIcon.png" alt="Login" class="botaoLogin"></a>
-				<input class="btnVender btn-primary" type="reset" value="Vender">
+				<a href="">
+					<img src="img/questionIcon.png" alt="Perguntas Frequentes" class="botaoQuestion">
+				</a>
+				<a href="cadastro.php">
+					<img src="img/userIcon.png" alt="Login" class="botaoLogin">
+				</a>
+				<button type="button" class="btnVender"><p class="textoBotao">Vender</p></button>
 		</nav>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light col-md-12 col-lg-12" style="margin-bottom: 5px; background-color: #bfd3e940;border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; height: 37px;justify-content: center">
+<nav class="navbar navbar-expand-lg navbar-light col-xs-1 col-sm-1 col-md-1 col-lg-12" style="margin-bottom: 5px; background-color: #bfd3e940;border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; height: 37px;justify-content: center">
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: transparent;">
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: transparent;">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -103,6 +108,4 @@
 					<!-- </ul>
 				</nav>
 			</div> -->
-
-
-		</header>
+</header>

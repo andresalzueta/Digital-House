@@ -120,40 +120,40 @@
 				<div class="row">
 					<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 						<label for="nome">Nome</label>
-						<input type="text" class="form-control" id="nome" name="nome" value="<?php if(isset($_SESSION["nome"])) {echo $_SESSION["nome"];} ?>" placeholder="Insira Nome ">
+						<input type="text" class="form-control camposCadastro" id="nome" name="nome" value="<?php if(isset($_SESSION["nome"])) {echo $_SESSION["nome"];} ?>" placeholder="Insira Nome ">
 					</div>
 					<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 						<label for="sobrenome">Sobrenome</label>
-						<input type="text" class="form-control" id="sobrenome" name="sobrenome" value="<?php if(isset($_SESSION["sobrenome"])) {echo $_SESSION["sobrenome"];} ?>" placeholder="Insira seu sobrenome">
+						<input type="text" class="form-control camposCadastro" id="sobrenome" name="sobrenome" value="<?php if(isset($_SESSION["sobrenome"])) {echo $_SESSION["sobrenome"];} ?>" placeholder="Insira seu sobrenome">
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 						<label for="username">Nome de usuário</label>
-						<input type="text" class="form-control" id="usuario" name="usuario" value="<?php if(isset($_SESSION["usuario"])) {echo $_SESSION["usuario"];} ?>" placeholder="Insira um nome de usuário">
+						<input type="text" class="form-control camposCadastro" id="usuario" name="usuario" value="<?php if(isset($_SESSION["usuario"])) {echo $_SESSION["usuario"];} ?>" placeholder="Insira um nome de usuário">
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 						<label for="email">E-mail</label>
-						<input type="text" class="form-control" id="email" name="email" value="<?php if(isset($_SESSION["email"])) {echo $_SESSION["email"];} ?>" placeholder="Insira um e-mail">
+						<input type="text" class="form-control camposCadastro" id="email" name="email" value="<?php if(isset($_SESSION["email"])) {echo $_SESSION["email"];} ?>" placeholder="Insira um e-mail">
 					</div>
 					<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 						<label for="email-confirm">Confirmar e-mail</label>
-						<input type="text" class="form-control" id="email_confirm" name="email_confirm" value="<?php if(isset($_SESSION["email_confirm"])) {echo $_SESSION["email_confirm"];} ?>" placeholder="Confirme seu e-mail">
+						<input type="text" class="form-control camposCadastro" id="email_confirm" name="email_confirm" value="<?php if(isset($_SESSION["email_confirm"])) {echo $_SESSION["email_confirm"];} ?>" placeholder="Confirme seu e-mail">
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 						<label for="senha">Senha</label>
-						<input type="password" class="form-control" id="senha" name="senha" value="<?php if(isset($_SESSION["senha"])) {echo $_SESSION["senha"];} ?>" placeholder="Insira uma senha">
+						<input type="password" class="form-control camposCadastro" id="senha" name="senha" value="<?php if(isset($_SESSION["senha"])) {echo $_SESSION["senha"];} ?>" placeholder="Insira uma senha">
 					</div>
 					<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 						<label for="senha-confirm">Confirmar senha</label>
-						<input type="password" class="form-control" id="senha-confirm" name="senha_confirm" value="<?php if(isset($_SESSION["senha_confirm"])) {echo $_SESSION["senha_confirm"];} ?>" placeholder="Confirme sua senha">
+						<input type="password" class="form-control camposCadastro" id="senha-confirm" name="senha_confirm" value="<?php if(isset($_SESSION["senha_confirm"])) {echo $_SESSION["senha_confirm"];} ?>" placeholder="Confirme sua senha">
 					</div>
 				</div>
 
@@ -171,7 +171,7 @@
 						</div>
 						<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-1">
 									<label for="nacionalidade">Nacionalidade</label>
-									<select class="form-control" name="nacionalidade" id="nacionalidade">
+									<select class="form-control camposCadastro" name="nacionalidade" id="nacionalidade">
 													<?php foreach ($array_paises as $key => $value) : ?>
 															<option value="<?php echo $value ?>" <?php if($_SESSION["nacionalidade"]===$value){echo " selected";} ?>><?php echo $value; ?></option>
 													<?php endforeach; ?>
@@ -184,7 +184,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-1">
 							<label> Dia</label>
-							<select class="form-control" name="fnac_dia">
+							<select class="form-control camposCadastro campoDMA" name="fnac_dia">
 								<?php for ($i=1; $i <= 31 ; $i++) : ?>
 									<option value="<?php echo $i ?>" <?php if($_SESSION["fnac_dia"]==="$i"){echo " selected";} ?>><?php echo $i; ?></option>
 								<?php endfor; ?>
@@ -192,7 +192,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-1">
 							<label> Mês</label>
-							<select class="form-control" name="fnac_mes">
+							<select class="form-control camposCadastro campoDMA" name="fnac_mes">
 								<?php for ($i=1; $i <= 12 ; $i++) : ?>
 									<option value="<?php echo $i ?>" <?php if($_SESSION["fnac_mes"]==="$i"){echo " selected";} ?>><?php echo $i; ?></option>
 								<?php endfor; ?>
@@ -200,7 +200,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-1 ce">
 							<label> Ano</label>
-							<select class="form-control" name="fnac_ano">
+							<select class="form-control camposCadastro campoDMA" name="fnac_ano">
 								<?php for ($i=2018; $i >= 1960 ; $i--) : ?>
 									<option value="<?php echo $i ?>" <?php if($_SESSION["fnac_ano"]==="$i"){echo " selected";} ?>><?php echo $i; ?></option>
 								<?php endfor; ?>

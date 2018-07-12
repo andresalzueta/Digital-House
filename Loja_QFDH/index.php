@@ -53,7 +53,7 @@
     </div>
   <div class="col-6">
       <nav class="navbarVeja navbar-expand-lg navbar-light">
-        <input class="vejaBtn btn-primary" type="reset" value="Veja Mais">
+        <button type="button" class="vejaBtn"><p class="textoBotao">Veja mais</p></button>
       </nav>
   </div>
  </div>
@@ -66,37 +66,38 @@
 <div class="container" style="padding-left: 0px; padding-right: 0px; position: relative;  bottom: 70px;">
 		<div class="cont-prod">
 			<section class="vip-products row">
-				<article  class="product col-6  col-sm-2 col-md-2 col-lg-2">
+				<article  class="product col-6  col-xs-5 col-sm-2 col-md-4 col-lg-2">
 					<img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg" alt="pdto 01">
 					<!-- <h2>Produto 01</h2> -->
 					<p>Jaquetas</p>
 					<a href="#">ver mais</a>
 				</article>
-				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
 					<img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg" alt="pdto 02">
 					<!-- <h2>Produto 02</h2> -->
 					<p>Óculos</p>
 					<a href="#">ver mais</a>
 				</article>
-				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
+          <!-- col-lg-2 = 992px -->
 					<img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg" alt="pdto 03">
 					<!-- <h2>Produto 03</h2> -->
 					<p>Social</p>
 					<a href="#">ver mais</a>
 				</article>
-				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
 					<img src="img/Produtos/Ela/Jeans.jpg" class="sizeImg"  alt="pdto 04">
 					<!-- <h2>Produto 04</h2> -->
 					<p>Calça Jeans</p>
 					<a href="#">ver mais</a>
 				</article>
-				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
 					<img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg"  alt="pdto 05">
 					<!-- <h2>Produto 05</h2> -->
 					<p>Sapatos</p>
 					<a href="#">ver mais</a>
 				</article>
-        <article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+        <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
 					<img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg"  alt="pdto 05">
 					<!-- <h2>Produto 05</h2> -->
 					<p>Bolsas</p>
@@ -122,48 +123,49 @@
         <p class="font-weight-light">Moda Ele</p>
       </h1>
     </div>
-  <div class="col-6">
-      <nav class="navbarVeja navbar-expand-lg navbar-light">
-        <input class="vejaBtn btn-primary" type="reset" value="Veja Mais">
-      </nav>
-  </div>
+    <div class="col-6">
+        <nav class="navbarVeja navbar-expand-lg navbar-light">
+          <input class="vejaBtn btn-primary" type="reset" value="Veja Mais">
+        </nav>
+    </div>
  </div>
 </div>
 
 <div class="container" style="padding-left: 0px; padding-right: 0px; position: relative;  bottom: 70px;">
 			<div class="cont-prod">
   			<section class="vip-products row" style="margin-top: 70px;">
-  				<article  class="product col-6 col-sm-2 col-md-2 col-lg-2">
+  				<article  class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
+            <!-- col-lg-2 = 992px -->
   					<img src="img/Produtos/Ele/camisa.jpg" class="sizeImg" alt="pdto 01">
   					<!-- <h2>Produto 01</h2> -->
   					<p>Camisas</p>
   					<a href="#">ver mais</a>
   				</article>
-  				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+  				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
   					<img src="img/Produtos/Ele/óculos.jpg" class="sizeImg" alt="pdto 02">
   					<!-- <h2>Produto 02</h2> -->
   					<p>Óculos</p>
   					<a href="#">ver mais</a>
   				</article>
-  				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+  				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
   					<img src="img/Produtos/Ele/blazer.jpg" class="sizeImg" alt="pdto 03">
   					<!-- <h2>Produto 03</h2> -->
   					<p>Social</p>
   					<a href="#">ver mais</a>
   				</article>
-  				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+  				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
   					<img src="img/Produtos/Ele/calça.jpg" class="sizeImg"  alt="pdto 04">
   					<!-- <h2>Produto 04</h2> -->
   					<p>Calça Jeans</p>
   					<a href="#">ver mais</a>
   				</article>
-  				<article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+  				<article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
   					<img src="img/Produtos/Ele/Sapato.jpg" class="sizeImg"  alt="pdto 05">
   					<!-- <h2>Produto 05</h2> -->
   					<p>Sapatos</p>
   					<a href="#">ver mais</a>
   				</article>
-          <article class="product col-6 col-sm-2 col-md-2 col-lg-2">
+          <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
   					<img src="img/Produtos/Ele/acessorios.jpg" class="sizeImg"  alt="pdto 05">
   					<!-- <h2>Produto 05</h2> -->
   					<p>Acessórios</p>
@@ -198,7 +200,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="c-widget__header col-12" style="margin-top: 80px;">
+    <div class="c-widget__header col-12" style="margin-top: 5%;">
         <h1 class="text-center" >
           <p class="font-weight-light">O que você procura? Quais suas marcas preferidas?</p>
         </h1>
@@ -210,80 +212,78 @@
 		 <div class="cont-marcas">
   			<section class="vip-marcas row">
 
-  				<article  class="marcas col-sm-2 col-md-2 col-lg-2">
+  				<article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
 					 <a href="#" class="shadow bottom" >
              <img class="sizeMarcas" src="img/Produtos/Marcas/adidas.jpg" alt="adidas">
            </a>
           </article>
 
-         <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-         <a href="#" class="shadow bottom" >
-            <img class="sizeMarcas" src="img/Produtos/Marcas/apple.jpg" alt="apple">
-          </a>
-         </article>
+          <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+              <a href="#" class="shadow bottom" >
+                <img class="sizeMarcas" src="img/Produtos/Marcas/apple.jpg" alt="apple">
+              </a>
+          </article>
 
-         <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-         <a href="#" class="shadow bottom" >
-           <img class="sizeMarcas" src="img/Produtos/Marcas/asics.jpg" alt="asics">
-         </a>
-         </article>
+          <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+              <a href="#" class="shadow bottom" >
+                <img class="sizeMarcas" src="img/Produtos/Marcas/asics.jpg" alt="asics">
+              </a>
+          </article>
 
-         <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-         <a href="#" class="shadow bottom" >
-           <img class="sizeMarcas" src="img/Produtos/Marcas/BMW.jpg" alt="BMW">
-         </a>
-         </article>
+          <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+              <a href="#" class="shadow bottom" >
+                <img class="sizeMarcas" src="img/Produtos/Marcas/BMW.jpg" alt="BMW">
+              </a>
+          </article>
 
-         <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-         <a href="#" class="shadow bottom" >
-           <img class="sizeMarcas" src="img/Produtos/Marcas/colcci.jpg" alt="colcci">
-         </a>
-         </article>
+          <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+              <a href="#" class="shadow bottom" >
+                <img class="sizeMarcas" src="img/Produtos/Marcas/colcci.jpg" alt="colcci">
+              </a>
+          </article>
 
-         <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-         <a href="#" class="shadow bottom" >
-           <img class="sizeMarcas" src="img/Produtos/Marcas/fossil.jpg" alt="fossil">
-         </a>
-         </article>
+          <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+              <a href="#" class="shadow bottom" >
+                <img class="sizeMarcas" src="img/Produtos/Marcas/fossil.jpg" alt="fossil">
+              </a>
+          </article>
 
+          <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+            <a href="#" class="shadow bottom" >
+              <img class="sizeMarcas" src="img/Produtos/Marcas/guess.jpg" alt="guess">
+            </a>
+          </article>
 
-
-
-        <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-         <a href="#" class="shadow bottom" >
-           <img class="sizeMarcas" src="img/Produtos/Marcas/guess.jpg" alt="guess">
-         </a>
+        <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+            <a href="#" class="shadow bottom" >
+              <img class="sizeMarcas" src="img/Produtos/Marcas/honda.jpg" alt="honda">
+            </a>
         </article>
 
-       <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-       <a href="#" class="shadow bottom" >
-          <img class="sizeMarcas" src="img/Produtos/Marcas/honda.jpg" alt="honda">
-        </a>
-       </article>
+        <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+            <a href="#" class="shadow bottom" >
+              <img class="sizeMarcas" src="img/Produtos/Marcas/samsung.jpg" alt="samsung">
+            </a>
+        </article>
 
-       <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-       <a href="#" class="shadow bottom" >
-         <img class="sizeMarcas" src="img/Produtos/Marcas/samsung.jpg" alt="samsung">
-       </a>
-       </article>
+        <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+            <a href="#" class="shadow bottom" >
+              <img class="sizeMarcas" src="img/Produtos/Marcas/nike.jpg" alt="nike">
+            </a>
+        </article>
 
-       <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-       <a href="#" class="shadow bottom" >
-         <img class="sizeMarcas" src="img/Produtos/Marcas/nike.jpg" alt="nike">
-       </a>
-       </article>
+        <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+            <a href="#" class="shadow bottom" >
+              <img class="sizeMarcas" src="img/Produtos/Marcas/mormaii.jpg" alt="mormaii">
+            </a>
+        </article>
 
-       <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-       <a href="#" class="shadow bottom" >
-         <img class="sizeMarcas" src="img/Produtos/Marcas/mormaii.jpg" alt="mormaii">
-       </a>
-       </article>
+        <article  class="marcas col-xs-5 col-sm-2 col-md-4 col-lg-2">
+            <a href="#" class="shadow bottom" >
+              <img class="sizeMarcas" src="img/Produtos/Marcas/mercedes.jpg" alt="mercedes">
+            </a>
+        </article>
 
-       <article  class="marcas col-sm-2 col-md-2 col-lg-2">
-       <a href="#" class="shadow bottom" >
-         <img class="sizeMarcas" src="img/Produtos/Marcas/mercedes.jpg" alt="mercedes">
-       </a>
-       </article>
       </section>
     </div>
  </div>
@@ -297,7 +297,7 @@
      </div>
    <div class="col-6">
        <nav class="navbar navbar-expand-lg navbar-light">
-         <input class="vejaBtn btn-primary" type="reset" value="Veja Mais">
+        <button type="button" class="vejaBtn promocoesBtn"><p class="textoBotao">Veja Mais</p></button>
        </nav>
    </div>
   </div>
