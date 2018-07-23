@@ -11,46 +11,44 @@
 	<footer class="footer">
 	    <div class="container">
 	        <div class="row">
-	        <div class="col-sm-3">
-						<img src="img/logo2-1.png" alt="logotipo" class="logoFooter">
+	        <div class="logoRS col-sm-3 col-md-4 col-lg-3 col-lg-2">
+				<img src="img/logo/simbolo.png" alt="logotipo" class="logoFooter">
 	            <!-- <h4 class="title">Sumi</h4>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p> -->
 	            <ul class="social-icon">
-	            <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-	            <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-	            <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-	            <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-	            <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
-	            <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-	            </ul>
-	            </div>
-	        <div class="minhaConta col-sm-3">
+					<a href="#" class="social"><i class="fab fa-facebook-square botaoFacebook"></i></a>
+					<a href="#" class="social"><i class="fab fa-instagram botaoInstagram"></i></a>
+					<a href="#" class="social"><i class="fab fa-twitter botaoTwitter"></i></a>
+					<a href="#" class="social"><i class="fab fa-pinterest-square botaoPinterest"></i></i></a>
+				</ul>
+			</div>
+	        <div class="minhaConta col-sm-3 col-md-4 col-lg-3">
 	            <h4 class="title">Minha Conta</h4>
 	            <span class="acount-icon">
-	            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> lista de Desejos</a>
-	            <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> Carrinho</a>
-	            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
-	            <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Outros</a>
+					<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> lista de Desejos</a>
+					<a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> Carrinho</a>
+					<a href="#"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
+					<a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Outros</a>
 	          </span>
-	            </div>
-	        <div class="footerCategorias col-sm-3">
+			</div>
+	        <div class="footerCategorias col-sm-3 col-md-4 col-lg-3">
 	            <h4 class="title">Categorias</h4>
 	            <div class="category">
-	            <a href="#">Homem</a>
-	            <a href="#">Mulher</a>
-	            <a href="#">Menino</a>
-	            <a href="#">Menina</a>
-	            <a href="#">Carro</a>
-	            <a href="#">Eletrodomésticos</a>
-	            <a href="#">Viagem</a>
-	            <a href="#">Eletrônicos</a>
-	            <a href="#">Óculos</a>
-	            <a href="#">Sports</a>
-	            <a href="#">Bebê</a>
-	            <a href="#">Trabalho</a>
+					<a href="#">Homem</a>
+					<a href="#">Mulher</a>
+					<a href="#">Menino</a>
+					<a href="#">Menina</a>
+					<a href="#">Carro</a>
+					<a href="#">Eletrodomésticos</a>
+					<a href="#">Viagem</a>
+					<a href="#">Eletrônicos</a>
+					<a href="#">Óculos</a>
+					<a href="#">Sports</a>
+					<a href="#">Bebê</a>
+					<a href="#">Trabalho</a>
 	            </div>
-	            </div>
-	        <div class="footerPagto col-sm-3">
+			</div>
+	        <div class="footerPagto col-sm-3 col-md-4 col-lg-3">
 	            <h4 class="title">Métodos de Pagamento</h4>
 	            <p>xxxxxxxxxxxxxxxx.</p>
 	            <ul class="payment">
@@ -63,7 +61,7 @@
 	        </div>
 	        <hr>
 
-	        <div class="row text-center"> © 2017. Made with  by Quarteto Fantástico.</div>
+	        <div class="row text-center"> © 2018. Made with  by Quarteto Fantástico.</div>
 	        </div>
 
 

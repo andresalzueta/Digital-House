@@ -1,64 +1,65 @@
 		<!-- cabeçalho / menu -->
 
 <header class="main-header row">
-		<div class="headerSearch col-3 col-sm-5 col-md-5 col-lg-5" style="padding-top: 34px; padding-left:25px;">
+		<div class="headerSearch col-3 col-sm-5 col-md-12 col-lg-4	" style="padding-top: 34px; padding-left:25px;">
 			<div class="input-group">
-				<button class="btn btn-default btn-ps" type="button" style="background-color: white; padding-top: 0px; padding-right: 14px; padding-left: 19px;">
-
-				<input type="text" class="form-control" placeholder="Search for...">
-				</button>
+				<img src="img/searchIcon.png" alt="Search" class="botaoSearch">
+				<input type="text" class="barraDeBusca form-control" placeholder="         Search for...">
 			</div><!-- /input-group -->
 		</div><!-- /.col-lg-6 -->
 
-<div class="col-sm-5 col-md-7 col-lg-7">
+<div>
 		<nav class="navbar navbar-expand-lg navbar-light">
   		<a class="navbar-brand" href="#">
-				<img src="img/logo2.png" alt="logotipo" class="logo">
+				<img src="img/logo/simbolo.png" alt="logotipo" class="logoSimbolo">
+				<img src="img/logo/texto.png" alt="logotipo" class="logoTexto">
 			</a>
-			 <ul class="navbar-nav mr-auto">
-				 <li class="nav-item active">
-
-					 <button class="btn btn-default home-img" type="button" style="margin: 15px";>
-					 </button>
-
-					 <button class="btn btn-default duvida-img" type="button">
- 					</button>
-		 			<!-- <a href="cadastro.php" class="search" style="font-size: 14px;  margin: 21px";>Dúvidas
-					</a> -->
-					<button class="btn btn-default entrar-img" type="button" style="margin: 15px;">
-				 </button>
-		 	    <!-- <a href="login.php" class="search">Entrar</a> -->
-		 			<input class="btnVender btn-primary" type="reset" value="Vender">
-			</ul>
+				<a href="">
+					<img src="img/questionIcon.png" alt="Perguntas Frequentes" class="botaoQuestion">
+				</a>
+				<a href="cadastro.php">
+					<img src="img/userIcon.png" alt="Login" class="botaoLogin">
+				</a>
+				<button type="button" class="btnVender"><p class="textoBotao">Vender</p></button>
 		</nav>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 5px; background-color: #bfd3e940;border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; height: 37px;justify-content: center">
+<nav class="navbar navbar-expand-lg navbar-light col-xs-1 col-sm-1 col-md-1 col-lg-12" style="margin-bottom: 5px; background-color: #bfd3e940;border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; height: 37px;justify-content: center">
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: transparent;">
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: transparent;">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse col-4 col-md-4 col-lg-4" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#" style="color: #007bff;">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color: #007bff;">Link</a>
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
 			<li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
+	        <a class="nav-link dropdown-toggle" href="categorias.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Categorias
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Action</a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+						<a class="dropdown-item" href="masculino.php">Masculino</a>
+						<a class="dropdown-item" href="feminino.php">Feminino</a>
+						<a class="dropdown-item" href="kids.php">Kids</a>
+						<div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="categorias.php">Categorias</a>
+					</div>
+			</li>
+			<li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="produtos.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Marcas
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Forever 21</a>
+						<a class="dropdown-item" href="#">Gucci</a>
+						<a class="dropdown-item" href="#">Nike</a>
+						<a class="dropdown-item" href="#">Adidas</a>
+	          <a class="dropdown-item" href="#">New Balance</a>
+					</div>
+			</li>
+			<li class="nav-item">
+        <a class="nav-link" href="#">Vender</a>
       </li>
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">
@@ -107,6 +108,4 @@
 					<!-- </ul>
 				</nav>
 			</div> -->
-
-
-		</header>
+</header>
