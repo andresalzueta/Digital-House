@@ -168,7 +168,7 @@
 		?>
 
 		<div class="row">
-			<form role="form" action="Form_Insere_Filme.php" method="post" enctype="multipart/form-data">
+			<form role="form" class="form-vertical" action="Form_Insere_Filme.php" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="form-group col-sm-12">
 						<label for="title">Título do Filme</label>
