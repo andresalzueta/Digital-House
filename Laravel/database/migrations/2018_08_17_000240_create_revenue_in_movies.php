@@ -15,7 +15,7 @@ class CreateRevenueInMovies extends Migration
     {
         //
         Schema::table('movies', function (Blueprint $table) {
-            $table->float('revenue',8,2);
+            $table->float('revenue',11,2);
         });
     }
 

@@ -1,14 +1,23 @@
 @extends('layouts.master')
 
-@section('conteudo')
-
+@section('content')
 <div class="container">
-    <h1 align="center">Projeto Laravel</h1>
-    <br>
-    <h2 align="center">autor: Andrés Alzueta</h2>
-    <br>
-    <h3 align="center">Criado em 16/08/2018</h3>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 @endsection

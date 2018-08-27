@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('conteudo')
+@section('content')
 
 <div class="container">
 <h1 align="center">{{ $msgtitulo }}</h1>
@@ -17,7 +17,7 @@
     <form class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" id="editarFilme" name="editarFilme" method="POST" action="{{$action}}" enctype="multipart/form-data">
         {{csrf_field()}}
         {{method_field($metodo)}}
-        <div class="form-group  {{ $msgclass }}">
+        <div class="form-group  {{ $msgclass }}" role="alert">
             <h2 align="center">{{ $msgstatus }}</h2>
         </div>
         <div class="row">
@@ -106,8 +106,8 @@
                         <td>{{ $actor->getNomeCompleto() }}</td>
                         <td>{{ $actor->rating }}</td>
                         <td>{{ $actor->getFilme_Favorito['title'] }}</td>
-                        <td><a href="/Digital-House/Laravel/public/actor/read/{{ $actor->id }}">Exibir</a></td>
-                        <td><a href="/Digital-House/Laravel/public/actor/edit/{{ $actor->id }}">Editar</a></td>
+                        <td><a href="{{ url('/') }}/actor/read/{{ $actor->id }}">Exibir</a></td>
+                        <td><a href="{{ url('/') }}/actor/edit/{{ $actor->id }}">Editar</a></td>
                     </tr>
                 @endforeach                
             </tbody>

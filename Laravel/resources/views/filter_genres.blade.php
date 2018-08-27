@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('conteudo')
+@section('content')
     <div class="container mt-2">
         <h1 align="center">{{ $msgtitulo }}</h1>
         {{csrf_field()}}
@@ -27,6 +27,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Gênero</th>
+                    <th>Ranking</th>
                     <th>Editar</th>
                     <th>Excluir</th>
                 </tr>
@@ -36,8 +37,9 @@
                     <tr>
                         <td>{{ $genero->id }}</td>
                         <td>{{ $genero->name }}</td>
-                        <td><a href="/Digital-House/Laravel/public/genre/edit/{{ $genero->id }}">Editar</a></td>
-                        <td><a href="/Digital-House/Laravel/public/genre/preDelete/{{ $genero->id }}">Deletar</a></td>
+                        <td>{{ $genero->ranking }}</td>
+                        <td><a href="{{ url('/') }}/genre/edit/{{ $genero->id }}">Editar</a></td>
+                        <td><a href="{{ url('/') }}/genre/predelete/{{ $genero->id }}">Deletar</a></td>
                     </tr>
                 @endforeach                
             </tbody>

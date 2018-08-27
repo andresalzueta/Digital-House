@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('conteudo')
+@section('content')
     
     <div class="container mt-2">
         <h1 align="center">{{ $msgtitulo }}</h1>
@@ -11,7 +11,7 @@
             @else
                 @php $msgclass="alert alert-info" @endphp
             @endif  
-        <div class="{{ $msgclass }}">
+        <div class="{{ $msgclass }}" role="alert">
                     <h2 align="center">{{ $msgstatus }}</h2>
         </div>
         
@@ -35,9 +35,9 @@
                         <td>{{ $ator->getNomeCompleto() }}</td>
                         <td>{{ $ator->rating }}</td>
                         <td>{{ $ator->getFilme_Favorito['title'] }}</td>
-                        <td><a href="/Digital-House/Laravel/public/actor/show/{{ $ator->id }}">Exibir</a></td>
-                        <td><a href="/Digital-House/Laravel/public/actor/edit/{{ $ator->id }}">Editar</a></td>
-                        <td><a href="/Digital-House/Laravel/public/actor/predelete/{{ $ator->id }}">Deletar</a></td>
+                        <td><a href="{{ url('/') }}/actor/read/{{ $ator->id }}">Exibir</a></td>
+                        <td><a href="{{ url('/') }}/actor/edit/{{ $ator->id }}">Editar</a></td>
+                        <td><a href="{{ url('/') }}/actor/predelete/{{ $ator->id }}">Deletar</a></td>
                     </tr>
                 @endforeach                
             </tbody>

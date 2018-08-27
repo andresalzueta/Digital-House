@@ -53,7 +53,7 @@ class MovieController extends Controller
         $msgtitulo = "1. Inserir Novo Filme";
         $msgstatus = "Preencha todos os dados";
         $msgbotao = "Inserir->";
-        $action="/Digital-House/Laravel/public/movie/create";
+        $action=url('/')."/movie/create";
                 
         $filme = new Movie; 
         //$filme = $filme->getFillArray();
@@ -117,12 +117,12 @@ class MovieController extends Controller
         
         if ($result) {
             $msgstatus = "Filme cadastrado com sucesso!";
-            $action="/Digital-House/Laravel/public/movie/update/$filme->id";
+            $action=url('/')."/movie/update/$filme->id";
             $sucesso = true;
         } else {
             //return view('form_movie')->with('request',$request);
             $msgstatus = "Ops, ocorreu um erro ao tentar salvar o Filme, tente novamente!";
-            $action="/Digital-House/Laravel/public/movie/create/";
+            $action=url('/')."/movie/create/";
             $sucesso = false;
         }     
         return view('form_movie')
@@ -145,10 +145,10 @@ class MovieController extends Controller
 
         if ($filme) {  
             $msgstatus = "Confira os dados abaixo";
-            $action="/Digital-House/Laravel/public/movies";     
+            $action=url('/')."/movies";     
         } else {
             $msgstatus = "Filme não localizado";
-            $action="/Digital-House/Laravel/public/movies";   
+            $action=url('/')."/movies";   
             $filme = new Movie;
             // return redirect('movies');
         }
@@ -169,7 +169,7 @@ class MovieController extends Controller
         $msgtitulo = "4. Edite dados do Filme";
         $msgstatus = "Edite os dados abaixo";
         $msgbotao = "Atualizar->";
-        $action="/Digital-House/Laravel/public/movie/update/$filme->id";
+        $action=url('/')."/movie/update/$filme->id";
 
         return view('form_movie')
             ->with('metodo',$metodo)
@@ -197,7 +197,7 @@ class MovieController extends Controller
         $metodo = "PATCH";
         $msgtitulo = "5. Atualizar dados do Filme";
         $msgbotao = "Atualizar->";
-        $action="/Digital-House/Laravel/public/movie/update/$filme->id";
+        $action=url('/')."/movie/update/$filme->id";
         $result = $filme->save();
 
         if ($result) {
@@ -227,7 +227,7 @@ class MovieController extends Controller
         $msgtitulo = "6. Deletar Filme";
         $msgstatus = "Confirme deleção do filme abaixo:";   
         $msgbotao = "Deletar->";  
-        $action="/Digital-House/Laravel/public/movie/delete/$filme->id";
+        $action=url('/')."/movie/delete/$filme->id";
 
         return view('form_movie')
             ->with('filme', $filme)
@@ -246,11 +246,12 @@ class MovieController extends Controller
         $msgtitulo = "7. Deletar Filme";
         $msgstatus = "Filme deletado:";
         $msgbotao = "Retornar->";     
-        $action="/Digital-House/Laravel/public/movie/read/$filme->id";
+        $action=url('/')."/movie/read/$filme->id";
         $result = $filme->delete();
 
         if ($result) {
             $msgstatus = "Filme excluído com sucesso!";
+            //Flash::message('Filme excluído com sucesso!');
             return redirect('movies');
         } else {
             //return view('form_movie')->with('request',$request);

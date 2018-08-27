@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('conteudo')
+@section('content')
     <div class="container mt-2">
         <h1 align="center">{{ $msgtitulo }}</h1>
             @if (isset($sucesso) && $sucesso)
@@ -36,9 +36,9 @@
                         <td>{{ $filme->id }}</td>
                         <td>{{ $filme->title }}</td>
                         <td>{{ $filme->genre_id .' - ' .$filme->genero['name'] }}</td>
-                        <td><a href="/Digital-House/Laravel/public/movie/read/{{ $filme->id }}">Exibir</a></td>
-                        <td><a href="/Digital-House/Laravel/public/movie/edit/{{ $filme->id }}">Editar</a></td>
-                        <td><a href="/Digital-House/Laravel/public/movie/preDelete/{{ $filme->id }}">Deletar</a></td>
+                        <td><a href="{{ url('/') }}/movie/read/{{ $filme->id }}">Exibir</a></td>
+                        <td><a href="{{ url('/') }}/movie/edit/{{ $filme->id }}">Editar</a></td>
+                        <td><a href="{{ url('/') }}/movie/preDelete/{{ $filme->id }}">Deletar</a></td>
                     </tr>
                 @endforeach                
             </tbody>
