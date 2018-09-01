@@ -20,3 +20,4 @@ CSS:Designer=> Daniel
 
 Inclusão de biblioteca de Validações Brasileiras
 https://github.com/LaravelLegends/pt-br-validator
+https://github.com/geekcom/validator-docs
