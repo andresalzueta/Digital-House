@@ -18,7 +18,7 @@ class CreateCustomersTable extends Migration
             $table->timestamps();
 
             $table->unsignedInteger('user_id')->unique();
-            $table->unsignedInteger('cpf')->unique();
+            $table->string('cpf_cnpj',20)->unique();
             $table->string('first_name',50);
             $table->string('last_name',50);
             $table->string('gender',1);
@@ -28,7 +28,7 @@ class CreateCustomersTable extends Migration
 
             $table->string('address',50);
             $table->string('address_number',10);
-            $table->string('adress_complement',50)->nullable();
+            $table->string('address_complement',50)->nullable();
             $table->string('city',50);
             $table->string('state',2);
             $table->string('zipcode',8);

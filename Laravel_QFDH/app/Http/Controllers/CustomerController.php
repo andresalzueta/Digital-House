@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 use App\Customer;
+use App\User;
+
 
 class CustomerController extends Controller
 {
     //
-    // digitalhouse_db.customers[id, created_at, updated_at, user_id, cpf, first_name, last_name, gender,
+    // digitalhouse_db.customers[id, created_at, updated_at, user_id, cpf_cnpj, first_name, last_name, gender,
     //                           birthday, phone, email, address, address_number, adress_complement, city, state, zipcode]
 
     public function index() {
@@ -56,9 +59,11 @@ class CustomerController extends Controller
         $action=url('/')."/customer/create";
         
         $customer = new Customer;
+        // captura usuário logado
+        $user = $user = auth()->user();
              
-        $customer->user_id = old('user_id');
-        $customer->cpf = old('cpf');
+        $customer->user_id = $user->id;
+        $customer->cpf_cnpj = old('cpf_cnpj');
         $customer->first_name = old('first_name');
         $customer->last_name = old('last_name');
         $customer->gender = old('gender');
@@ -85,21 +90,41 @@ class CustomerController extends Controller
     }
 
     public function create(Request $request) {
-        // $fillable = [user_id, cpf, first_name, last_name, gender,birthday, phone, email, address, address_number, adress_complement, city, state, zipcode]
-
+        // $fillable = [user_id, cpf_cnpj, first_name, last_name, gender,birthday, phone, email, address, address_number, adress_complement, city, state, zipcode]
+        $date = 
         $this->validate($request,[
-            'user_id' => 'numeric|min:0',
-            'cpf' => 'numeric|required|min:11|max:13',
+            'user_id' => 'numeric|required|min:0|unique:customers',
+            'cpf_cnpj' => 'required|cpf_cnpj|unique:customers',
             'first_name' => 'required|min:3|max:50',
             'last_name' => 'required|min:3|max:50',
-            'email' => 'required|min:6|max:60',
-
+            'gender' => 'required|in:F,M',
+            'birthday' => 'date|date_format:Y-m-d|required|after:1900-01-01|before:today',
+            'phone' => 'required|min:6|max:32',
+            'email' => 'required|email|min:6|max:60|unique:customers',
+            'address' => 'required|min:6|max:50',
+            'address_number' => 'required|min:1|max:10',
+            'address_complement' => 'required|min:1|max:50',
+            'city' => 'required|min:3|max:50',
+            'state' => 'required|min:2|max:2',
+            'zipcode' => 'required|min:5|max:8',
         ]);
 
         
         $customer = Customer::create([
-            'name' => $request->input('name'),
+            'user_id' => $request->input('user_id'),
+            'cpf_cnpj' => $request->input('cpf_cnpj'),
+            'first_name' => $request->input('first_name'),
+            'last_name' => $request->input('last_name'),
+            'gender' => $request->input('gender'),
+            'birthday' => $request->input('birthday'),
+            'phone' => $request->input('phone'),
             'email' => $request->input('email'),
+            'address' => $request->input('address'),
+            'address_number' => $request->input('address_number'),
+            'address_complement' => $request->input('address_complement'),
+            'city' => $request->input('city'),
+            'state' => $request->input('state'),
+            'zipcode' => $request->input('zipcode'),
         ]);
         $result = $customer->save();
 
@@ -196,18 +221,41 @@ class CustomerController extends Controller
         // os campos ['email_confirm'] ['password_confirm'] não existem na tabela users, portanto precisam ser criados no objeto
 
         $this->validate($request,[
-            'name' => 'required|min:3|max:255',
-            'email' => 'required|min:6|max:255',
-            'email_confirm' => 'required_with:email|same:email|min:6',
-            'password' => 'required|min:6|max:64',
-            'password_confirm' => 'required_with:password|same:password|min:6',
-            'remember_token' => 'required|min:6|max:64',
+            'user_id' => Rule::unique('customers')->ignore($customer->id, 'user_id'),
+            'cpf_cnpj' => Rule::unique('customers')->ignore($customer->cpf_cnpj, 'cpf_cnpj'),
+            'email' => Rule::unique('customers')->ignore($customer->email, 'email'),
+            'user_id' => 'required',
+            'cpf_cnpj' => 'required|cpf_cnpj',
+            'email' => 'required|email',
+            'first_name' => 'required|min:3|max:50',
+            'last_name' => 'required|min:3|max:50',
+            'gender' => 'required|in:F,M',
+            'birthday' => 'date|date_format:Y-m-d|required|after:1900-01-01|before:today',
+            'phone' => 'required|min:6|max:32',            
+            'address' => 'required|min:6|max:50',
+            'address_number' => 'required|min:1|max:10',
+            'address_complement' => 'required|min:1|max:50',
+            'city' => 'required|min:3|max:50',
+            'state' => 'required|min:2|max:2',
+            'zipcode' => 'required|min:5|max:8',
         ]);
 
-        $customer->name = $request->input('name');
+                   
+        $customer->user_id = $request->input('user_id');
+        $customer->cpf_cnpj = $request->input('cpf_cnpj');
+        $customer->first_name = $request->input('first_name');
+        $customer->last_name = $request->input('last_name');
+        $customer->gender = $request->input('gender');
+        $customer->birthday = $request->input('birthday');
+        $customer->phone = $request->input('phone');
         $customer->email = $request->input('email');
-        $customer->password = $request->input('password');
-        $customer->remember_token = $request->input('remember_token');
+        $customer->address = $request->input('address');
+        $customer->address_number = $request->input('address_number');
+        $customer->address_complement = $request->input('address_complement');
+        $customer->city = $request->input('city');
+        $customer->state = $request->input('state');
+        $customer->zipcode = $request->input('zipcode');
+
         // save() faz Update dos dados no banco de dados   
         $result = $customer->save();         
         $msgtitulo = "5. Atualizar dados do Cliente";

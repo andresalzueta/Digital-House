@@ -58,6 +58,20 @@
                 <label for="remember_token">Lembrete de Senha</label>
                 <input type="text" class="form-control" id="remember_token" name="remember_token" value="{{ $user->remember_token }}" placeholder="Insira um lembrete de senha" />
             </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="role_id">Funções de Usuário</label>
+                <select class="form-control" name="role_id" id="role_id">
+                    @foreach ($user->roles as $role) 
+                        <option value="{{ $role->id }}" 
+                            @if( $role->id == $user->role_id )
+                            {{"selected"}}
+                            @endif
+                            >{{ $role->name }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
+
         </div>
 
         <div class="row">

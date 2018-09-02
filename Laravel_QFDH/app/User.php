@@ -12,7 +12,7 @@ class User extends Authenticatable
     protected   $table = 'users';
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
-    /** movies_db.users[id, name, email, password, remember_token, created_at, updated_at]
+    /** digitalhouse_db.users[id, name, email, password, remember_token, created_at, updated_at]
      * 
      * 
      * The attributes that are mass assignable.
