@@ -91,7 +91,7 @@ class CustomerController extends Controller
 
     public function create(Request $request) {
         // $fillable = [user_id, cpf_cnpj, first_name, last_name, gender,birthday, phone, email, address, address_number, adress_complement, city, state, zipcode]
-        $date = 
+        
         $this->validate($request,[
             'user_id' => 'numeric|required|min:0|unique:customers',
             'cpf_cnpj' => 'required|cpf_cnpj|unique:customers',
@@ -168,9 +168,6 @@ class CustomerController extends Controller
         $view="show_customer";
 
         if ($customer) {  
-            $customer->fill(['email_confirm' => $customer->email ]);
-            $customer->fill(['password_confirm' => $customer->password ]);
-    
             $msgstatus = "Confira os dados abaixo";
         } else {
             $msgstatus = "Cliente não localizado";

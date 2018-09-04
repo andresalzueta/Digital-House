@@ -67,7 +67,7 @@
             </div>
             <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <label for="phone">Phone</label>
-                <input type="text" class="form-control" name="phone" id="phone" value="{{ $customer->phone }}" placeholder="Insira telefone"/>
+                <input type="tel" class="form-control" name="phone" id="phone" value="{{ $customer->phone }}" placeholder="Insira telefone"/>
             </div>
             <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <label for="email">Email</label>

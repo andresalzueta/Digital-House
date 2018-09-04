@@ -55,13 +55,24 @@
                         <ul class="navbar-nav mr-auto">
                             <!-- Dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/movies" id="navbardrop" data-toggle="dropdown">
-                                Clientes
+                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/genres" id="navbardrop" data-toggle="dropdown">
+                                Marcas
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ url('/') }}/customers_pages">Listar Clientes</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/customers">Filtrar Clientes</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/customer/new">Inserir cliente</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/brands_pages">Listar Marcas</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/brands">Filtrar Marcas</a>                                  
+                                    <a class="dropdown-item" href="{{ url('/') }}/brand/new">Inserir Marca</a>
+                                </div>
+                            </li>
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/genres" id="navbardrop" data-toggle="dropdown">
+                                Categorias
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="{{ url('/') }}/categories_pages">Listar Categorias</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/categories">Filtrar Categorias</a>                                  
+                                    <a class="dropdown-item" href="{{ url('/') }}/category/new">Inserir Categoria</a>
                                 </div>
                             </li>
                             <!-- Dropdown -->
@@ -77,14 +88,27 @@
                             </li>
                             <!-- Dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/genres" id="navbardrop" data-toggle="dropdown">
-                                Categorias
+                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/products" id="navbardrop" data-toggle="dropdown">
+                                Pedidos
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ url('/') }}/categories">Exibir Categorias</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/category/new">Inserir Categoria</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/orders_pages">Listar Pedidos</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/orders">Filtrar Pedidos</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/order/new">Inserir Pedido</a>
                                 </div>
                             </li>
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/movies" id="navbardrop" data-toggle="dropdown">
+                                Clientes
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="{{ url('/') }}/customers_pages">Listar Clientes</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/customers">Filtrar Clientes</a>
+                                    <a class="dropdown-item" href="{{ url('/') }}/customer/new">Inserir cliente</a>
+                                </div>
+                            </li>
+
                             <!-- Dropdown -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ url('/') }}/users" id="navbardrop" data-toggle="dropdown">
@@ -95,10 +119,8 @@
                                     <a class="dropdown-item" href="{{ url('/') }}/user/new">Inserir Usuário</a>
                                     <a class="dropdown-item" href="{{ url('/') }}/roles">Exibir Funções</a>
                                     <a class="dropdown-item" href="{{ url('/') }}/role/new">Inserir Função</a>
-
                                 </div>
                             </li>
-
                         </ul>
 
                         <!-- Right Side Of Navbar -->
@@ -144,9 +166,6 @@
         <footer id="bottom" class="main-footer ">
             <div class="text-center m-auto">&copy; <?php echo "Digital House - Laravel - " .date('Y'); ?></div>
         </footer>
-
     </div>
-
-
 </body>
 </html>

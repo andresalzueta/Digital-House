@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 use App\User;
 use App\Role;
@@ -82,7 +83,7 @@ class UserController extends Controller
         // $fillable = ['name', 'email', 'password', 'remember_token'];
         $this->validate($request,[
             'name' => 'required|min:3|max:255',
-            'email' => 'required|min:6|max:255',
+            'email' => 'required|email|min:6|max:255|unique:users',
             'email_confirm' => 'required_with:email|same:email|min:6',
             'password' => 'required|min:6|max:64',
             'password_confirm' => 'required_with:password|same:password|min:6',
@@ -191,8 +192,9 @@ class UserController extends Controller
 
         $user = User::find($id);
         // os campos ['email_confirm'] ['password_confirm'] não existem na tabela users, portanto precisam ser criados no objeto
-
+        
         $this->validate($request,[
+            'email' => Rule::unique('users')->ignore($user->email, 'email'),    
             'name' => 'required|min:3|max:255',
             'email' => 'required|min:6|max:255',
             'email_confirm' => 'required_with:email|same:email|min:6',

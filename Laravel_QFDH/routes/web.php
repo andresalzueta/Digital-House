@@ -20,7 +20,9 @@ Route::get('/home', function () {
 });
 
 Route::middleware(['auth'])->group (Function() {
-    // Precisa estar autenticado para conseguir acessar 
+    // Precisa estar autenticado para conseguir acessar o CRUD de administração da loja
+
+    // Rotas do CRUD de Usuários
     Route::get('/users_pages','UserController@index');
     Route::get('/users/{id?}','UserController@directory');
     Route::get('/user/new','UserController@new');
@@ -30,7 +32,7 @@ Route::middleware(['auth'])->group (Function() {
     Route::patch('/user/update/{id?}','UserController@update');
     Route::get('/user/predelete/{id?}','UserController@preDelete');
     Route::delete('/user/delete/{id?}','UserController@delete');
-
+    // Rotas do CRUD de Funções dos Usuários
     Route::get('/roles_pages','RoleController@index');
     Route::get('/roles/{id?}','RoleController@directory');
     Route::get('/role/new','RoleController@new');
@@ -40,7 +42,7 @@ Route::middleware(['auth'])->group (Function() {
     Route::patch('/role/update/{id?}','RoleController@update');
     Route::get('/role/predelete/{id?}','RoleController@preDelete');
     Route::delete('/role/delete/{id?}','RoleController@delete');
-
+    // Rotas do CRUD de Clientes
     Route::get('/customers_pages','CustomerController@index');
     Route::get('/customers/{id?}','CustomerController@directory');
     Route::get('/customer/new','CustomerController@new');
@@ -50,6 +52,46 @@ Route::middleware(['auth'])->group (Function() {
     Route::patch('/customer/update/{id?}','CustomerController@update');
     Route::get('/customer/predelete/{id?}','CustomerController@preDelete');
     Route::delete('/customer/delete/{id?}','CustomerController@delete');
+    // Rotas do CRUD de Categorias de Produtos
+    Route::get('/categories_pages','ProductController@index');
+    Route::get('/categories/{id?}','ProductController@directory');
+    Route::get('/category/new','CategoryController@new');
+    Route::put('/category/create','CategoryController@create');
+    Route::get('/category/read/{id?}','CategoryController@read');
+    Route::get('/category/edit/{id?}','CategoryController@edit');
+    Route::patch('/category/update/{id?}','CategoryController@update');
+    Route::get('/category/predelete/{id?}','CategoryController@preDelete');
+    Route::delete('/category/delete/{id?}','CategoryController@delete');
+    // Rotas do CRUD de Marcas de Produtos
+    Route::get('/brands_pages','BrandController@index');
+    Route::get('/brands/{id?}','BrandController@directory');
+    Route::get('/brand/new','BrandController@new');
+    Route::put('/brand/create','BrandController@create');
+    Route::get('/brand/read/{id?}','BrandController@read');
+    Route::get('/brand/edit/{id?}','BrandController@edit');
+    Route::patch('/brand/update/{id?}','BrandController@update');
+    Route::get('/brand/predelete/{id?}','BrandController@preDelete');
+    Route::delete('/brand/delete/{id?}','BrandController@delete');
+    // Rotas do CRUD de Produtos
+    Route::get('/products_pages','ProductController@index');
+    Route::get('/products/{id?}','ProductController@directory');
+    Route::get('/product/new','ProductController@new');
+    Route::put('/product/create','ProductController@create');
+    Route::get('/product/read/{id?}','ProductController@read');
+    Route::get('/product/edit/{id?}','ProductController@edit');
+    Route::patch('/product/update/{id?}','ProductController@update');
+    Route::get('/product/predelete/{id?}','ProductController@preDelete');
+    Route::delete('/product/delete/{id?}','ProductController@delete');
+    // Rotas do CRUD de Pedidos
+    Route::get('/orders_pages','OrderController@index');
+    Route::get('/orders/{id?}','OrderController@directory');
+    Route::get('/order/new','OrderController@new');
+    Route::put('/order/create','OrderController@create');
+    Route::get('/order/read/{id?}','OrderController@read');
+    Route::get('/order/edit/{id?}','OrderController@edit');
+    Route::patch('/order/update/{id?}','OrderController@update');
+    Route::get('/order/predelete/{id?}','OrderController@preDelete');
+    Route::delete('/order/delete/{id?}','OrderController@delete');
 
 });
 

@@ -12,7 +12,7 @@ class Customer extends Model
     protected   $table = 'customers';
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
-    /** movies_db.users[id, name, email, password, remember_token, created_at, updated_at]
+    /** 
      * 
      * 
      * The attributes that are mass assignable.
@@ -35,8 +35,26 @@ class Customer extends Model
         return $genders;
     }
 
+    public function orders() {
+        return $this->hasMany(Order::class,'customer_id','id');
+    }    
+
     public function states() {
         $states = array( "SP", "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO" );
         return $states;
+    }
+
+    public function getBirthday() {
+        $date = new \Datetime($this->birthday);
+        return $date->format('d/m/Y');
+    }
+
+    public function getBirthdayToInput() {
+        if ($this->birthday == null) {
+            return null;    
+        } else {
+            $date = new \Datetime($this->birthday);
+            return $date->format('Y-m-d');
+        }
     }
 }
