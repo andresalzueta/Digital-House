@@ -39,6 +39,6 @@
             link.setAttribute("href","http://www.disney.com")
 
 		</script>
-		<script src="js\script_48.js"></script>
+		<script src="script_48.js"></script>
 	</body>
 </html>

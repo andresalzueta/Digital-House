@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--Aula-49 30-8-2018-->
+<!--index.php -->
+<!--http://localhost:8080/teste/-->
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cronômetro</title>
+        <meta name="description" content="Edita Filme">
+
+                
+        <!-- Bootstrap Projetoe-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<h1 id="tituloPrincipal">Aula 52 - JavaScript Revisão</h1>
+
+
+        <div class="conteiner">
+
+            <center>
+                <h2> Minha Calculadora </h2>
+                <form name="Calc">
+                    <table border=4 WIDTH="240" bgcolor="green">
+                        <tr>
+                            <td ALIGN="left">
+                                <input TYPE="text"  name="Input" SIZE="24">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td ALIGN="left">
+                                <input TYPE="button" name="um"      value="  1  " onClick="Calc.Input.value += '1'">
+                                <input TYPE="button" name="dois"    value="  2  " onClick="Calc.Input.value += '2'">
+                                <input TYPE="button" name="tres"    value="  3  " onClick="Calc.Input.value += '3'">
+                                <input TYPE="button" name="mais"    value="  +  " onClick="Calc.Input.value += ' + '">
+                                <BR>
+                                <input TYPE="button" name="quatro"  value="  4  " onClick="Calc.Input.value += '4'">
+                                <input TYPE="button" name="cinco"   value="  5  " onClick="Calc.Input.value += '5'">
+                                <input TYPE="button" name="seis"    value="  6  " onClick="Calc.Input.value += '6'">
+                                <input TYPE="button" name="menos"   value="  -  " onClick="Calc.Input.value += ' - '">
+                                <BR>
+                                <input TYPE="button" name="sete"    value="  7  " onClick="Calc.Input.value += '7'">
+                                <input TYPE="button" name="oito"    value="  8  " onClick="Calc.Input.value += '8'">
+                                <input TYPE="button" name="nove"    value="  9  " onClick="Calc.Input.value += '9'">
+                                <input TYPE="button" name="multiplica" value="  x  " onClick="Calc.Input.value += ' * '">
+                                <BR>
+                                <input TYPE="button" name="clear"   value="  C  " onClick="Calc.Input.value = ''">
+                                <input TYPE="button" name="zero"    value="  0  " onClick="Calc.Input.value += '0'">
+                                <input TYPE="button" name="DoIt"    value="  =  " onClick="Calc.Input.value = eval(Calc.Input.value)">
+                                <input TYPE="button" name="divide"  value="  /  " onClick="Calc.Input.value += ' / '">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
+
+		<script>
+            // código JavaScript  
+            // Exercício 52.5
+            // declaro constantes
+
+            window.onload = function() {
+                
+            }
+
+		</script>
+
+	</body>
+</html>

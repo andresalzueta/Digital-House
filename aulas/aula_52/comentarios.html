@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--Aula-49 30-8-2018-->
+<!--index.php -->
+<!--http://localhost:8080/teste/-->
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Insere Novo Filme</title>
+        <meta name="description" content="Edita Filme">
+
+                
+        <!-- Bootstrap Projetoe-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<h1 id="tituloPrincipal">Aula 52 - JavaScript Revisão</h1>
+
+
+        <div class="conteiner">
+            <h2> DOM - Entendendo Document Object Model </h2>
+            <div id="mySection"></div>
+
+            <form role="form" class="form-vertical" id="formulario" action="comentarios.html" method="post" enctype="multipart/form-data">
+
+                <div class="row">
+            		<div class="form-group col-sm-6">
+						<label for="first_name">Nome</label>
+						<input type="text" class="form-control" id="first_name" name="first_name" value="" placeholder="Nome">
+					</div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+						<label for="last_name">Sobrenome</label>
+						<input type="text" class="form-control" id="last_name" name="last_name" value="" placeholder="Sobrenome">
+					</div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+						<label for="comments">Comentários</label>
+						<input type="text" class="form-control" id="comments" name="comments" value="" placeholder="Comentários">
+					</div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <p id="mensagem" class="alert-danger"></p>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <button type="submit" name="myBtn" class="btn btn-basic">Enviar</button>
+					</div>
+                </div>
+	    </form>
+
+		<script>
+            // código JavaScript  
+            // Exercício 52.3
+            // declaro constantes
+            const mySection  = document.querySelector("#mySection")
+            const myBtn      = document.querySelector("#myBtn")
+            // declaro variáveis
+            let $msgFinal = ''
+            let $msgSection = ''
+            
+            function getDateTime() {
+                let agora = new Date();
+                let dd = agora.getDate();
+                let mm = agora.getMonth()+1; //January is 0!
+                let yyyy = agora.getFullYear();
+                let time = agora.getHours() + ":" + agora.getMinutes() + ":" + agora.getSeconds();
+                if(dd<10) {
+                    dd = '0'+dd
+                } 
+                if(mm<10) {
+                    mm = '0'+mm
+                } 
+                $datetime = mm + '/' + dd + '/' + yyyy + ' ' + time
+                return $datetime
+            }
+
+            function exercicio_3() {
+                // Criar um arquivo chamado comentarios.html que tenha um formulário com nome, sobrenome e comentário. Quando o usuário clicar em enviar, adicionar na parte de
+                // cima, em uma <section> de comentários, o novo comentário no formato:
+                // “João da Silva disse em 18/04/16 às 19:33: COMENTÁRIO”
+                
+                formulario.onsubmit = function(event){
+                    event.preventDefault();
+                    let $elemento1 = document.forms[0].elements[1]
+
+                    let $first_name = this['first_name'].value
+                    let $last_name  = this['last_name'].value
+                    let $comments   = this['comments'].value
+                    let $date_time = getDateTime()    
+                    let $msgSection = $first_name + ' ' + $last_name + ' disse em : ' + $date_time + ' : ' + $comments
+                    let $sucesso = true
+                
+                    if (!$first_name) {
+                        $msgFinal = $msgFinal + 'Preencha o campo nome <br>'
+                        $sucesso = false
+                    } 
+                    
+                    if (!$last_name) {
+                        $msgFinal = $msgFinal + 'Preencha o campo sobrenome <br>'
+                        $sucesso = false
+                    }
+                    
+                    if (!$comments) {
+                        $msgFinal = $msgFinal + 'Preencha o campo comentários <br>'
+                        $sucesso = false
+                    }
+
+                    mensagem.innerHTML = $msgFinal
+
+                    if ($sucesso) {
+                        
+                        $msgFinal = 'Sucesso <br>'
+                        mensagem.innerHTML = $msgFinal
+                        let tagHtml = 'P'
+                        let linha = document.createElement(tagHtml);
+                        let texto = $msgSection
+                        let linhaTexto = document.createTextNode(texto);
+                        alert(texto)
+                        linha.appendChild(linhaTexto);
+                        document.getElementById("mySection").appendChild(linha);
+
+                        setTimeout(function(){ formulario.submit() }, 2000);                   
+                    }
+                }          
+            }
+
+            window.onload = function() {
+                exercicio_3()
+            }
+
+		</script>
+
+	</body>
+</html>
