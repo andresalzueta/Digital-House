@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Aula-49 30-8-2018-->
+<!--index.php -->
+<!--http://localhost:8080/teste/-->
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cronômetro</title>
+        <meta name="description" content="Edita Filme">
+
+                
+        <!-- Bootstrap Projetoe-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<h1 id="tituloPrincipal">Aula 52 - JavaScript Revisão</h1>
+
+
+        <div class="conteiner">
+            <h2> Meu Cronômetro </h2>
+            <div id="mySection" class="col-sm-6">
+                <div id="myHour" class="col-2"></div>
+                <div id="myMinute"class="col-2"></div>
+                <div id="mySecond"class="col-2"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="button" id="myBtnStart" name="myBtnStart" class="btn btn-basic">Start</button>
+                        <button type="button" id="myBtnStop" name="myBtnStop" class="btn btn-basic">Stop</button>
+                        <button type="button" id="myBtnReset" name="myBtnReset" class="btn btn-basic">Reset</button>
+					</div>
+                </div>
+            </div>
+	    </form>
+
+		<script>
+            // código JavaScript  
+            // Exercício 52.3
+            // declaro constantes
+            const mySection = document.querySelector("#mySection")
+            const myHour    = document.querySelector("#myHour")
+            const myMinute  = document.querySelector("#myMinute")
+            const mySecond  = document.querySelector("#mySecond")
+            const myBtnStart  = document.querySelector("#myBtnStart")
+            const myBtnStop   = document.querySelector("#myBtnStop")
+            const myBtnReset  = document.querySelector("#myBtnReset")
+            // declaro variáveis
+            let intervalo;
+
+            function cronometro(op) {
+                if (op == 1) {
+                    let s = 1;
+                    let m = 0;
+                    let h = 0;
+                    intervalo = window.setInterval(function() {
+                        if (s == 60) { m++; s = 0; }
+                        if (m == 60) { h++; s = 0; m = 0; }
+                        if (h < 10) myHour.innerHTML    = "0" + h + "h"; else myHour.innerHTML = h + "h";
+                        if (m < 10) myMinute.innerHTML  = "0" + m + "m"; else myMinute.innerHTML = m + "m";		
+                        if (s < 10) mySecond.innerHTML  = "0" + s + "s"; else mySecond.innerHTML = s + "s";
+                        s++;
+                    },1000);
+                } else {
+                    let s = 0;
+                    let m = 0;
+                    let h = 0;
+                    myHour.innerHTML   = "00" + "h";
+                    myMinute.innerHTML = "00" + "m";	
+                    mySecond.innerHTML = "00" + "s";
+                }
+            }
+
+            function stop() {
+                window.clearInterval(intervalo)
+                myBtnStop.style.visibility = 'hidden'
+                myBtnStart.style.visibility = 'visible'
+            }
+
+        
+            myBtnStop.onclick = function(){
+                window.clearInterval(intervalo)
+                myBtnStart.style.visibility = 'visible'
+                myBtnStart.style.backgroundColor = 'green'
+                myBtnStop.style.visibility = 'hidden'
+                myBtnStop.style.backgroundColor = 'gray'
+                myBtnReset.style.visibility = 'visible'
+                myBtnReset.style.backgroundColor = 'blue'
+            }
+
+            myBtnStart.onclick = function(){
+                myBtnStart.style.visibility = 'hidden'
+                myBtnStart.style.backgroundColor = "gray"
+                myBtnStop.style.visibility = 'visible'
+                myBtnStop.style.backgroundColor = "red"
+                myBtnReset.style.visibility = 'hidden'
+                myBtnReset.style.backgroundColor = "gray"
+                cronometro(1)
+            }
+
+            myBtnReset.onclick = function(){
+                window.clearInterval(intervalo)
+                myBtnStart.style.visibility = 'visible'
+                myBtnStart.style.backgroundColor = "green"
+                myBtnStop.style.visibility = 'hidden'
+                myBtnStop.style.backgroundColor = "gray"
+                myBtnReset.style.visibility = 'hidden'
+                myBtnReset.style.backgroundColor = "gray"
+                cronometro(0)
+            }
+
+            window.onload = function() {
+                cronometro(0)
+            }
+
+		</script>
+
+	</body>
+</html>

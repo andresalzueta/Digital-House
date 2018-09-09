@@ -53,8 +53,8 @@ Route::middleware(['auth'])->group (Function() {
     Route::get('/customer/predelete/{id?}','CustomerController@preDelete');
     Route::delete('/customer/delete/{id?}','CustomerController@delete');
     // Rotas do CRUD de Categorias de Produtos
-    Route::get('/categories_pages','ProductController@index');
-    Route::get('/categories/{id?}','ProductController@directory');
+    Route::get('/categories_pages','CategoryController@index');
+    Route::get('/categories/{id?}','CategoryController@directory');
     Route::get('/category/new','CategoryController@new');
     Route::put('/category/create','CategoryController@create');
     Route::get('/category/read/{id?}','CategoryController@read');
@@ -92,7 +92,6 @@ Route::middleware(['auth'])->group (Function() {
     Route::patch('/order/update/{id?}','OrderController@update');
     Route::get('/order/predelete/{id?}','OrderController@preDelete');
     Route::delete('/order/delete/{id?}','OrderController@delete');
-
 });
 
 Auth::routes();

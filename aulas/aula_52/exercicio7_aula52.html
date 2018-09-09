@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--Aula-52 06-9-2018-->
+<!--http://localhost:8080/teste/-->
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Exercício 7 </title>
+        <meta name="description" content="Edita Filme">
+
+                
+        <!-- Bootstrap Projetoe-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<h1 id="tituloPrincipal">Aula 52 - JavaScript JSON & API</h1>
+
+        <div class="conteiner">
+            <h2> API - Entendendo Uso de APIs & JSON </h2>
+            <ul id="myList"></ul>
+        
+        </div>
+
+		<script>
+            // código JavaScript  
+       
+            // declaro constantes
+            const myList     = document.querySelector("#myList")
+            // declaro variáveis
+            let $msgfinal = ''
+
+            function getNaNuvem() {
+                // outro método de request de API
+                let $url = 'http://jsonplaceholder.typicode.com/posts'
+                fetch($url).then(function(response){
+                    response.json().then(function(dados){
+                        console.log(dados)
+                        mostrarNaTela(dados)
+                    })
+                })
+                // Obs.: then() é uma promise quando receber o conteúdo da fetch
+            }
+
+            function mostrarNaTela(dados) {
+                // outro método de request de API
+                let array = dados
+                let conteudo = ''
+                array.foreach( function( postagem ) {
+                    let title = postagem.title
+                    let body = postagem.body
+
+                    conteudo = conteudo + '<h2>' + title + '</h2>'
+                    conteudo = conteudo + '<p>' + body + '</p>'
+                })
+                document.body.innerHTML = conteudo.join('<hr>')
+                // Obs.: then() é uma promise quando receber o conteúdo da fetch
+            }
+
+            function getAPI() {
+                // outro método de request de API
+                //let $url = 'http://jsonplaceholder.typicode.com/posts'
+                let $url = 'https://jsonplaceholder.typicode.com/albums/1/photos'
+                fetch($url)
+                    .then(response => response.json())
+                    .then(mostrarOutroJeito)
+                    // Obs.: then() é uma promise quando receber o conteúdo da fetch
+            }
+
+            function mostrarOutroJeito(dados) {
+                // outro método de request de API
+                let conteudo = dados.map( postagem =>
+                    '<h2>' + postagem.title + '</h2>' + 
+                    '<img src='+postagem.url+'width="100" height="100">'
+                )
+                console.log(conteudo)
+                document.body.innerHTML = conteudo.join('<hr>')
+                // Obs.: then() é uma promise quando receber o conteúdo da fetch
+            }
+
+            window.onload = function() {
+                getAPI()
+            }
+
+		</script>
+	</body>
+</html>

@@ -17,7 +17,7 @@ class Brand extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','description', 'image'];
+    protected $fillable = ['name','description', 'active', 'image'];
     protected $guarded = ['id','created_at','updated_at'];
     protected $casts = ['active' => 'boolean'];
 

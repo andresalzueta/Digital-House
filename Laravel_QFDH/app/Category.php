@@ -19,6 +19,7 @@ class Category extends Model
      */
     protected $fillable = ['name','description', 'order', 'active', 'image'];
     protected $guarded = ['id','created_at','updated_at'];
+    protected $casts = ['active' => 'boolean'];
 
     public function products() {
         return $this->hasMany(Product::class,'category_id','id');
