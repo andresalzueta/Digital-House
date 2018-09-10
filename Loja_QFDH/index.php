@@ -7,11 +7,9 @@
     </head>
     <body>
     <!-- <div class="container"> -->
-        <header>
              <?php
                  include ("header.php");
              ?>
-        </header>
 
     </div>
 

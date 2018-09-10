@@ -1,6 +1,6 @@
 		<!-- cabeçalho / menu -->
 
-<header class="main-header row" style="margin-right: -87px;     margin-left: -83px;">
+<header class="container main-header row" style="margin-right: -87px;     margin-left: -83px;">
 		<div class="headerSearch col-3 col-sm-5 col-md-5 col-lg-5" style="padding-top: 34px">
 			<div class="input-group">
 				<button class="btn btn-default btn-ps" type="button" style="background-color: white; padding-top: 0px; padding-right: 14px; padding-left: 19px;">
