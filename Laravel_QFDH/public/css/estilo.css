@@ -1,0 +1,983 @@
+*{
+
+}
+
+.main-header .logo{
+  width: 30%;
+  margin-left: 285%;
+  margin-top: -40%;
+}
+
+.logoSimbolo{
+  width:25%;
+  margin-left: 245%;
+  margin-top: -30%;
+}
+
+.logoTexto{
+  width: 40%;
+  margin-top: -30%;
+}
+
+.logoFooter{
+  width: 50%;
+  margin-left: 20%;
+}
+
+.form-control{
+  font-size: 14px;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.1); 
+  width: 10px;
+  padding: 7px 0 7px 9px;
+  margin: 0 0 10px 0;
+  margin-bottom: 100px;
+  position: relative;
+    left: 0;
+    top: 10%;
+    z-index: 2;
+}
+
+/*PÁGINA CADASTRO*/
+.camposCadastro{
+  width: 80%;
+  margin: auto;
+}
+
+.campoDMA{
+  position: relative;
+    left: 0;
+    top: -10px;
+}
+
+
+/* Botões Menu header */
+
+  .botaoSearch{
+    width: 25px;
+    height: 25px;
+    position: relative;
+      left: 7%;;
+      top: 6px;
+      z-index: 5;
+  }
+
+  .input-group{
+    margin-left: 10%;
+  }
+
+  .navbar-brand{
+    width: 20%;
+    margin: auto;
+  }
+  
+  .botaoLogin{
+    float: right;
+    width: 6%;
+    margin-right: 5%;
+    margin-top: -10%;
+    max-width: 6%;
+    -moz-transition: all 0.3s;
+	  -webkit-transition: all 0.3s;
+	  transition: all 0.3s;
+  }
+
+  .botaoLogin:hover{
+    -moz-transform: scale(1.1);
+	  -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+  }
+  
+  .botaoQuestion{
+    width: 6%;
+    margin-top: -14.5%;
+    position: relative;
+      left: 180%;
+      top: 0;
+    max-width: 6%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .botaoQuestion:hover{
+    -moz-transform: scale(1.1);
+	  -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+  }
+
+ .home-img{
+   background-image:   url(../img/menuHome2.jpg);
+   width: 10px;
+   background-size: 35px;
+   background-repeat: no-repeat;
+   padding: 19px;
+   border: none;
+ }
+
+ .entrar-img{
+   background-image:   url(../img/menuEntrar2.jpg);
+   width: 10px;
+   background-size: 35px;
+   background-repeat: no-repeat;
+   padding: 19px;
+   border: none;
+ }
+
+.fieldSearch{
+  font-size: 14px;
+  background-color: #bfd3e940;
+  border:none;
+  width: 400px;
+
+}
+
+.buttonSearch{
+  color: #007bff;
+  border:none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btnVender{
+  color: #007bff; 
+  background-color: #007bff; 
+  border: none;
+  width: 8%;
+  height: 45px;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 25px; 
+  border-bottom-left-radius: 25px; 
+  border-bottom-right-radius: 5px;
+  margin-right: 10%;
+  margin-top: -4.5%;
+  cursor: pointer;
+  max-width: 8%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btnVender:hover{
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+  border-top-left-radius: 25px; 
+  border-top-right-radius: 5px; 
+  border-bottom-left-radius: 5px; 
+  border-bottom-right-radius: 25px;
+}
+
+.textoBotao{
+  margin: auto;
+  
+  color: white;
+}
+
+.navbar{
+  margin-top: -1%;
+}
+
+.main-nav li{
+    width: 100%;
+    background-color: #bfd3e940;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 0px;
+    margin: 12px;
+    font-size: 14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+.product a{
+    /* color: #007bff; */
+    color: black;
+    background-color: #BDDCFE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 15px 3px 15px;
+}
+
+a .nav-item{
+  color: #BDBDBD;
+}
+
+#navbarSupportedContent{
+  margin-left: 5%;
+}
+
+
+  /* FOOTER CSS */
+.main-footer li{
+    display: inline-block;
+    text-transform: lowercase;
+    text-transform: none;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 1px;
+    font-size: 12px;
+    background-color: #bfd3e940;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 180px;
+    padding: 5px;
+
+    }
+
+
+    /* INDEX CSS */
+    .c-widget__title{
+      color: #007bff;
+      font-size: 27px;
+      font-weight: lighter;
+    }
+
+    .sizeImg{
+      width: 150px;
+      height: 150px;
+    }
+
+    .product{
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .vejaBtn{
+      border: none;   
+      background-color: #007bff;
+      width: 112px;  
+      height: 39px;
+      border-top-left-radius: 10px; 
+      border-top-right-radius: 10px; 
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; 
+      float: right;
+      position: relative;
+        top:-14px;
+      cursor: pointer;
+    }
+
+    .promocoesBtn{
+      width: 112px;
+      height: 39px;
+      margin-left: 80%;
+      cursor: pointer;
+    }
+
+    .font-weight-light{
+      font-size: 27px;
+      color: #007bff;
+      position: relative;
+      left: 5px;
+      top: -5px;
+      }
+
+      .Separador .text-center{
+            margin-top: 42px;
+      }
+/*MARCAS FAVORITAS START*/
+
+      .sizeMarcas{
+        width: 100px;
+        height: 100px;
+      }
+
+      .vip-marcas{
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+
+      .shadow{
+        width: 100px;
+        margin: 0 auto;
+        height: 100px;
+        background-color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+       }
+      
+      .bottom {
+        box-shadow: 0px 15px 10px -15px #111;
+      }
+
+/*PROMOÇÕES START*/
+
+  .sizeImgPromo{
+    width: 110px;
+    height: 110px;
+    margin-bottom: 30px;
+  }
+
+  .promo{
+    margin-top: 40px;
+  }
+
+  .textPromo{
+    font-weight: 800px;
+    font-size: 40px;
+  }
+
+  .textPromo:hover{
+    text-decoration: none;
+    background: red;
+  }
+
+
+/* FOOTER CSS */
+
+  .footer {
+  padding: 50px 0 20px 0;
+  /* background-color: #35404f; */
+  color: #007bff;
+  margin-top: -10%;
+  }
+
+  .footer, .row{
+    clear: both;
+  }
+  
+  .footer .title{
+    text-align: left;
+    color:#007bff;
+    font-size:25px;
+  }
+  .footer{
+    padding:0px;
+    margin:0px;
+  }
+  .footer .social-icon a{
+    display:inline-block;
+    color:#007bff;
+    font-size:25px;
+    padding:5px;
+  }
+
+  .social-icon{
+    margin-left: -18%;
+  }
+
+  .botaoInstagram:hover{
+    color: #e95950;
+  }
+
+  .botaoFacebook:hover{
+    color: #3b5998;
+  }
+
+  .botaoTwitter:hover{
+    color: #00aced;
+  }
+  .botaoPinterest:hover{
+    color: #cb2027;
+  }
+
+
+  .footer .acount-icon a{
+    display:block;
+    color:#007bff;
+    font-size:18px;
+    padding:5px;
+    text-decoration:none;
+  }
+  .footer .acount-icon .fa{
+    margin-right:25px;
+  }
+
+
+.footer .category a {
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 1px;
+    border-radius:4px;
+    margin-top: 6px;
+    background-color: #f5f5f5;
+    /* border: solid 1px #007bff; */
+}
+
+.footer .payment{
+  margin:0px;
+  padding:0px;
+  list-style-type:none;
+}
+
+.footer .payment li{
+  list-style-type:none;
+}
+
+.footer .payment li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #007bff;
+    float: left;
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+.logoFooter{
+  margin-left: 0;
+}
+
+
+/*LOGIN*/
+.userBox{
+  color: #007bff;
+  background-color: #bfd3e940;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+.userBordas{
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+/*PERGUNTAS*/
+.lista_perguntas{
+  list-style-type:none;
+}
+
+/*CONTATO*/
+
+/*PÁGINA MASCULINO/FEMININO*/
+
+.pagMasc{
+  margin-top: 3%;
+}
+
+.imgMasc{
+  width: 11%;
+  float: left;
+  margin: -3% 3% 5% 0;
+  border: double 2px;
+}
+
+.tituloCamisas{
+  font-size: 1.2em;
+  margin-left: 80%;
+}
+
+.tituloCamisasUn{
+  visibility:hidden;
+}
+
+.imgConfig{
+  margin-top: 3%;
+  margin-bottom: 15%;
+  padding: 2%;
+  border: solid 2px rgba(0, 123, 255, 0.2);
+}
+
+.efeitoImg{
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.efeitoImg:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*PÁGINA PRODUTO FEMININO*/
+
+.imgProdutoFeminino{
+  width: 30%;
+}
+
+/*PÁGINA PRODUTO MASCULINO/FEMININO*/
+
+.imgProduto{
+  margin-left: 10%;
+  border: double 2px rgba(189, 189, 189, 0.5);
+}
+
+.imgProdutoSocial{
+  width: 30%;
+  margin-left: 7%;
+  border: double 2px rgba(189, 189, 189, 0.5);
+}
+
+.imgProdutoOculos{
+  width: 30%;
+  margin-left: 7%;
+  border: double 2px rgba(189, 189, 189, 0.5);
+}
+
+.imgProdTexto{
+  margin: 0 0 20% 0;
+}
+
+.textoProduto{
+  margin-right: 45%;
+  margin-top: 3%;
+  float: right;
+}
+
+.produtoImg{
+  float: left;
+  margin-top: 1%;
+}
+
+.descricaoProduto{
+  height: 170px;
+  float: left;
+  background: rgba(214, 214, 214, 0.3);
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  padding: 1%;
+  margin-left: 5%;
+}
+
+.precoProduto{
+  float: right;
+  background: rgba(214, 214, 214, 0.3);
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  padding: 1%;
+  margin-right: 8%;
+  width: 280px;
+}
+
+.euQuero{
+  background: #007bff;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 80%;
+  margin: 5% auto 0 auto;
+  padding: 8% 1% 2% 1%;
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.euQuero:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.textoEuQuero{
+  margin-left: 10%;
+}
+
+/*PÁGINA CATEGORIAS*/
+
+.divisorPagina{
+  width: 50%;
+  margin-left: 23%;
+  margin-bottom: -3%;
+}
+
+/*PÁGINA CATEGORIAS*/
+
+#categorias{
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+.categoriaMasc, .categoriaFem, .categoriaKids{
+  width: 20%;
+}
+
+.categoriaMasc{
+  float: left;
+  clear: both;
+  border: double 6px;
+  border-color: #BDBDBD;
+}
+
+.categoriaFem{
+  float: left;
+  margin-left: 0.5%;
+  border: double 6px;
+  border-color: #BDBDBD;
+}
+
+.categoriaKids{
+  float: left;
+  margin-left: 0.5%;
+  border: double 6px;
+  border-color: #BDBDBD;
+}
+
+.textoMasc{
+  float: left;
+  margin-left: 30%;
+}
+.textoFem{
+  float: left;
+  margin-left: 10%;
+}
+.textoKids{
+  float: left;
+  margin-left: 12%;
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:992px){
+
+  /*Header*/
+  header{
+    border-bottom: solid 0.5px #D8D8D8;
+  }
+
+  /*Botões Header*/
+
+  .barraDeBusca, .btnVender, .logoTexto, .botaoQuestion{
+    display: none;
+  }
+
+  .botaoSearch{
+    width: 50px;
+    height: 50px;
+    margin-top: -9%;
+    margin-bottom: 3%;
+    margin-left: -15%;
+  }
+
+  .botaoLogin{
+    float: right;
+    width: 9%;
+    max-width: 8%;;
+    margin-top: -7%;
+  }
+
+  .vejaBtn{
+    margin-top: 10%;
+  }
+
+  /*Logo e nav*/
+
+  .logoSimbolo{
+    width: 60%;
+    margin-left: 270%;
+    margin-top: -40%;
+  }
+
+  .navbar-brand{
+    width: 10%;
+    margin: auto;
+  }
+  .navbar-toggler-icon{
+    float: left;
+  }
+
+  .navbar-light{
+    margin-top: -40px;
+    margin-bottom: 30px;
+  }
+
+  /*FOOTER*/
+
+  .social-icon{
+    margin-left: -20%;
+  }
+
+  .logoFooter{
+    margin-left: 8%;
+  }
+
+  /*PRODUTO*/
+
+  .imgProdutoSocial{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .imgProduto{
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .imgProdutoOculos{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .descricaoProduto{
+    margin-left: 20%;
+  }
+
+  .precoProduto{
+    margin-right: 20%;
+  }
+
+
+}
+
+
+@media (max-width:768px){
+
+  /*Header*/
+  header{
+    border-bottom: solid 0.5px #D8D8D8;
+  }
+
+  /*Botões Header*/
+
+  .barraDeBusca, .btnVender, .logoTexto, .botaoQuestion{
+    display: none;
+  }
+
+  .botaoSearch{
+    width: 45px;
+    height: 45px;
+    position: relative;
+      left: 12%;
+      top: 53px;
+  }
+
+  .botaoLogin{
+    float: right;
+    width: 9%;
+    max-width: 8%;;
+    position: relative;
+      right: 0%;
+      top: 55px;
+  }
+
+  .vejaBtn{
+    margin-top: 15%;
+  }
+
+  .promocoesBtn{
+    width: 100%;
+    margin-left: 65%;
+  }
+
+  /*Logo e nav*/
+
+  .logoSimbolo{
+    width: 80%;
+    position: relative;
+      left: 75%;
+      top: 53px;
+  }
+
+  .navbar-brand{
+    width: 10%;
+    margin: auto;
+  }
+
+  .navbar-light{
+    margin-top: -8%;
+    margin-bottom: 7%;
+  }
+
+  /*MARCAS*/
+
+  .vip-marcas{
+    margin-left: 8%;
+  }
+
+  /*FOOTER*/
+
+  .social-icon{
+    margin-left: -20%;
+  }
+
+  .logoRS{
+    margin-top: 3%;
+    margin-left: 8%;
+  }
+
+  .footerCategorias, .logoFooter{
+    margin-left: 8%;
+  }
+
+  .footerPagto, .minhaConta{
+    margin-left: 15%;
+  }
+
+  .minhaConta{
+    margin-top: 6%;
+    margin-bottom: 10%;
+  }
+
+  
+  .logoFooter{
+    margin-top: 3%;
+  }
+
+  /*PRODUTO*/
+
+  .imgProduto{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .imgProdutoSocial{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .imgProdutoOculos{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .descricaoProduto{
+    margin-left: 12%;
+  }
+
+  .precoProduto{
+    margin-right: 5%;
+  }
+
+  .tituloCamisas{
+    margin-left: -230%;
+  }
+
+
+}
+
+
+
+@media (max-width:568px){
+
+    /*Header*/
+    header{
+      border-bottom: solid 0.5px #D8D8D8;
+    }
+  
+    /*Botões Header*/
+  
+    .barraDeBusca, .btnVender, .logoTexto, .botaoQuestion{
+      display: none;
+    }
+  
+    .botaoSearch{
+      width: 40px;
+      height: 40px;
+      position: relative;
+        left: 34%;
+        top: -10px;
+    }
+  
+    .botaoLogin{
+      float: right;
+      width: 50%;
+      max-width: 100%;;
+      position: relative;
+        left: 450px;
+        top: 20px;
+    }
+  
+    .vejaBtn{
+      margin-top: 150%;
+    }
+  
+    .promocoesBtn{
+      width: 100%;
+      margin-left: 65%;
+    }
+  
+    /*Logo e nav*/
+  
+    .logoSimbolo{
+      width: 80%;
+      position: relative;
+        left: 120%;
+        top: 63px;
+    }
+  
+    .navbar-brand{
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10%;
+    }
+  
+    .navbar-light{
+      width: 10%;
+      margin-top: -13%;
+      margin-bottom: 2%;
+      margin-left: 0.5%;
+    }
+
+    .col-xs-1{
+      margin-top: -8.7%;
+    }
+  
+    /*MARCAS*/
+  
+    .vip-marcas{
+      margin-left: 8%;
+    }
+
+    .sizeMarcas{
+      width: 50px;
+      height: 50px;
+    }
+
+    .shadow{
+      width: 60px;
+      height: 60px;
+      margin: 0;
+    }
+  
+    /*FOOTER*/
+  
+    .social-icon{
+      margin-left: -20%;
+    }
+  
+    .footerCategorias, .logoFooter{
+      margin-left: 8%;
+    }
+  
+    .footerPagto, .minhaConta{
+      margin-left: 15%;
+    }
+  
+    .minhaConta{
+      margin-top: 6%;
+      margin-bottom: 10%;
+    }
+  
+    
+    .logoFooter{
+      margin-top: 3%;
+    }
+  
+  
+  }

@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('name',50)->unique();
             $table->string('description',255)->nullable();
             $table->string('image',255)->default('default.jpg');
+            $table->unsignedInteger('price')->nullable();
             $table->unsignedInteger('category_id')->nullable();
             $table->unsignedInteger('brand_id')->nullable();
             $table->boolean('active')->default(false);

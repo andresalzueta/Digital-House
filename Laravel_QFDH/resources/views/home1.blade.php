@@ -31,37 +31,37 @@
     </div>
 
     <div class="row">
-        <div class="c-widget__header col-6">
+        <div class="c-widget__header col-10">
             <h1 class="c-widget__title" >
                 <p class="font-weight-light">Moda Ela</p>
             </h1>
         </div>
-       <div class="col-6">
-            <nav class="navbarVeja navbar-expand-lg navbar-light">
+        <div class="col-2">
+            
                 <button type="button" class="vejaBtn"><p class="textoBotao">Veja mais</p></button>
-            </nav>
+            
         </div>
-
+    </div>
         <div class="container">
-        <div class="row">
-            <div class="c-widget__header col-6">
-            <h1 class="c-widget__title" >
-                <p class="font-weight-light">Moda Ela</p>
-            </h1>
+            <div class="row">
+                <div class="c-widget__header col-6">
+                    <h1 class="c-widget__title" >
+                        <p class="font-weight-light">Moda Ela</p>
+                    </h1>
+                </div>
+                <div class="col-6">
+                    
+                        <button type="button" class="vejaBtn"><p class="textoBotao">Veja mais</p></button>
+                    
+                </div>
             </div>
-        <div class="col-6">
-            <nav class="navbarVeja navbar-expand-lg navbar-light">
-                <button type="button" class="vejaBtn"><p class="textoBotao">Veja mais</p></button>
-            </nav>
-        </div>
-        </div>
         </div>
         <br>
         <br>
         <br>
 
 
-        <div class="container" style="padding-left: 0px; padding-right: 0px; position: relative;  bottom: 70px;">
+        <div class="row justify-content-center">
                 <div class="cont-prod">
                     <section class="vip-products row">
                         <article  class="product col-6  col-xs-5 col-sm-2 col-md-4 col-lg-2">
@@ -77,7 +77,7 @@
                             <a href="#">ver mais</a>
                         </article>
                         <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
-                <!-- col-lg-2 = 992px -->
+                            <!-- col-lg-2 = 992px -->
                             <img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg" alt="pdto 03">
                             <!-- <h2>Produto 03</h2> -->
                             <p>Social</p>
@@ -95,25 +95,15 @@
                             <p>Sapatos</p>
                             <a href="#">ver mais</a>
                         </article>
-                <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
+                        <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
                             <img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg"  alt="pdto 05">
                             <!-- <h2>Produto 05</h2> -->
                             <p>Bolsas</p>
                             <a href="#">ver mais</a>
                         </article>
+                    </section>
             </div>
         </div>
-
-                <div class="container">
-                <div class="row">
-                    <div class="Separador col-12">
-                        <div class="text-center" style="margin-top: 42px; margin-bottom: 10px;">
-                        <hr class="col-6" style="position:relative; bottom: 40px;">
-                        </div>
-                    </div>
-                </div>
-        </div>
-
 
     </div>
 
