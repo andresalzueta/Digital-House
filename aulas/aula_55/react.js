@@ -22,6 +22,7 @@ class Tela extends React.Component {
         })
     }
 
+
     // ()=> é uma arrowfunction
     render() {
         return (
