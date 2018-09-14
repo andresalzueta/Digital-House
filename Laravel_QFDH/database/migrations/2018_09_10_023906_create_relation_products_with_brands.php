@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRelationCustomersWithUsers extends Migration
+class CreateRelationProductsWithBrands extends Migration
 {
     /**
      * Run the migrations.
@@ -16,9 +16,9 @@ class CreateRelationCustomersWithUsers extends Migration
         //
         Schema::disableForeignKeyConstraints();
 
-        Schema::table('customers', function (Blueprint $table) {
-            // Cria uma chave estrangeira entre tabela customers e users
-            $table->foreign('user_id')->references('id')->on('users');
+        Schema::table('products', function (Blueprint $table) {
+            // Cria uma chave estrangeira entre tabela products e categories
+            $table->foreign('brand_id')->references('id')->on('brands');
         });
         
         Schema::enableForeignKeyConstraints();
@@ -34,9 +34,9 @@ class CreateRelationCustomersWithUsers extends Migration
         //
         Schema::disableForeignKeyConstraints();
 
-        Schema::table('customers', function (Blueprint $table) {
+        Schema::table('products', function (Blueprint $table) {
             //
-            $table->dropForeign(['user_id']);
+            $table->dropForeign(['brand_id']);
         });
 
         Schema::enableForeignKeyConstraints();

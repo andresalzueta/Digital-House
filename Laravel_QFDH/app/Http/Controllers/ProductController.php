@@ -5,28 +5,28 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
+use App\Product;
 use App\Brand;
+use App\Category;
 use App\User;
 
-
-class BrandController extends Controller
+class ProductController extends Controller
 {
     //
-    // digitalhouse_db.brands[id, created_at, updated_at, name, description, image, active]
+    // digitalhouse_db.products[id, created_at, updated_at, name, description, order, image, active]
     
-
     public function index() {
         // 
-        //$brands = Brand::paginate(5);
-        $brands = Brand::orderBy('name')->paginate(10);
-        //$brands = Brand::inRandomOrdery()->paginate(10);
+        //$products = Product::paginate(5);
+        $products = Product::orderBy('name')->paginate(10);
+        //$products = Product::inRandomOrdery()->paginate(10);
 
         $metodo = "GET";
-        $msgtitulo = "Index das Marcas";
-        $msgstatus = "Escolha uma marca de sua preferência";
+        $msgtitulo = "Index dos Produtos";
+        $msgstatus = "Escolha Exibir, Editar ou Excluir";
         
-        return view('index_brands')
-            ->with('brands', $brands)
+        return view('index_products')
+            ->with('products', $products)
             ->with('metodo',$metodo)
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
@@ -34,15 +34,15 @@ class BrandController extends Controller
     }
 
     public function directory() {
-        // users é uma classe criada a partir de uma classe abstrata Model que manipula a tabela no banco 
-        $brands = Brand::orderBy('name')->get();
-        // $brands = Brand::all();     
+        // Product é uma classe criada a partir de uma classe abstrata Model que manipula a tabela no banco 
+        $products = Product::orderBy('name')->get();
+        // $products = Product::all();     
         $metodo = "GET";
-        $msgtitulo = "Lista das Marcas";
+        $msgtitulo = "Lista dos Produtos";
         $msgstatus = "Escolha Exibir, Editar ou Excluir";
         
-        return view('filter_brands')
-            ->with('brands',$brands)
+        return view('filter_products')
+            ->with('products',$products)
             ->with('metodo',$metodo)
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
@@ -52,22 +52,26 @@ class BrandController extends Controller
     public function new() {
         // 
         $metodo = "PUT";
-        $msgtitulo = "1. Inserir Nova Marca";
+        $msgtitulo = "1. Inserir Novo Produto";
         $msgstatus = "Preencha todos os dados";
         $msgbotao = "Inserir ->";
         $sucesso = null;
-        $action=url('/')."/brand/create";
-        
-        $brand = new Brand;
+        $action=url('/')."/product/create";
+        $product = new Product;
+
         // captura usuário logado
         $user = $user = auth()->user();
-            
-        $brand->name = old('name');
-        $brand->description = old('description');
-        $brand->image = old('image');
-        $brand->active = old('active');
 
-        $view="form_brand";
+        $product->product_id    = old('product_id');
+        $product->name          = old('name');
+        $product->description   = old('description');
+        $product->image         = old('image');
+        $product->price         = old('price');
+        $product->active        = old('active');
+        $product->category_id   = old('category_id');
+        $product->brand_id      = old('brand_id');
+
+        $view = "form_product";
         return view( $view )
             ->with('metodo',$metodo)
             ->with('action',$action)
@@ -75,44 +79,50 @@ class BrandController extends Controller
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
             ->with('msgbotao',$msgbotao)
-            ->with('brand',$brand)
+            ->with('product',$product)
         ;
     }
 
     public function create(Request $request) {
-        // $fillable = [name, description, image, active]
-
+        // $fillable = [name, description, image, order, active]
+        
         $this->validate($request,[
-            'name' => 'required|min:3|max:50',
+            'product_id' => 'required|min:3|max:20|unique:products',
+            'name' => 'required|min:3|max:50|unique:products',
             'description' => 'min:3|max:255',
+            'price' => 'min:0',
             'image' => 'min:0|max:255',
             'active' => 'boolean',
         ]);
 
-        $brand = Brand::create([
+        $product = Product::create([
+            'product_id' => $request->input('product_id'),
             'name' => $request->input('name'),
             'description' => $request->input('description'),
             'image' => $request->input('image'),
+            'price' => $request->input('price'),
             'active' => $request->input('active'),
+            'category_id' => $request->input('category_id'),
+            'brand_id' => $request->input('brand_id'),  
         ]);
-        $result = $brand->save();
+        $result = $product->save();
 
-        $msgtitulo = "2. Inserida Nova Marca";
+        $msgtitulo = "2. Inserida Novo Produto";
         
         if ($result) {
             $metodo = "GET";
-            $msgstatus = "Marca cadastrada com sucesso!";
+            $msgstatus = "Produto cadastrada com sucesso!";
             $msgbotao = "Retornar ->";
-            $action=url('/')."/brands";  
+            $action=url('/')."/products";  
             $sucesso=true;
-            $view="show_brand";
+            $view="show_product";
         } else {
             $metodo = "PUT";
-            $msgstatus = "Ops, ocorreu um erro ao tentar salvar a Marca, tente novamente!";
-            $action=url('/')."/brand/create/";
+            $msgstatus = "Ops, ocorreu um erro ao tentar salvar o Produto, tente novamente!";
+            $action=url('/')."/product/create/";
             $sucesso=false;
             $msgbotao = "Inserir ->";
-            $view="form_brand";
+            $view="form_product";
         }     
         return view($view)
             ->with('metodo',$metodo)
@@ -121,26 +131,26 @@ class BrandController extends Controller
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
             ->with('msgbotao',$msgbotao)
-            ->with('brand',$brand)
+            ->with('product',$product)
         ;
     }
 
     public function read($id) {
         // 
-        $brand = Brand::find($id);
+        $product = Product::find($id);
 
         $metodo = "GET";
-        $msgtitulo = "3. Leia dados da Marca";
+        $msgtitulo = "3. Leia dados do Produto";
         $msgbotao = "Retornar ->";
         $sucesso = null;
-        $action=url('/')."/brands";
-        $view="show_brand";
+        $action=url('/')."/products";
+        $view="show_product";
 
-        if ($brand) {  
+        if ($product) {  
             $msgstatus = "Confira os dados abaixo";
         } else {
-            $msgstatus = "Marca não localizada";
-            $brand = new Brand;
+            $msgstatus = "Produto não localizada";
+            $product = new Product;
         }
 
         return view( $view )
@@ -150,23 +160,21 @@ class BrandController extends Controller
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
             ->with('msgbotao',$msgbotao)
-            ->with('brand',$brand)
+            ->with('product',$product)
         ;
     }
 
     public function edit($id) {
         // 
-        $brand = Brand::find($id);
-        //$brand->fill(['email_confirm' => $brand->email ]);
-        //$brand->fill(['password_confirm' => $brand->password ]);
+        $product = Product::find($id);
         
         $metodo = "PATCH";
-        $msgtitulo = "4. Edite dados da Marca";
+        $msgtitulo = "4. Edite dados do Produto";
         $msgstatus = "Edite os dados abaixo";
         $msgbotao = "Atualizar ->";
-        $action=url('/')."/brand/update/$brand->id";
+        $action=url('/')."/product/update/$product->id";
         $sucesso = null;
-        $view="form_brand";
+        $view="form_product";
         return view( $view )
             ->with('metodo',$metodo)
             ->with('action',$action)
@@ -174,47 +182,52 @@ class BrandController extends Controller
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
             ->with('msgbotao',$msgbotao)
-            ->with('brand',$brand)
+            ->with('product',$product)
         ;
     }
 
     public function update(Request $request, $id) {
         //
-
-        $brand = Brand::find($id);
-        // os campos ['email_confirm'] ['password_confirm'] não existem na tabela users, portanto precisam ser criados no objeto
+        $product = Product::find($id);
 
         $this->validate($request,[
-            'name' => Rule::unique('name')->ignore($brand->name, 'name'),
+            'product_id' => Rule::unique('name')->ignore($product->product_id, 'product_id'),
+            'product_id' => 'required|min:3|max:20',
+            'name' => Rule::unique('name')->ignore($product->name, 'name'),
             'name' => 'required|min:3|max:50',
             'description' => 'min:3|max:255',
             'image' => 'min:0|max:255',
+            'price' => 'min:0',
             'active' => 'boolean',
-        ]);
-                   
-        $brand->name = $request->input('name');
-        $brand->description = $request->input('description');
-        $brand->image = $request->input('image');
-        $brand->active = $request->input('active');
-        
+            ]);
+
+        $product->product_id    = $request->input('product_id');
+        $product->name          = $request->input('name');
+        $product->description   = $request->input('description');
+        $product->image         = $request->input('image');
+        $product->price         = $request->input('price');
+        $product->active        = $request->input('active');
+        $product->category_id   = $request->input('category_id');
+        $product->brand_id      = $request->input('brand_id');
+
         // save() faz Update dos dados no banco de dados   
-        $result = $brand->save();         
-        $msgtitulo = "5. Atualizar dados da Marca";
+        $result = $product->save();         
+        $msgtitulo = "5. Atualizar dados do Produto";
         
         if ($result) {
             $metodo = "GET";
-            $msgstatus = "Marca atualizada com sucesso!";
+            $msgstatus = "Produto atualizada com sucesso!";
             $msgbotao = "Retornar ->";
-            $action=url('/')."/brands";  
+            $action=url('/')."/products";  
             $sucesso=true;
-            $view='show_brand';
+            $view='show_product';
         } else {
             $metodo = "PATCH";
-            $msgstatus = "Ops, ocorreu um erro ao tentar salvar a Marca, tente novamente!";
-            $action=url('/')."/brand/update/$brand->id";
+            $msgstatus = "Ops, ocorreu um erro ao tentar salvar o Produto, tente novamente!";
+            $action=url('/')."/product/update/$product->id";
             $sucesso=false;
             $msgbotao = "Atualizar ->";
-            $view="form_brand";
+            $view="form_product";
         }     
         return view($view)
             ->with('metodo',$metodo)
@@ -223,7 +236,7 @@ class BrandController extends Controller
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
             ->with('msgbotao',$msgbotao)
-            ->with('brand',$brand)
+            ->with('product',$product)
         ;
     }
 
@@ -231,14 +244,14 @@ class BrandController extends Controller
         //Check role
         $role = $request->user()->authorizeRoles('admin');
         //Check role
-        $brand = Brand::find($id);
+        $product = Product::find($id);
         $metodo = "DELETE";
-        $msgtitulo = "6. Confirmar Deleção da Marca";
-        $msgstatus = "Confirma deleção da Marca abaixo ?";     
+        $msgtitulo = "6. Confirmar Deleção do Produto";
+        $msgstatus = "Confirma deleção do Produto abaixo ?";     
         $msgbotao = "Deletar ->";
         $sucesso=null;
-        $action=url('/')."/brand/delete/$brand->id";
-        $view="show_brand";
+        $action=url('/')."/product/delete/$product->id";
+        $view="show_product";
         return view( $view )
             ->with('sucesso',$sucesso)
             ->with('metodo',$metodo)
@@ -246,31 +259,31 @@ class BrandController extends Controller
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
             ->with('msgbotao',$msgbotao)
-            ->with('brand',$brand)
+            ->with('product',$product)
         ;
     }
 
     public function delete ($id) {
-        $brand = Brand::find($id);
-        $msgtitulo = "7. Deletar Marca";
-        $msgstatus = "Marca $brand->name excluída com sucesso!";  
-        $brandid = $brand->id;
-        $result = $brand->delete();
-        //$result = Brand::destroy($id);
+        $product = Product::find($id);
+        $msgtitulo = "7. Deletar Produto";
+        $msgstatus = "Produto $product->name excluído com sucesso!";  
+        $deleted_id = $product->id;
+        $result = $product->delete();
+        //$result = Product::destroy($id);
         if ( $result) {
             $metodo = "GET";
             $msgbotao = "Retornar ->";
-            $action=url('/')."/brands/";
+            $action=url('/')."/products/";
             $sucesso=true;
-            $brand = new Brand;
+            $product = new Product;
         } else {
             $metodo = "GET";
-            $msgstatus = "Ops, ocorreu um erro ao tentar excluir a Marca, tente novamente!";
-            $action=url('/')."/brand/preDelete/$brandid";
+            $msgstatus = "Ops, ocorreu um erro ao tentar excluir o Produto, tente novamente!";
+            $action=url('/')."/product/preDelete/$deleted_id";
             $msgbotao = "Deletar ->";
             $sucesso=false;
         }     
-        $view="show_brand";
+        $view="show_product";
         
         return view( $view )
             ->with('sucesso',$sucesso)
@@ -279,7 +292,7 @@ class BrandController extends Controller
             ->with('msgtitulo',$msgtitulo)   
             ->with('msgstatus',$msgstatus)
             ->with('msgbotao',$msgbotao)
-            ->with('brand',$brand)
+            ->with('product',$product)
         ;
-    }
+    }    
 }
