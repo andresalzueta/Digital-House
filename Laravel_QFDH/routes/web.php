@@ -97,6 +97,7 @@ Route::middleware(['auth'])->group (Function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/perguntas', 'rotasController@perguntas')->name('perguntas');
 
 //para requerer autenticação
 Route::get('/middleware','HomeController@index')->middleware('auth');
