@@ -53,7 +53,7 @@ Route::middleware(['auth'])->group (Function() {
     Route::get('/customer/predelete/{id?}','CustomerController@preDelete');
     Route::delete('/customer/delete/{id?}','CustomerController@delete');
     // Rotas do CRUD de Categorias de Produtos
-    Route::get('/categories_pages','CategoryController@index');
+    
     Route::get('/categories/{id?}','CategoryController@directory');
     Route::get('/category/new','CategoryController@new');
     Route::put('/category/create','CategoryController@create');
@@ -63,7 +63,7 @@ Route::middleware(['auth'])->group (Function() {
     Route::get('/category/predelete/{id?}','CategoryController@preDelete');
     Route::delete('/category/delete/{id?}','CategoryController@delete');
     // Rotas do CRUD de Marcas de Produtos
-    Route::get('/brands_pages','BrandController@index');
+    
     Route::get('/brands/{id?}','BrandController@directory');
     Route::get('/brand/new','BrandController@new');
     Route::put('/brand/create','BrandController@create');
@@ -73,7 +73,7 @@ Route::middleware(['auth'])->group (Function() {
     Route::get('/brand/predelete/{id?}','BrandController@preDelete');
     Route::delete('/brand/delete/{id?}','BrandController@delete');
     // Rotas do CRUD de Produtos
-    Route::get('/products_pages','ProductController@index');
+    
     Route::get('/products/{id?}','ProductController@directory');
     Route::get('/product/new','ProductController@new');
     Route::put('/product/create','ProductController@create');
@@ -96,9 +96,13 @@ Route::middleware(['auth'])->group (Function() {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
 
 //para requerer autenticação
 Route::get('/middleware','HomeController@index')->middleware('auth');
 
-
+//não requer autenticação
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/categories_pages','CategoryController@index');
+Route::get('/products_pages','ProductController@index');
+Route::get('/brands_pages','BrandController@index');

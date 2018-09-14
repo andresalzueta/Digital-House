@@ -20,7 +20,7 @@ class CategoryController extends Controller
 
         $metodo = "GET";
         $msgtitulo = "Index das Marcas";
-        $msgstatus = "Escolha Exibir, Editar ou Excluir";
+        $msgstatus = "Escolha uma categoria e encontre os produtos que procura";
         
         return view('index_categories')
             ->with('categories', $categories)

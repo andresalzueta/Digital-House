@@ -1,4 +1,4 @@
-@extends('layouts.masterweb')
+@extends('layouts.master')
 
 @section('content')
 <div class="container">
@@ -30,92 +30,56 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="c-widget__header col-6">
-            <h1 class="c-widget__title" >
-                <p class="font-weight-light">Moda Ela</p>
-            </h1>
-        </div>
-       <div class="col-6">
-            <nav class="navbarVeja navbar-expand-lg navbar-light">
-                <button type="button" class="vejaBtn"><p class="textoBotao">Veja mais</p></button>
-            </nav>
-        </div>
+    <div class="cont-prod row">
+        <section class="vip-products row">
+            <article class="product col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg" alt="pdto 01" style="width:300px;height:300px;">
+					<!-- <h2>Produto 01</h2> -->
+					<h2>Jaquetas</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
+                    <a href="#">ver mais</a>
+            </article>
 
-        <div class="container">
-        <div class="row">
-            <div class="c-widget__header col-6">
-            <h1 class="c-widget__title" >
-                <p class="font-weight-light">Moda Ela</p>
-            </h1>
-            </div>
-        <div class="col-6">
-            <nav class="navbarVeja navbar-expand-lg navbar-light">
-                <button type="button" class="vejaBtn"><p class="textoBotao">Veja mais</p></button>
-            </nav>
-        </div>
-        </div>
-        </div>
-        <br>
-        <br>
-        <br>
+            <article class="product col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg" alt="pdto 01" style="width:300px;height:300px;">
+                    
+                    <h2>Óculos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
+                    <a href="#">ver mais</a>
+            </article>
 
+            <article class="product col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg" alt="pdto 01" style="width:300px;height:300px;">
+                    <h2>Lorem ipsum amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
+                    <a href="#">ver mais</a>
+            </article>
 
-        <div class="container" style="padding-left: 0px; padding-right: 0px; position: relative;  bottom: 70px;">
-                <div class="cont-prod">
-                    <section class="vip-products row">
-                        <article  class="product col-6  col-xs-5 col-sm-2 col-md-4 col-lg-2">
-                            <img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg" alt="pdto 01">
-                            <!-- <h2>Produto 01</h2> -->
-                            <p>Jaquetas</p>
-                            <a href="#">ver mais</a>
-                        </article>
-                        <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
-                            <img src="img/Produtos/Ela/Óculos.jpg" class="sizeImg" alt="pdto 02">
-                            <!-- <h2>Produto 02</h2> -->
-                            <p>Óculos</p>
-                            <a href="#">ver mais</a>
-                        </article>
-                        <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
-                <!-- col-lg-2 = 992px -->
-                            <img src="img/Produtos/Ela/Blazer.jpg" class="sizeImg" alt="pdto 03">
-                            <!-- <h2>Produto 03</h2> -->
-                            <p>Social</p>
-                            <a href="#">ver mais</a>
-                        </article>
-                        <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
-                            <img src="img/Produtos/Ela/Jeans.jpg" class="sizeImg"  alt="pdto 04">
-                            <!-- <h2>Produto 04</h2> -->
-                            <p>Calça Jeans</p>
-                            <a href="#">ver mais</a>
-                        </article>
-                        <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
-                            <img src="img/Produtos/Ela/Sapato.jpg" class="sizeImg"  alt="pdto 05">
-                            <!-- <h2>Produto 05</h2> -->
-                            <p>Sapatos</p>
-                            <a href="#">ver mais</a>
-                        </article>
-                <article class="product col-6 col-xs-5 col-sm-2 col-md-4 col-lg-2">
-                            <img src="img/Produtos/Ela/Bolsa.jpg" class="sizeImg"  alt="pdto 05">
-                            <!-- <h2>Produto 05</h2> -->
-                            <p>Bolsas</p>
-                            <a href="#">ver mais</a>
-                        </article>
-            </div>
-        </div>
+            <article class="product col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="images/img-pdto-1.jpg" alt="pdto 01">
+                    <h2>Lorem ipsum amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
+                    <a href="#">ver mais</a>
+            </article>
 
-                <div class="container">
-                <div class="row">
-                    <div class="Separador col-12">
-                        <div class="text-center" style="margin-top: 42px; margin-bottom: 10px;">
-                        <hr class="col-6" style="position:relative; bottom: 40px;">
-                        </div>
-                    </div>
-                </div>
-        </div>
+            <article class="product col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="images/img-pdto-2.jpg" alt="pdto 02">
+                    <h2>Lorem ipsum amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
+                    <a href="#">ver mais</a>
+            </article>
 
+            <article class="product col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="images/img-pdto-3.jpg" alt="pdto 03">
+                    <h2>Lorem ipsum amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
+                    <a href="#">ver mais</a>
+            </article>
 
+        </section>
     </div>
+
+
 
 </div>
 @endsection

@@ -23,7 +23,7 @@ class BrandController extends Controller
 
         $metodo = "GET";
         $msgtitulo = "Index das Marcas";
-        $msgstatus = "Escolha Exibir, Editar ou Excluir";
+        $msgstatus = "Escolha uma marca de sua preferência";
         
         return view('index_brands')
             ->with('brands', $brands)
