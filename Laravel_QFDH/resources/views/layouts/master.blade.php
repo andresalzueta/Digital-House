@@ -59,13 +59,24 @@
                     <img src="{{url('img/logo/logo1.pn')}}g" alt="logotipo" class="logo">
                 </div> --}}
                 <div class="botoesMenu col-12 col-sm-12 col-md-5 col-lg-5">
-                    <button class="btn btn-default home-img" type="button";>
+                    <button class="btn btn-default" type="button";>
+                        <a href="{{route('home')}}">
+                            <img class="home-img">
+                        </a>
                     </button>
-                    <button class="btn btn-default duvida-img" type="button">
+                    <button class="btn btn-default" type="button";>
+                        <a href="{{route('perguntas')}}">
+                            <img class="duvida-img">
+                        </a>
                     </button>
-                    <button class="btn btn-default entrar-img" type="button">
+                    <button class="btn btn-default" type="button">
+                        <a href="{{route('login')}}">
+                            <img class="entrar-img">
+                        </a>
                     </button>
-                    <input class="btnVender btn-primary" type="reset" value="Vender">
+                    <a href="{{route('register')}}">
+                        <input href="{{route('register')}}"class="btnVender btn-primary" type="reset" value="Vender">
+                    </a>
                 </div> 
             </nav>
 
@@ -158,9 +169,9 @@
   
                             <!-- Authentication Links -->
                             @guest
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>

@@ -10,4 +10,9 @@ class rotasController extends Controller
 
         return view('perguntas');
     }
+
+    public function login(){
+
+        return view('login');
+    }
 }

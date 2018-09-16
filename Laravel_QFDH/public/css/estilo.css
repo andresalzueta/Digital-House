@@ -39,8 +39,15 @@ top{
 
 
 .btn.btn-default{
-    border-bottom-width: 26px;
-    border-right-width: 15px;
+    /* border-bottom-width: 26px;
+    border-right-width: 15px; */
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border: none;
 }
 
 .form-control{
@@ -93,7 +100,7 @@ top{
    width: 10px;
    background-size: 35px;
    background-repeat: no-repeat;
-   padding: 17px;
+   padding: 18px;
    border: none;
  }
 

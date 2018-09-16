@@ -97,7 +97,7 @@ Route::middleware(['auth'])->group (Function() {
 Auth::routes();
 
 Route::get('/perguntas', 'rotasController@perguntas')->name('perguntas');
-
+// Route::get('/login', 'rotasController@login')->name('login');
 
 //para requerer autenticação
 Route::get('/middleware','HomeController@index')->middleware('auth');

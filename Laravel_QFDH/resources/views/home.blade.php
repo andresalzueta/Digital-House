@@ -47,7 +47,7 @@
             <div class="cont-prod col-12 col-sm-12 col-md-12 col-lg-12">
                 <section class="vip-products row">
                     <article  class="product col-6  col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg" href="{{route('perguntas')}}" alt="pdto 01">
+                        <img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg" alt="pdto 01">
                         <!-- <h2>Produto 01</h2> -->
                         <p>Jaquetas</p>
                         <a href="#">ver mais</a>
@@ -99,7 +99,7 @@
     <div class="bug container-fluid">
         <nav class="navbarVeja row">
             <div class="c-widget__header col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <p class="font-weight-light">Kids</p>
+                <p class="font-weight-light">Destaques Kids</p>
             </div>
             <div class="botaoVejaMais col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
                 <button type="button" class="vejaBtn"><p class="textoBotao">Veja mais</p></button>
@@ -119,14 +119,14 @@
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
                         <img src="img/Produtos/Ela-Kids/calca1.jpg" class="sizeImg" alt="pdto 02">
                         <!-- <h2>Produto 02</h2> -->
-                        <p>Óculos</p>
+                        <p>Calça Jeans</p>
                         <a href="#">ver mais</a>
                     </article>
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
                         <!-- col-lg-2 = 992px -->
                         <img src="img/Produtos/Ela-Kids/calca2.jpg" class="sizeImg" alt="pdto 03">
                         <!-- <h2>Produto 03</h2> -->
-                        <p>Social</p>
+                        <p>Calça Jeans</p>
                         <a href="#">ver mais</a>
                     </article>
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
