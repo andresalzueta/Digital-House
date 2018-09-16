@@ -3,7 +3,7 @@
 @section('content')
     
     <div class="container mt-2">
-        <h1 align="center">{{ $msgtitulo }}</h1>
+        <h1 align="center" class='Title1Category'>{{ $msgtitulo }}</h1>
             @if (isset($sucesso) && $sucesso)
                 @php $msgclass="alert alert-success" @endphp
             @elseif(count($errors) > 0 ) 
@@ -11,8 +11,8 @@
             @else
                 @php $msgclass="alert alert-info" @endphp
             @endif  
-        <div class="{{ $msgclass }}">
-                    <h2 align="center">{{ $msgstatus }}</h2>
+        <div class="campoCategory {{ $msgclass }}">
+                    <h2 align="center" class='Title2Category'>{{ $msgstatus }}</h2>
         </div>
         
         <h3>Tabela com filtro</h3>

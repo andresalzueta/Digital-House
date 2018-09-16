@@ -10,8 +10,8 @@
     <!-- Bootstrap Projetoe-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="{{url('css/app.css')}}">
+    <link rel="stylesheet" href="{{url('css/estilo.css')}}">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <!-- Styles Projeto -->
     <style>
-        .form-control:disabled, .form-control[readonly]{
+        .form-control:disabled, .form-control[readonly]{    
             background-color:#f8f9fawite;
         }
     </style>
@@ -43,7 +43,7 @@
         <header id="top" class="headerMenu container-fluid main-header">
             <nav class="linhaMenu row">
                 <div class="logo col-12 col-sm-12 col-md-2 col-lg-2">
-                    <img src="img/logo/logo-Copia.png" alt="logotipo" class="logo">
+                    <img src="{{url('img/logo/logo-Cop')}}ia.png" alt="logotipo" class="logo">
                 </div>               
                 <div class="todoSearch col-12 col-sm-12 col-md-5 col-lg-5">
                     <div class="row">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 {{-- <div class="logo col-4 col-sm-4 col-md-2 col-lg-12">
-                    <img src="img/logo/logo1.png" alt="logotipo" class="logo">
+                    <img src="{{url('img/logo/logo1.pn')}}g" alt="logotipo" class="logo">
                 </div> --}}
                 <div class="botoesMenu col-12 col-sm-12 col-md-5 col-lg-5">
                     <button class="btn btn-default home-img" type="button";>
@@ -77,7 +77,7 @@
                         {{ config('app.name', 'Laravel') }}
                     </a> --}}
                     <button class="hambMenu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                        <img src="img/logo/hamburguer2.png" alt="logotipo" class="hamburguer">
+                        <img src="{{url('img/logo/hamburgu')}}er2.png" alt="logotipo" class="hamburguer">
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -188,22 +188,24 @@
                 </div>
             </nav>
         </header>
+        
 
         <main class="py-3 bg-white">
             @yield('content')
         </main> 
         <footer class="footer">
+            <hr>
             <div class="container">
                 <div class="row">
                     <div class="logoFooter col-sm-3">
-                        <img src="img/logo/logo.png" alt="logotipo" class="logoFooter">
+                        <img src="{{url('img/logo/logo.png')}}" alt="logotipo" class="logoFooter">
                         <!-- <h4 class="title">Sumi</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p> -->
                         <ul class="social-icon">
-                            <a href="#" class="social"><i class="fab fa-facebook-square botaoFacebook"></i></a>
-                            <a href="#" class="social"><i class="fab fa-instagram botaoInstagram"></i></a>
-                            <a href="#" class="social"><i class="fab fa-twitter botaoTwitter"></i></a>
-                            <a href="#" class="social"><i class="fab fa-pinterest-square botaoPinterest"></i></i></a>
+                            <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square botaoFacebook"></i></a>
+                            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram botaoInstagram"></i></a>
+                            <a href="https://twitter.com/" class="social"><i class="fab fa-twitter botaoTwitter"></i></a>
+                            <a href="https://br.pinterest.com/" class="social"><i class="fab fa-pinterest-square botaoPinterest"></i></i></a>
                         </ul>
                     </div>
                     <div class="minhaContaFooter col-sm-3">

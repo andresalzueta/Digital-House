@@ -194,7 +194,7 @@ top{
 /*Carrossel*/
   .bannerCarrossel{
     padding: 0;
-    margin-top: 126px;
+    /* margin-top: 126px; */
   }
 
 
@@ -818,5 +818,55 @@ top{
   margin-left: 12%;
 }
 
+/* ////////////////////////////////////////////////////////////// */
 
+/* PÁGINA LOGIN */
+  .campoLogin{
+  background-color: #eff4f9 !important;
+  }
 
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS PRODUTOS */
+  .Title1Product{
+    font-size: 30px;
+    color: #007bff !important;
+  }
+
+  .Title2Product{
+    font-size: 25px;
+    color: #007bff !important;
+  }
+
+  .campoProduct{
+    background-color: #eff4f9 !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS CATEGORIAS */
+  .Title1Category{
+    font-size: 30px;
+    color: #007bff !important;
+  }
+
+  .Title2Category{
+    font-size: 25px;
+    color: #007bff !important;
+  }
+
+  .campoCategory{
+    background-color: #eff4f9 !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS CATEGORIAS */
+.Title1Brand{
+  font-size: 30px;
+  color: #007bff !important;
+}
+
+.Title2Brand{
+  font-size: 25px;
+  color: #007bff !important;
+}
+
+.campoBrand{
+  background-color: #eff4f9 !important;
+}

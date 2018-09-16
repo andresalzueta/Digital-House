@@ -47,7 +47,7 @@
             <div class="cont-prod col-12 col-sm-12 col-md-12 col-lg-12">
                 <section class="vip-products row">
                     <article  class="product col-6  col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg" alt="pdto 01">
+                        <img src="img/Produtos/Ela/Jaqueta.jpg" class="sizeImg" href="{{route('perguntas')}}" alt="pdto 01">
                         <!-- <h2>Produto 01</h2> -->
                         <p>Jaquetas</p>
                         <a href="#">ver mais</a>
@@ -217,7 +217,7 @@
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
                     <a href="#" class="shadow bottom" >
-                        <img class="sizeMarcas" src="img/Produtos/Marcas/Vlatore.jpg" alt="Vlatore">
+                        <img class="sizeMarcas" src="img/Produtos/Marcas/michael-kors.png" alt="michael-kors">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
@@ -298,15 +298,7 @@
             </a>
         </nav>
     </div>
-    <div class="bug separadorFooter container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="text-center">
-                <hr class="Separador">
-            </div>
-        </div>
-    </div>
-
+ 
 
 
 </div>{{--  div Container Fim --}}
