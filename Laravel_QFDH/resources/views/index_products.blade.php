@@ -19,7 +19,7 @@
             <section class="vip-products row ">      
                 @foreach($products as $product )
                     <article class="product col-xs-12 col-sm-6 col-md-4 col-lg-3 center">
-                        <img src="{{ $product->image }}" class="sizeImg" alt="{{ $product->name }}" width="265px" height="265px">
+                        <img src="{{ url('/') }}/{{ $product->image }}" class="sizeImg" alt="{{ $product->name }}" width="265px" height="265px">
                         <!-- <h2>Produto 01</h2> -->
                         <h2>{{ $product->name }}</h2>
                         <p>{{ $product->description }}</p>

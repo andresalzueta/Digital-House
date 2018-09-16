@@ -16,13 +16,43 @@ class ProductController extends Controller
     // digitalhouse_db.products[id, created_at, updated_at, name, description, order, image, active]
     
     public function index() {
-        // 
         //$products = Product::paginate(5);
-        $products = Product::orderBy('name')->paginate(10);
+        $products = Product::orderBy('name')->paginate(8);
         //$products = Product::inRandomOrdery()->paginate(10);
+        $metodo = "GET";
+        $msgtitulo = "Index dos Produtos";
+        $msgstatus = "Escolha um produto de sua preferência";
+        
+        return view('index_products')
+            ->with('products', $products)
+            ->with('metodo',$metodo)
+            ->with('msgtitulo',$msgtitulo)   
+            ->with('msgstatus',$msgstatus)
+        ;
+    }
+
+    public function indexBrand($brand_id) {
+        // 
+        $products = Product::where('brand_id', '=', $brand_id)->orderBy('name')->paginate(8);
 
         $metodo = "GET";
         $msgtitulo = "Index dos Produtos";
+        $msgstatus = "Escolha um produto de sua preferência";
+        
+        return view('index_products')
+            ->with('products', $products)
+            ->with('metodo',$metodo)
+            ->with('msgtitulo',$msgtitulo)   
+            ->with('msgstatus',$msgstatus)
+        ;
+    }
+
+    public function indexCategory($category_id) {
+        // 
+        $products = Product::where('category_id', '=', $category_id)->orderBy('name')->paginate(8);
+
+        $metodo = "GET";
+        $msgtitulo = "Index dos Produtos da Categoria ";
         $msgstatus = "Escolha um produto de sua preferência";
         
         return view('index_products')
