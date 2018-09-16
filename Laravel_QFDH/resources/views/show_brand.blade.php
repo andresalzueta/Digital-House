@@ -49,7 +49,7 @@
             </div>
             <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
                 <label for="image">Imagem da Marca</label>
-                <input type="text" class="form-control" id="image" name="image" value="{{ $brand->image }}" placeholder="Insira imagem da marca" readonly>
+                <img src="{{ url('/') }}/{{ $brand->image }}" class="sizeImg" alt="{{ $brand->name }}" width="265px" height="265px">
             </div>
         </div>
             

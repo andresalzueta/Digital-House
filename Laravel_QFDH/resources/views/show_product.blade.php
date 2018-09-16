@@ -68,7 +68,7 @@
             </div>
             <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
                 <label for="image">Imagem do Produto</label>
-                <input type="text" class="form-control" id="image" name="image" value="{{ $product->image }}" placeholder="Insira imagem do Produto" readonly>
+                <img src="{{ url('/') }}/{{ $product->image }}" class="sizeImg" alt="{{ $product->name }}" width="265px" height="265px">
             </div>
         </div>
             
