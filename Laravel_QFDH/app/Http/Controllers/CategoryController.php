@@ -19,7 +19,7 @@ class CategoryController extends Controller
         //$categories = Category::inRandomOrdery()->paginate(10);
 
         $metodo = "GET";
-        $msgtitulo = "Index das Marcas";
+        $msgtitulo = "Index das Categorias";
         $msgstatus = "Escolha uma categoria e encontre os produtos que procura";
         
         return view('index_categories')

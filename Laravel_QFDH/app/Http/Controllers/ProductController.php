@@ -23,7 +23,7 @@ class ProductController extends Controller
 
         $metodo = "GET";
         $msgtitulo = "Index dos Produtos";
-        $msgstatus = "Escolha Exibir, Editar ou Excluir";
+        $msgstatus = "Escolha um produto de sua preferência";
         
         return view('index_products')
             ->with('products', $products)
