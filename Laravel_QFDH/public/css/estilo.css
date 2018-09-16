@@ -1,127 +1,123 @@
-*{
 
-}
 
 .main-header .logo{
-  width: 30%;
-  margin-left: 285%;
-  margin-top: -40%;
+  height: 73px;
+  width: 121px;
 }
 
-.logoSimbolo{
-  width:25%;
-  margin-left: 245%;
-  margin-top: -30%;
+/* HEADER */
+.bug{
+  width: 102% !important;
 }
 
-.logoTexto{
-  width: 40%;
-  margin-top: -30%;
+top{
+  /* position: fixed */
 }
 
-.logoFooter{
-  width: 50%;
-  margin-left: 20%;
+.logo{
+  text-align: center;
+}
+
+.botoesMenu{
+  margin-top: 23px;
+  text-align: right;
+}
+
+.btnVender{
+  margin-left: 57px;
+  color: #007bff;
+  color: #007bff; border-color: #2700ff00;   
+  background-color: #007bff; 
+  width: 112px;  
+  height: 39px;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+  height: 37px;
+}
+
+
+.btn.btn-default{
+    border-bottom-width: 26px;
+    border-right-width: 15px;
 }
 
 .form-control{
-  font-size: 14px;
-  border: solid 1px;
-  border-color: rgba(0, 0, 0, 0.1); 
-  width: 10px;
-  padding: 7px 0 7px 9px;
-  margin: 0 0 10px 0;
-  margin-bottom: 100px;
-  position: relative;
-    left: 0;
-    top: 10%;
-    z-index: 2;
+  margin-left: -20px;
+  font-size: 14px; 
+  background-color: #bfd3e940; 
+  border:none; width: 302px; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+}
+.linhaMenu{
+  background-color: white;
 }
 
-/*PÁGINA CADASTRO*/
-.camposCadastro{
-  width: 80%;
-  margin: auto;
+
+.MenuPrincipal{
+  background-color: #007bff !important;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.04);
+  box-shadow: 0 2px 4px rgba(0,0,0,.04);
+  /* z-index: 10;  */
 }
 
-.campoDMA{
-  position: relative;
-    left: 0;
-    top: -10px;
-}
+
+
 
 
 /* Botões Menu header */
-
-  .botaoSearch{
-    width: 25px;
-    height: 25px;
-    position: relative;
-      left: 7%;;
-      top: 6px;
-      z-index: 5;
+  .headerMenu{
+    padding: 0 !important;
+    /* position: fixed;  */
+    z-index: 100;
+    background-color: #eff4f9;
   }
 
-  .input-group{
-    margin-left: 10%;
-  }
-
-  .navbar-brand{
-    width: 20%;
-    margin: auto;
-  }
-  
-  .botaoLogin{
-    float: right;
-    width: 6%;
-    margin-right: 5%;
-    margin-top: -10%;
-    max-width: 6%;
-    -moz-transition: all 0.3s;
-	  -webkit-transition: all 0.3s;
-	  transition: all 0.3s;
-  }
-
-  .botaoLogin:hover{
-    -moz-transform: scale(1.1);
-	  -webkit-transform: scale(1.1);
-	  transform: scale(1.1);
-  }
-  
-  .botaoQuestion{
-    width: 6%;
-    margin-top: -14.5%;
-    position: relative;
-      left: 180%;
-      top: 0;
-    max-width: 6%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .botaoQuestion:hover{
-    -moz-transform: scale(1.1);
-	  -webkit-transform: scale(1.1);
-	  transform: scale(1.1);
-  }
+ .btn-ps{
+    background-color: white;
+    background-image:   url(../img/menuProcura.jpg);
+    width: 10px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    padding: 18px;
+    border: none;
+ }
 
  .home-img{
-   background-image:   url(../img/menuHome2.jpg);
+   background-color: white;
+   background-image:   url(../img/menuHome.jpg);
    width: 10px;
    background-size: 35px;
    background-repeat: no-repeat;
-   padding: 19px;
+   padding: 17px;
+   border: none;
+ }
+
+ .duvida-img{
+   background-color: white;
+   background-image: url(../img/questionIcon.png);  /*url(../img/menuDuvida2.jpg)*/
+   width: 10px;
+   background-size: 35px;
+   background-repeat: no-repeat;
+   padding: 18px;
    border: none;
  }
 
  .entrar-img{
-   background-image:   url(../img/menuEntrar2.jpg);
+   background-color: white;
+   background-image: url(../img/userIcon.png);  ;/*url(../img/menuEntrar2.jpg)*/
    width: 10px;
    background-size: 35px;
    background-repeat: no-repeat;
-   padding: 19px;
+   padding: 18px;
    border: none;
  }
+
+
 
 .fieldSearch{
   font-size: 14px;
@@ -140,44 +136,8 @@
   border-bottom-right-radius: 10px;
 }
 
-.btnVender{
-  color: #007bff; 
-  background-color: #007bff; 
-  border: none;
-  width: 8%;
-  height: 45px;
-  border-top-left-radius: 5px; 
-  border-top-right-radius: 25px; 
-  border-bottom-left-radius: 25px; 
-  border-bottom-right-radius: 5px;
-  margin-right: 10%;
-  margin-top: -4.5%;
-  cursor: pointer;
-  max-width: 8%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
 
-.btnVender:hover{
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.1);
-  border-top-left-radius: 25px; 
-  border-top-right-radius: 5px; 
-  border-bottom-left-radius: 5px; 
-  border-bottom-right-radius: 25px;
-}
 
-.textoBotao{
-  margin: auto;
-  
-  color: white;
-}
-
-.navbar{
-  margin-top: -1%;
-}
 
 .main-nav li{
     width: 100%;
@@ -196,26 +156,19 @@
 
 .product a{
     /* color: #007bff; */
-    color: black;
-    background-color: #BDDCFE;
+    color:red!important;
+    background-color: #bfd3e940;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 0px 15px 3px 15px;
-}
-
-a .nav-item{
-  color: #BDBDBD;
-}
-
-#navbarSupportedContent{
-  margin-left: 5%;
+    padding: 0px 11px 3px 15px;
 }
 
 
-  /* FOOTER CSS */
-.main-footer li{
+
+/* FOOTER CSS */
+  .main-footer li{
     display: inline-block;
     text-transform: lowercase;
     text-transform: none;
@@ -232,82 +185,96 @@ a .nav-item{
     }
 
 
-    /* INDEX CSS */
-    .c-widget__title{
-      color: #007bff;
-      font-size: 27px;
-      font-weight: lighter;
-    }
+/* BODY CONTAINER CSS */
+  .bodyCont{
+    padding: 0;
+    margin-top: -15px;
+  }
 
-    .sizeImg{
-      width: 150px;
-      height: 150px;
-    }
+/*Carrossel*/
+  .bannerCarrossel{
+    padding: 0;
+    /* margin-top: 126px; */
+  }
 
-    .product{
-      text-align: center;
-      margin-top: 10px;
-    }
 
-    .vejaBtn{
-      border: none;   
-      background-color: #007bff;
-      width: 112px;  
-      height: 39px;
-      border-top-left-radius: 10px; 
-      border-top-right-radius: 10px; 
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px; 
-      float: right;
-      position: relative;
-        top:-14px;
-      cursor: pointer;
-    }
+/* INDEX CSS - Anuncios Variados 1 */
+  .c-widget__title{
+    color: #007bff;
+    font-size: 27px;
+    font-weight: lighter;
+  }
 
-    .promocoesBtn{
-      width: 112px;
-      height: 39px;
-      margin-left: 80%;
-      cursor: pointer;
-    }
+  
 
-    .font-weight-light{
-      font-size: 27px;
-      color: #007bff;
-      position: relative;
-      left: 5px;
-      top: -5px;
-      }
+  .sizeImg{
+    width: 150px;
+    height: 150px;
+  }
 
-      .Separador .text-center{
-            margin-top: 42px;
-      }
+  .product{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .vejaBtn{
+    color: #007bff; 
+    border-color: #2700ff00;   
+    background-color: #bfd3e940; 
+    width: 112px;  height: 39px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    height: 37px; 
+    float: right;
+  }
+
+  .font-weight-light{
+    font-size: 27px;
+    color: #007bff;
+  }
+
+  .Separador{
+    margin-top: 43px;
+    margin-bottom: 25px;
+  }
+  
+  .prop{
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 13px;
+  }
+  
+
+
 /*MARCAS FAVORITAS START*/
+  .sizeMarcas{
+    width: 100px;
+    height: 100px;
+  }
 
-      .sizeMarcas{
-        width: 100px;
-        height: 100px;
-      }
+  .vip-marcas{
+    padding-right: 210px;
+    padding-left: 210px;
+    margin-right: 34px;
+  }
 
-      .vip-marcas{
-        margin-top: 5%;
-        margin-bottom: 5%;
-      }
+  .shadow{
+    width: 100px;
+    margin: 0 auto;
+    height: 100px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
 
-      .shadow{
-        width: 100px;
-        margin: 0 auto;
-        height: 100px;
-        background-color: #f5f5f5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 15px;
-       }
-      
-      .bottom {
-        box-shadow: 0px 15px 10px -15px #111;
-      }
+  .bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+  }
+
 
 /*PROMOÇÕES START*/
 
@@ -322,78 +289,65 @@ a .nav-item{
   }
 
   .textPromo{
-    font-weight: 800px;
-    font-size: 40px;
+    font-weight: 800;
+    font-size: 50px;
   }
 
-  .textPromo:hover{
+  .img-fluid{
+    width: 100%
+  }
+
+
+
+
+/* FOOTER CSS COMEÇO*/
+
+  .hamburguer{
+    height: 20px;
+    width: 36px;
+  }
+
+  .footer .payment{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+  }
+
+  .footer .payment li{
+    list-style-type:none;
+  }
+
+  .footer .payment li a {
     text-decoration: none;
-    background: red;
+    display: inline-block;
+    color: #007bff;
+    /* float: left; */
+    font-size: 25px;
+    padding: 10px 10px;
   }
 
+  .logoFooter{
+    margin-left: 0;
+    width: 137px;
+  } 
 
-/* FOOTER CSS */
+
 
   .footer {
-  padding: 50px 0 20px 0;
-  /* background-color: #35404f; */
-  color: #007bff;
-  margin-top: -10%;
+    padding: 50px 0 20px 0;
+    background-color: white;
+    color: #007bff;
   }
-
-  .footer, .row{
-    clear: both;
-  }
-  
-  .footer .title{
-    text-align: left;
-    color:#007bff;
-    font-size:25px;
-  }
-  .footer{
-    padding:0px;
-    margin:0px;
-  }
-  .footer .social-icon a{
-    display:inline-block;
-    color:#007bff;
-    font-size:25px;
-    padding:5px;
-  }
-
-  .social-icon{
-    margin-left: -18%;
-  }
-
-  .botaoInstagram:hover{
-    color: #e95950;
-  }
-
-  .botaoFacebook:hover{
-    color: #3b5998;
-  }
-
-  .botaoTwitter:hover{
-    color: #00aced;
-  }
-  .botaoPinterest:hover{
-    color: #cb2027;
-  }
+  .footer .title{text-align: left;color:#007bff;font-size:25px;}
 
 
-  .footer .acount-icon a{
-    display:block;
-    color:#007bff;
-    font-size:18px;
-    padding:5px;
-    text-decoration:none;
-  }
-  .footer .acount-icon .fa{
-    margin-right:25px;
-  }
+  .footer .social-icon{padding:0px;margin:0px;}
+  .footer .social-icon a{display:inline-block;color:#007bff;font-size:25px;padding:5px;}
+  .footer .acount-icon a{display:block;color:#007bff;font-size:18px;padding:5px;text-decoration:none;}
+  .footer .acount-icon .fa{margin-right:25px;}
 
 
-.footer .category a {
+  .footer .category a {
     text-decoration: none;
     color: #007bff;
     display: inline-block;
@@ -402,32 +356,87 @@ a .nav-item{
     border-radius:4px;
     margin-top: 6px;
     background-color: #f5f5f5;
-    /* border: solid 1px #007bff; */
+
 }
 
-.footer .payment{
-  margin:0px;
-  padding:0px;
-  list-style-type:none;
-}
-
-.footer .payment li{
-  list-style-type:none;
-}
-
-.footer .payment li a {
+  .footer .payment{margin:0px;padding:0px;list-style-type:none}
+  .footer .payment li{list-style-type:none}
+  .footer .payment li a {
     text-decoration: none;
     display: inline-block;
     color: #007bff;
-    float: left;
     font-size: 25px;
     padding: 10px 10px;
-}
+  }
 
-.logoFooter{
-  margin-left: 0;
-}
+  .separadorFooter{
+    margin-bottom: -44px;
+  }
 
+/* /ALTERAÇÕES DE WAGNER COMEÇO*/
+  /* .footer, .row{
+    clear: both;
+  }
+
+    .footer .title{
+      text-align: left;
+      color:#007bff;
+      font-size:25px;
+    }
+    .footer{
+      padding:0px;
+      margin:0px;
+    }
+    .footer .social-icon a{
+      display:inline-block;
+      color:#007bff;
+      font-size:25px;
+      padding:5px;
+    }
+
+    .social-icon{
+      margin-left: -18%;
+    }
+
+    .botaoInstagram:hover{
+      color: #e95950;
+    }
+
+    .botaoFacebook:hover{
+      color: #3b5998;
+    }
+
+    .botaoTwitter:hover{
+      color: #00aced;
+    }
+    .botaoPinterest:hover{
+      color: #cb2027;
+    }
+
+
+    .footer .acount-icon a{
+      display:block;
+      color:#007bff;
+      font-size:18px;
+      padding:5px;
+      text-decoration:none;
+    }
+    .footer .acount-icon .fa{
+      margin-right:25px;
+    }
+
+
+    .footer .category a {
+      text-decoration: none;
+      color: #007bff;
+      display: inline-block;
+      padding: 5px 20px;
+      margin: 1px;
+      border-radius:4px;
+      margin-top: 6px;
+      background-color: #f5f5f5;
+      /* border: solid 1px #007bff; */
+    /* /ALTERAÇÕES DE WAGNER FIM*/
 
 /*LOGIN*/
 .userBox{
@@ -441,20 +450,197 @@ a .nav-item{
 
 }
 
-.userBordas{
-  border: none;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-
-}
 
 /*PERGUNTAS*/
 .lista_perguntas{
   list-style-type:none;
 }
 
+/*CONTATO*/
+
+/* @media (max-width:576px) para Header.php */
+
+
+@media (max-width:575px){
+  
+  .todoSearch{
+    margin: auto;
+    margin-bottom: 11px;
+    left: 11px;
+  }
+
+  .botoesMenu{
+    margin: auto;
+    margin-left: -10px;
+  }
+
+  .hambMenu{
+    position: relative;
+    left: 140px;
+  }
+
+  .variados1Anuncios{
+    margin-left: -11px;
+  }
+
+  .vip-marcas{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 34px;
+  }
+
+
+  .marcas{
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 13px;
+    width: 86px;
+  }
+
+  .logoFooter{
+    text-align: center;
+  }
+
+  .minhaContaFooter{
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .footerCategorias{
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .footerPagto{
+    text-align: center;
+    margin-top: 12px;
+  }
+
+
+
+
+  
+
+
+}
+@media (min-width:576px){
+
+  .headerSearch{
+    margin: 0 auto;
+    padding-top: 2px;
+  }
+
+  .campoSearch{
+    position: relative;
+    right: 127px;
+    margin: 0 auto;
+  }
+
+  .input-group{
+    position: relative;
+    left: 0px;
+    margin: auto;
+  }
+
+  .vip-marcas{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 34px;
+  }
+
+  .todoSearch{
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: -3px;
+    left: 32px;
+  }
+
+  .form-control{
+    margin-left: -10px;
+  }
+
+  .botoesMenu{
+    margin: auto;
+    right: 132px;
+  }
+
+  .hambMenu{
+    position: relative;
+    left: 246px;
+  }
+
+
+}
+
+@media (min-width:768px){
+
+  .logo{
+    left: 15px;
+  }
+ 
+  .todoSearch{
+    top: 20px;
+    left: 23px;
+  }
+
+  .botoesMenu{
+    left: -13px;
+  }
+
+  .c-widget__header{
+    left: 32px;
+  }
+
+  .variados1Anuncios{
+    max-width: 100% !important;
+    position: relative;
+    right: 22px;
+  }
+  
+  .input-group{
+    position: relative;
+    left: 5px;
+    margin: 0 auto;
+  }
+
+  .nav-item{
+    position: relative;
+    left: 15px;
+  }
+
+  .cont-marcas{
+    margin-left: 65px;
+  }
+
+}
+
+
+
+@media (min-width:992px){
+
+.logo{
+  margin-left: -26px;
+}
+
+.c-widget__header{
+  left: 0px;
+}
+
+.vejaBtn{
+  position: relative;
+  right: 49px;
+}
+
+.cont-marcas{
+  position: relative;
+  right: 49px;
+}
+
+}
+
+/* ////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////// */
 /*CONTATO*/
 
 /*PÁGINA MASCULINO/FEMININO*/
@@ -632,352 +818,55 @@ a .nav-item{
   margin-left: 12%;
 }
 
+/* ////////////////////////////////////////////////////////////// */
 
-/*RESPONSIVIDADE*/
-
-@media (max-width:992px){
-
-  /*Header*/
-  header{
-    border-bottom: solid 0.5px #D8D8D8;
+/* PÁGINA LOGIN */
+  .campoLogin{
+  background-color: #eff4f9 !important;
   }
 
-  /*Botões Header*/
-
-  .barraDeBusca, .btnVender, .logoTexto, .botaoQuestion{
-    display: none;
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS PRODUTOS */
+  .Title1Product{
+    font-size: 30px;
+    color: #007bff !important;
   }
 
-  .botaoSearch{
-    width: 50px;
-    height: 50px;
-    margin-top: -9%;
-    margin-bottom: 3%;
-    margin-left: -15%;
+  .Title2Product{
+    font-size: 25px;
+    color: #007bff !important;
   }
 
-  .botaoLogin{
-    float: right;
-    width: 9%;
-    max-width: 8%;;
-    margin-top: -7%;
+  .campoProduct{
+    background-color: #eff4f9 !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS CATEGORIAS */
+  .Title1Category{
+    font-size: 30px;
+    color: #007bff !important;
   }
 
-  .vejaBtn{
-    margin-top: 10%;
+  .Title2Category{
+    font-size: 25px;
+    color: #007bff !important;
   }
 
-  /*Logo e nav*/
-
-  .logoSimbolo{
-    width: 60%;
-    margin-left: 270%;
-    margin-top: -40%;
+  .campoCategory{
+    background-color: #eff4f9 !important;
   }
-
-  .navbar-brand{
-    width: 10%;
-    margin: auto;
-  }
-  .navbar-toggler-icon{
-    float: left;
-  }
-
-  .navbar-light{
-    margin-top: -40px;
-    margin-bottom: 30px;
-  }
-
-  /*FOOTER*/
-
-  .social-icon{
-    margin-left: -20%;
-  }
-
-  .logoFooter{
-    margin-left: 8%;
-  }
-
-  /*PRODUTO*/
-
-  .imgProdutoSocial{
-    width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .imgProduto{
-    width: 40%;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .imgProdutoOculos{
-    width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .descricaoProduto{
-    margin-left: 20%;
-  }
-
-  .precoProduto{
-    margin-right: 20%;
-  }
-
-
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS CATEGORIAS */
+.Title1Brand{
+  font-size: 30px;
+  color: #007bff !important;
 }
 
-
-@media (max-width:768px){
-
-  /*Header*/
-  header{
-    border-bottom: solid 0.5px #D8D8D8;
-  }
-
-  /*Botões Header*/
-
-  .barraDeBusca, .btnVender, .logoTexto, .botaoQuestion{
-    display: none;
-  }
-
-  .botaoSearch{
-    width: 45px;
-    height: 45px;
-    position: relative;
-      left: 12%;
-      top: 53px;
-  }
-
-  .botaoLogin{
-    float: right;
-    width: 9%;
-    max-width: 8%;;
-    position: relative;
-      right: 0%;
-      top: 55px;
-  }
-
-  .vejaBtn{
-    margin-top: 15%;
-  }
-
-  .promocoesBtn{
-    width: 100%;
-    margin-left: 65%;
-  }
-
-  /*Logo e nav*/
-
-  .logoSimbolo{
-    width: 80%;
-    position: relative;
-      left: 75%;
-      top: 53px;
-  }
-
-  .navbar-brand{
-    width: 10%;
-    margin: auto;
-  }
-
-  .navbar-light{
-    margin-top: -8%;
-    margin-bottom: 7%;
-  }
-
-  /*MARCAS*/
-
-  .vip-marcas{
-    margin-left: 8%;
-  }
-
-  /*FOOTER*/
-
-  .social-icon{
-    margin-left: -20%;
-  }
-
-  .logoRS{
-    margin-top: 3%;
-    margin-left: 8%;
-  }
-
-  .footerCategorias, .logoFooter{
-    margin-left: 8%;
-  }
-
-  .footerPagto, .minhaConta{
-    margin-left: 15%;
-  }
-
-  .minhaConta{
-    margin-top: 6%;
-    margin-bottom: 10%;
-  }
-
-  
-  .logoFooter{
-    margin-top: 3%;
-  }
-
-  /*PRODUTO*/
-
-  .imgProduto{
-    width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .imgProdutoSocial{
-    width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .imgProdutoOculos{
-    width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .descricaoProduto{
-    margin-left: 12%;
-  }
-
-  .precoProduto{
-    margin-right: 5%;
-  }
-
-  .tituloCamisas{
-    margin-left: -230%;
-  }
-
-
+.Title2Brand{
+  font-size: 25px;
+  color: #007bff !important;
 }
 
-
-
-@media (max-width:568px){
-
-    /*Header*/
-    header{
-      border-bottom: solid 0.5px #D8D8D8;
-    }
-  
-    /*Botões Header*/
-  
-    .barraDeBusca, .btnVender, .logoTexto, .botaoQuestion{
-      display: none;
-    }
-  
-    .botaoSearch{
-      width: 40px;
-      height: 40px;
-      position: relative;
-        left: 34%;
-        top: -10px;
-    }
-  
-    .botaoLogin{
-      float: right;
-      width: 50%;
-      max-width: 100%;;
-      position: relative;
-        left: 450px;
-        top: 20px;
-    }
-  
-    .vejaBtn{
-      margin-top: 150%;
-    }
-  
-    .promocoesBtn{
-      width: 100%;
-      margin-left: 65%;
-    }
-  
-    /*Logo e nav*/
-  
-    .logoSimbolo{
-      width: 80%;
-      position: relative;
-        left: 120%;
-        top: 63px;
-    }
-  
-    .navbar-brand{
-      width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10%;
-    }
-  
-    .navbar-light{
-      width: 10%;
-      margin-top: -13%;
-      margin-bottom: 2%;
-      margin-left: 0.5%;
-    }
-
-    .col-xs-1{
-      margin-top: -8.7%;
-    }
-  
-    /*MARCAS*/
-  
-    .vip-marcas{
-      margin-left: 8%;
-    }
-
-    .sizeMarcas{
-      width: 50px;
-      height: 50px;
-    }
-
-    .shadow{
-      width: 60px;
-      height: 60px;
-      margin: 0;
-    }
-  
-    /*FOOTER*/
-  
-    .social-icon{
-      margin-left: -20%;
-    }
-  
-    .footerCategorias, .logoFooter{
-      margin-left: 8%;
-    }
-  
-    .footerPagto, .minhaConta{
-      margin-left: 15%;
-    }
-  
-    .minhaConta{
-      margin-top: 6%;
-      margin-bottom: 10%;
-    }
-  
-    
-    .logoFooter{
-      margin-top: 3%;
-    }
-  
-  
-  }
+.campoBrand{
+  background-color: #eff4f9 !important;
+}

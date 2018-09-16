@@ -10,7 +10,8 @@
     <!-- Bootstrap Projetoe-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" href="{{url('css/app.css')}}">
+    <link rel="stylesheet" href="{{url('css/estilo.css')}}">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -31,23 +32,52 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <!-- Styles Projeto -->
     <style>
-        .form-control:disabled, .form-control[readonly]{
-            background-color:#f8f9fa;
+        .form-control:disabled, .form-control[readonly]{    
+            background-color:#f8f9fawite;
         }
     </style>
   
 </head>
-
 <body>
     <div id="app">
-        <header id="top" class="main-header">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel">
+        <header id="top" class="headerMenu container-fluid main-header">
+            <nav class="linhaMenu row">
+                <div class="logo col-12 col-sm-12 col-md-2 col-lg-2">
+                    <img src="{{url('img/logo/logo-Cop')}}ia.png" alt="logotipo" class="logo">
+                </div>               
+                <div class="todoSearch col-12 col-sm-12 col-md-5 col-lg-5">
+                    <div class="row">
+                        <div class="col-2 col-sm-1 col-md-2 col-lg-2">
+                            <button class="btn btn-default btn-ps" type="button"></button>
+                        </div>
+                        <div class="col-10 col-sm-11 col-md-10 col-lg-10">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="logo col-4 col-sm-4 col-md-2 col-lg-12">
+                    <img src="{{url('img/logo/logo1.pn')}}g" alt="logotipo" class="logo">
+                </div> --}}
+                <div class="botoesMenu col-12 col-sm-12 col-md-5 col-lg-5">
+                    <button class="btn btn-default home-img" type="button";>
+                    </button>
+                    <button class="btn btn-default duvida-img" type="button">
+                    </button>
+                    <button class="btn btn-default entrar-img" type="button">
+                    </button>
+                    <input class="btnVender btn-primary" type="reset" value="Vender">
+                </div> 
+            </nav>
+
+            
+            {{-- <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel col-sm-12 col-md-12 col-lg-12"> --}}
+             <nav class="menuPrincipal navbar navbar-expand-md col-sm-12 col-md-12 col-lg-12"
                 <div class="container">
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                        <span class="navbar-toggler-icon"></span>
+                    </a> --}}
+                    <button class="hambMenu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        <img src="{{url('img/logo/hamburgu')}}er2.png" alt="logotipo" class="hamburguer">
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -158,14 +188,64 @@
                 </div>
             </nav>
         </header>
+        
 
         <main class="py-3 bg-white">
             @yield('content')
-        </main>
-
-        <footer id="bottom" class="main-footer ">
-            <div class="text-center m-auto">&copy; <?php echo "Digital House - Laravel - " .date('Y'); ?></div>
+        </main> 
+        <footer class="footer">
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="logoFooter col-sm-3">
+                        <img src="{{url('img/logo/logo.png')}}" alt="logotipo" class="logoFooter">
+                        <!-- <h4 class="title">Sumi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p> -->
+                        <ul class="social-icon">
+                            <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square botaoFacebook"></i></a>
+                            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram botaoInstagram"></i></a>
+                            <a href="https://twitter.com/" class="social"><i class="fab fa-twitter botaoTwitter"></i></a>
+                            <a href="https://br.pinterest.com/" class="social"><i class="fab fa-pinterest-square botaoPinterest"></i></i></a>
+                        </ul>
+                    </div>
+                    <div class="minhaContaFooter col-sm-3">
+                        <h4 class="minhaContaFooter">Minha Conta</h4>
+                        <span class="acount-icon">
+                            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> lista de Desejos</a>
+                            <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> Carrinho</a>
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
+                            <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Outros</a>
+                        </span>
+                    </div>
+                    <div class="footerCategorias col-sm-3">
+                        <h4 class="footerCategorias">Categorias</h4>
+                        <div class="category">
+                            <a href="#">Acessórios</a>
+                            <a href="#">Calças</a>
+                            <a href="#">Blusas</a>
+                            <a href="#">Kids</a>
+                        </div>
+                    </div>
+                    <div class="footerPagto col-sm-3">
+                        <h4 class="footerPagto">Métodos de Pagamento</h4>
+                        <p>xxxxxxxxxxxxxxxx.</p>
+                        <ul class="payment">
+                            <li><a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                {{-- <div class="row text-center"> © 2017. Made with  by Quarteto Fantástico.</div> --}}
+                <div class="text-center m-auto">&copy; <?php echo " © 2017. Made with  by Quarteto Fantástico. - " .date('Y'); ?></div>
+            </div>
+            {{-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> --}}
         </footer>
     </div>
 </body>
+
 </html>

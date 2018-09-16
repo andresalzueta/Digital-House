@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-<h1 align="center">{{ $msgtitulo }}</h1>
+<h1 align="center" class='Title1Category'>{{ $msgtitulo }}</h1>
 
 @if (isset($sucesso) && $sucesso)
     @php $msgclass="alert alert-success" @endphp
@@ -17,8 +17,8 @@
     <form class="form-group col-12" id="form" name="show_role" method="POST" action="{{$action}}" enctype="multipart/form-data">
         {{csrf_field()}}
         {{method_field($metodo)}}
-        <div class="form-group  {{ $msgclass }}" role="alert">
-            <h2 align="center">{{ $msgstatus }}</h2>
+        <div class="campoCategory form-group  {{ $msgclass }}" role="alert">
+            <h2 align="center" class='Title2Category'>{{ $msgstatus }}</h2>
         </div>
 
         <div class="row">
