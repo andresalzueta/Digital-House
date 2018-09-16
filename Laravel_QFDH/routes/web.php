@@ -106,4 +106,6 @@ Route::get('/middleware','HomeController@index')->middleware('auth');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/categories_pages','CategoryController@index');
 Route::get('/products_pages','ProductController@index');
+Route::get('/products_bybrand/{id?}','ProductController@indexBrand');
+Route::get('/products_bycategory/{id?}','ProductController@indexCategory');
 Route::get('/brands_pages','BrandController@index');

@@ -22,8 +22,8 @@
                         <!-- <h2>Produto 01</h2> -->
                         <h2>{{ $category->name }}</h2>
                         <p>{{ $category->description }}</p>
-                        <a href="{{ url('/') }}/category/read/{{ $category->id }}">
-                            <button type="button" onclick="location.href = {{ url('/') }}/category/read/{{ $category->id }}" name="{{ $category->name }}" class="btn btn-primary">{{ $category->name }}</button>
+                        <a href="{{ url('/') }}/products_bycategory/{{ $category->id }}">
+                            <button type="button" onclick="location.href = {{ url('/') }}/products_bycategory/{{ $category->id }}" name="{{ $category->name }}" class="btn btn-primary">{{ $category->name }}</button>
                         </a>                      	
                     </article>
                 @endforeach                
