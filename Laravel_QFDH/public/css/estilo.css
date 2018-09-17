@@ -213,7 +213,6 @@ top{
   }
 
   
-
   .sizeImg{
     width: 150px;
     height: 150px;
@@ -222,6 +221,11 @@ top{
   .product{
     text-align: center;
     margin-top: 10px;
+  }
+
+  .imgLink{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   .vejaBtn{
@@ -774,62 +778,64 @@ top{
 
 /*PÁGINA CATEGORIAS*/
 
-.divisorPagina{
-  width: 50%;
-  margin-left: 23%;
-  margin-bottom: -3%;
-}
+  .divisorPagina{
+    width: 50%;
+    margin-left: 23%;
+    margin-bottom: -3%;
+  }
 
-/*PÁGINA CATEGORIAS*/
+  /*PÁGINA CATEGORIAS*/
 
-#categorias{
-  margin-left: 25%;
-  margin-top: 5%;
-}
+  #categorias{
+    margin-left: 25%;
+    margin-top: 5%;
+  }
 
-.categoriaMasc, .categoriaFem, .categoriaKids{
-  width: 20%;
-}
+  .categoriaMasc, .categoriaFem, .categoriaKids{
+    width: 20%;
+  }
 
-.categoriaMasc{
-  float: left;
-  clear: both;
-  border: double 6px;
-  border-color: #BDBDBD;
-}
+  .categoriaMasc{
+    float: left;
+    clear: both;
+    border: double 6px;
+    border-color: #BDBDBD;
+  }
 
-.categoriaFem{
-  float: left;
-  margin-left: 0.5%;
-  border: double 6px;
-  border-color: #BDBDBD;
-}
+  .categoriaFem{
+    float: left;
+    margin-left: 0.5%;
+    border: double 6px;
+    border-color: #BDBDBD;
+  }
 
-.categoriaKids{
-  float: left;
-  margin-left: 0.5%;
-  border: double 6px;
-  border-color: #BDBDBD;
-}
+  .categoriaKids{
+    float: left;
+    margin-left: 0.5%;
+    border: double 6px;
+    border-color: #BDBDBD;
+  }
 
-.textoMasc{
-  float: left;
-  margin-left: 30%;
-}
-.textoFem{
-  float: left;
-  margin-left: 10%;
-}
-.textoKids{
-  float: left;
-  margin-left: 12%;
-}
+  .textoMasc{
+    float: left;
+    margin-left: 30%;
+  }
+  .textoFem{
+    float: left;
+    margin-left: 10%;
+  }
+  .textoKids{
+    float: left;
+    margin-left: 12%;
+  }
 
 /* ////////////////////////////////////////////////////////////// */
 
 /* PÁGINA LOGIN */
   .campoLogin{
-  background-color: #eff4f9 !important;
+    font-size: .9rem;
+    color: #007bff !important;
+    background-color: #eff4f9 !important;
   }
 
 /* ////////////////////////////////////////////////////////////// */
@@ -864,16 +870,23 @@ top{
   }
 /* ////////////////////////////////////////////////////////////// */
 /* PÁGINAS CATEGORIAS */
-.Title1Brand{
-  font-size: 30px;
-  color: #007bff !important;
-}
+  .Title1Brand{
+    font-size: 30px;
+    color: #007bff !important;
+  }
 
-.Title2Brand{
-  font-size: 25px;
-  color: #007bff !important;
-}
+  .Title2Brand{
+    font-size: 25px;
+    color: #007bff !important;
+  }
 
-.campoBrand{
+  .campoBrand{
+    background-color: #eff4f9 !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINA REGISTER */
+.TitleRegister{
+  font-size: .9rem;
+  color: #007bff !important;
   background-color: #eff4f9 !important;
 }

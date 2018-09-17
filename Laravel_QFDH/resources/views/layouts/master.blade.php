@@ -43,7 +43,9 @@
         <header id="top" class="headerMenu container-fluid main-header">
             <nav class="linhaMenu row">
                 <div class="logo col-12 col-sm-12 col-md-2 col-lg-2">
+                    <a href="{{route('home')}}">
                     <img src="{{url('img/logo/logo-Cop')}}ia.png" alt="logotipo" class="logo">
+                    </a>
                 </div>               
                 <div class="todoSearch col-12 col-sm-12 col-md-5 col-lg-5">
                     <div class="row">
@@ -69,13 +71,13 @@
                             <img class="duvida-img">
                         </a>
                     </button>
-                    <button class="btn btn-default" type="button">
+                    <button class="btn btn-default" type="button";>
                         <a href="{{route('login')}}">
                             <img class="entrar-img">
                         </a>
                     </button>
                     <a href="{{route('register')}}">
-                        <input href="{{route('register')}}"class="btnVender btn-primary" type="reset" value="Vender">
+                        <input href="{{route('register')}}"class="btnVender btn-primary" type="reset" value="Cadastrar">
                     </a>
                 </div> 
             </nav>
@@ -172,9 +174,9 @@
                                 {{-- <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li> --}}
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
+                                </li> --}}
                             @else
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -209,7 +211,9 @@
             <div class="container">
                 <div class="row">
                     <div class="logoFooter col-sm-3">
-                        <img src="{{url('img/logo/logo.png')}}" alt="logotipo" class="logoFooter">
+                        <a href="{{route('home')}}">
+                            <img src="{{url('img/logo/logo.png')}}" alt="logotipo" class="logoFooter">
+                        </a>
                         <!-- <h4 class="title">Sumi</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p> -->
                         <ul class="social-icon">
@@ -231,10 +235,13 @@
                     <div class="footerCategorias col-sm-3">
                         <h4 class="footerCategorias">Categorias</h4>
                         <div class="category">
-                            <a href="#">Acessórios</a>
-                            <a href="#">Calças</a>
-                            <a href="#">Blusas</a>
-                            <a href="#">Kids</a>
+                            <a href="http://localhost:8000/products_bycategory/4">Acessórios</a>
+                            <a href="http://localhost:8000/products_bycategory/2">Bolsas</a>
+                            <a href="http://localhost:8000/products_bycategory/3">Calças</a>
+                            <a href="http://localhost:8000/products_bycategory/1">Jaquetas</a>
+                            <a href="http://localhost:8000/products_bycategory/8">Kids</a>
+                            <a href="http://localhost:8000/products_bycategory/6">Óculos</a>
+                            <a href="http://localhost:8000/products_bycategory/7">Roupa Social</a>
                         </div>
                     </div>
                     <div class="footerPagto col-sm-3">
