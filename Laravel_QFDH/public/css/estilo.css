@@ -265,6 +265,10 @@ top{
     height: 100px;
   }
 
+  .sizeMarcas:active{
+    transform: translateY(4px);
+  }
+
   .vip-marcas{
     padding-right: 210px;
     padding-left: 210px;
@@ -384,71 +388,6 @@ top{
     margin-bottom: -44px;
   }
 
-/* /ALTERAÇÕES DE WAGNER COMEÇO*/
-  /* .footer, .row{
-    clear: both;
-  }
-
-    .footer .title{
-      text-align: left;
-      color:#007bff;
-      font-size:25px;
-    }
-    .footer{
-      padding:0px;
-      margin:0px;
-    }
-    .footer .social-icon a{
-      display:inline-block;
-      color:#007bff;
-      font-size:25px;
-      padding:5px;
-    }
-
-    .social-icon{
-      margin-left: -18%;
-    }
-
-    .botaoInstagram:hover{
-      color: #e95950;
-    }
-
-    .botaoFacebook:hover{
-      color: #3b5998;
-    }
-
-    .botaoTwitter:hover{
-      color: #00aced;
-    }
-    .botaoPinterest:hover{
-      color: #cb2027;
-    }
-
-
-    .footer .acount-icon a{
-      display:block;
-      color:#007bff;
-      font-size:18px;
-      padding:5px;
-      text-decoration:none;
-    }
-    .footer .acount-icon .fa{
-      margin-right:25px;
-    }
-
-
-    .footer .category a {
-      text-decoration: none;
-      color: #007bff;
-      display: inline-block;
-      padding: 5px 20px;
-      margin: 1px;
-      border-radius:4px;
-      margin-top: 6px;
-      background-color: #f5f5f5;
-      /* border: solid 1px #007bff; */
-    /* /ALTERAÇÕES DE WAGNER FIM*/
-
 /*LOGIN*/
 .userBox{
   color: #007bff;
@@ -459,12 +398,6 @@ top{
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
-}
-
-
-/*PERGUNTAS*/
-.lista_perguntas{
-  list-style-type:none;
 }
 
 /*CONTATO*/
@@ -852,6 +785,7 @@ top{
 
   .campoProduct{
     background-color: #eff4f9 !important;
+    border-color: transparent !important;
   }
 /* ////////////////////////////////////////////////////////////// */
 /* PÁGINAS CATEGORIAS */
@@ -867,6 +801,7 @@ top{
 
   .campoCategory{
     background-color: #eff4f9 !important;
+    border-color: transparent !important;
   }
 /* ////////////////////////////////////////////////////////////// */
 /* PÁGINAS CATEGORIAS */
@@ -882,11 +817,22 @@ top{
 
   .campoBrand{
     background-color: #eff4f9 !important;
+    border-color: transparent !important;
   }
 /* ////////////////////////////////////////////////////////////// */
 /* PÁGINA REGISTER */
-.TitleRegister{
-  font-size: .9rem;
-  color: #007bff !important;
-  background-color: #eff4f9 !important;
-}
+  .TitleRegister{
+    font-size: .9rem;
+    color: #007bff !important;
+    background-color: #eff4f9 !important;
+    border-color: transparent !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/*PERGUNTAS*/
+  .lista_perguntas{
+    list-style-type:none;
+  }
+
+  .card-header{
+    background-color: #eff4f9 !important;
+  }

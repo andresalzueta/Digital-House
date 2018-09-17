@@ -41,7 +41,7 @@
             </div>
             <div class="botaoVejaMais col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
                 <a href="http://localhost:8000/categories_pages">
-                    <input href="http://localhost:8000/categories_pages"class="vejaBtn" type="reset" value="Veja Mais">
+                    <input href="http://localhost:8000/categories_pages"class="vejaBtn btn-primary" type="reset" value="Veja Mais">
                 </a>
             </div>
         </nav>        
@@ -118,7 +118,7 @@
             </div>
             <div class="botaoVejaMais col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
                 <a href="http://localhost:8000/categories_pages">
-                    <input href="http://localhost:8000/categories_pages"class="vejaBtn" type="reset" value="Veja Mais">
+                    <input href="http://localhost:8000/categories_pages"class="vejaBtn btn-primary" type="reset" value="Veja Mais">
                 </a>
             </div>    
         </nav>        
@@ -128,52 +128,52 @@
             <div class="cont-prod col-12 col-sm-12 col-md-12 col-lg-12">
                 <section class="vip-products row">
                     <article  class="product col-6  col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <a class="imgLink" href="http://localhost:8000/products_bycategory/8"> 
+                        <a class="imgLink" href="http://localhost:8000/product/show/42"> 
                             <img src="img/Produtos/Ela-Kids/blusa-gap.jpg" class="sizeImg" alt="pdto 01">
                             <!-- <h2>Produto 01</h2> -->
                         </a>
                         <p>Jaquetas</p>
-                        <a href="http://localhost:8000/products_bycategory/8">ver mais</a>
+                        <a href="http://localhost:8000/product/show/42">ver mais</a>
                     </article>
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <a class="imgLink" href="http://localhost:8000/products_bycategory/8"> 
+                        <a class="imgLink" href="http://localhost:8000/product/show/48"> 
                             <img src="img/Produtos/Ela-Kids/calca1.jpg" class="sizeImg" alt="pdto 02">
                             <!-- <h2>Produto 02</h2> -->
                         </a>
                         <p>Calça Jeans</p>
-                        <a href="http://localhost:8000/products_bycategory/8">ver mais</a>
+                        <a href="http://localhost:8000/product/show/48">ver mais</a>
                     </article>
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <a class="imgLink" href="http://localhost:8000/products_bycategory/8"> 
+                        <a class="imgLink" href="http://localhost:8000/product/show/47"> 
                             <img src="img/Produtos/Ela-Kids/calca2.jpg" class="sizeImg" alt="pdto 03">
                             <!-- <h2>Produto 03</h2> -->
                         </a>
                         <p>Calça Jeans</p>
-                        <a href="http://localhost:8000/products_bycategory/8">ver mais</a>
+                        <a href="http://localhost:8000/product/show/47">ver mais</a>
                     </article>
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <a class="imgLink" href="http://localhost:8000/products_bycategory/8"> 
+                        <a class="imgLink" href="http://localhost:8000/product/show/43"> 
                             <img src="img/Produtos/Ela-Kids/calca4.jpg" class="sizeImg"  alt="pdto 04">
                             <!-- <h2>Produto 04</h2> -->
                         </a>
                         <p>Calça Jeans</p>
-                            
+                        <a href="http://localhost:8000/product/show/43">ver mais</a>   
                     </article>
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <a class="imgLink" href="http://localhost:8000/products_bycategory/8">
+                        <a class="imgLink" href="http://localhost:8000/product/show/46">
                             <img src="img/Produtos/Ela-Kids/tenis-polo.jpg" class="sizeImg"  alt="pdto 05">
                             <!-- <h2>Produto 05</h2> -->
                         </a>
                         <p>Sapatos</p>
-                        <a href="http://localhost:8000/products_bycategory/8">ver mais</a>
+                        <a href="http://localhost:8000/product/show/46">ver mais</a>
                     </article>
                     <article class="product col-6 col-xs-5 col-sm-2 col-md-2 col-lg-2">
-                        <a class="imgLink" href="http://localhost:8000/products_bycategory/8">
+                        <a class="imgLink" href="http://localhost:8000/product/show/45">
                             <img src="img/Produtos/Ela-Kids/shorts-destroyer.jpg" class="sizeImg"  alt="pdto 05">
                             <!-- <h2>Produto 05</h2> -->
                         </a>
                         <p>Bolsas</p>
-                        <a href="http://localhost:8000/products_bycategory/8">ver mais</a>
+                        <a href="http://localhost:8000/product/show/45">ver mais</a>
                     </article>
                 </section>
             </div>
@@ -282,7 +282,7 @@
             </div>
             <div class="botaoVejaMais col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
                 <a href="http://localhost:8000/products_bycategory/9">
-                    <input href="http://localhost:8000/products_bycategory/9"class="vejaBtn" type="reset" value="Veja Mais">
+                    <input href="http://localhost:8000/products_bycategory/9"class="vejaBtn btn-primary" type="reset" value="Veja Mais">
                 </a>
             </div>   
         </nav>        

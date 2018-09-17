@@ -49,11 +49,11 @@
                 </div>               
                 <div class="todoSearch col-12 col-sm-12 col-md-5 col-lg-5">
                     <div class="row">
-                        <div class="col-2 col-sm-1 col-md-2 col-lg-2">
-                            <button class="btn btn-default btn-ps" type="button"></button>
+                        <div class="col-2 col-sm-1 col-md-2 col-lg-1">
+                            <button class="btn-ps btn-default" type="button"></button>
                         </div>
                         <div class="col-10 col-sm-11 col-md-10 col-lg-10">
-                            <input type="text" class="form-control" placeholder="Search for...">
+                            <input type="text" name="searchData" class="form-control" placeholder="Search for...">
                         </div>
                     </div>
                 </div>
