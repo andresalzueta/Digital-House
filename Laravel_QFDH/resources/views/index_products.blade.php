@@ -23,16 +23,15 @@
                         <!-- <h2>Produto 01</h2> -->
                         <h2>{{ $product->name }}</h2>
                         <p>{{ $product->description }}</p>
-                        <a href="{{ url('/') }}/product/read/{{ $product->id }}">
+                        <a href="{{ url('/') }}/product/show/{{ $product->id }}">
                             <button type="button" onclick="location.href = {{ url('/') }}/product/read/{{ $product->id }}" name="{{ $product->name }}" class="btn btn-primary">{{ $product->name }}</button>
                         </a>                      	
                     </article>
                 @endforeach                
             </section>
-            <p>Criado em 05/09/2018.</p>
 
             {{ $products->links() }}
-            <p>link de paginação</p>
+            
         </div>
     </div>
 @endsection
