@@ -194,6 +194,36 @@ class ProductController extends Controller
         ;
     }
 
+    public function show($id) {
+        // 
+        $product = Product::find($id);
+
+        $metodo = "GET";
+        $msgtitulo = "Produto disponível, para inserí-lo no carrinho clique no botão comprar";
+        $msgbotao = "Comprar ->";
+        $sucesso = null;
+        $action=url('/')."/product/select/$product->id";
+        $view="show_product";
+
+        if ($product) {  
+            $msgstatus = "Confira os dados abaixo";
+        } else {
+            $msgstatus = "Produto não localizada";
+            $product = new Product;
+        }
+
+        return view( $view )
+            ->with('sucesso',$sucesso)
+            ->with('metodo',$metodo)
+            ->with('action',$action)
+            ->with('msgtitulo',$msgtitulo)   
+            ->with('msgstatus',$msgstatus)
+            ->with('msgbotao',$msgbotao)
+            ->with('product',$product)
+        ;
+    }
+
+
     public function edit($id) {
         // 
         $product = Product::find($id);

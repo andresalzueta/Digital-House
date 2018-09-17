@@ -16,10 +16,10 @@
         </div>
         
         <div class="container-fluid mt-2 justify-content-center">
-            <section class="vip-products row ">      
+            <section class="vip-products row justify-content-left">      
                 @foreach($brands as $brand )
                     <article class="product col-xs-12 col-sm-6 col-md-4 col-lg-3 center">
-                        <img src="{{ $brand->image }}" class="sizeImg" alt="{{ $brand->name }}" width="265px" height="265px">
+                        <img src="{{ url('/') }}/{{ $brand->image }}" class="sizeImg" alt="{{ $brand->name }}" width="265px" height="265px">
                         <!-- <h2>Produto 01</h2> -->
                         <h2>{{ $brand->name }}</h2>
                         <p>{{ $brand->description }}</p>
@@ -29,10 +29,9 @@
                     </article>
                 @endforeach                
             </section>
-            <p>Criado em 05/09/2018.</p>
 
             {{ $brands->links() }}
-            <p>Note que basta incluir o link de paginação acima.</p>
+
         </div>     
 
     </div>

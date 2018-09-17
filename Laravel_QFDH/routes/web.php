@@ -74,7 +74,6 @@ Route::middleware(['auth'])->group (Function() {
         Route::get('/brand/predelete/{id?}','BrandController@preDelete');
         Route::delete('/brand/delete/{id?}','BrandController@delete');
         // Rotas do CRUD de Produtos
-        
         Route::get('/products/{id?}','ProductController@directory');
         Route::get('/product/new','ProductController@new');
         Route::put('/product/create','ProductController@create');
@@ -112,3 +111,4 @@ Route::get('/products_pages','ProductController@index');
 Route::get('/products_bybrand/{id?}','ProductController@indexBrand');
 Route::get('/products_bycategory/{id?}','ProductController@indexCategory');
 Route::get('/brands_pages','BrandController@index');
+Route::get('/product/show/{id?}','ProductController@show');
