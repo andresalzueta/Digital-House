@@ -56,7 +56,7 @@
           <div class="card-body">
               Especializada em programas de fidelidade com o cliente, a Multiplus possui um sistema em que todas as compras de produtos e serviços feitas nos parceiros membros da rede podem se transformar em pontos que poderão ser resgatados posteriormente.
               <br>
-              A cada R$ 1 em compras você receberá 3 pontos Multiplus. Essa proporção pode mudar em algumas ocasiões devido às promoções. Para ganhar seus pontos, você deve necessariamente efetuar a compra pelo link: www.dafiti.com.br/multiplus.
+              A cada R$ 1 em compras você receberá 3 pontos Multiplus. Essa proporção pode mudar em algumas ocasiões devido às promoções. Para ganhar seus pontos, você deve necessariamente efetuar a compra pelo link: www.qhdh.com.br/multiplus.
               <br>
               Após a finalização, os pontos serão creditados na sua conta em até 30 dias. Para consultar seu saldo ou resgatá-lo, acesse o site da Multiplus e solicite um extrato ou a troca dos pontos por um cupom.
               <br>
@@ -74,7 +74,7 @@
               <br>
               Multiplus Fidelidade Fale Conosco
               <br>
-              Importante! A compra de produtos marketplace não acarreta em acúmulo de pontos Multiplus. No caso de compras mistas, serão atribuídos pontos considerando apenas produtos Dafiti.
+              Importante! A compra de produtos marketplace não acarreta em acúmulo de pontos Multiplus. No caso de compras mistas, serão atribuídos pontos considerando apenas produtos Quarteto Fantástico DH.
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@
           <div class="card-body">
               - Nem todos os produtos fazem parte da Black Friday. Os itens participantes estarão identificados com o selo da Black Friday durante o período de vigência da promoção.
             <br>
-              - A Dafiti comercializa produtos de parceiros por meio do marketplace. Os itens participantes da Black Friday estarão identificados com o selo da campanha.
+              - A QFDH comercializa produtos de parceiros por meio do marketplace. Os itens participantes da Black Friday estarão identificados com o selo da campanha.
             <br> 
               - Os descontos dos produtos participantes da Black Friday não são cumulativos com outras promoções ou cupons vigentes no site.
             <br>
@@ -117,9 +117,9 @@
   <div class="row">
     <div class="c-widget__header col-12">
         <div class="text-center" >
-          <a href="contato.php">Entrar em Contato</a>
+          <a href="{{route('contato')}}">Entrar em Contato</a>
           <br><br>
-          <a  href="index.html">Voltar Home</a>
+          <a  href="http://localhost:8000/home">Voltar Home</a>
       </div>
     </div>
   </div>

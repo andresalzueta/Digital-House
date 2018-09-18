@@ -102,7 +102,7 @@
                 <div class="text-center" >
                   <a href="contato.php">Entrar em Contato</a>
                   <br><br>
-                  <a  href="index.html">Voltar Home</a>
+                  <a  href="{{route('home')}}">Voltar Home</a>
               </div>
             </div>
           </div>

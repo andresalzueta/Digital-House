@@ -117,8 +117,8 @@
                 <p class="font-weight-light">Destaques Kids</p>
             </div>
             <div class="botaoVejaMais col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
-                <a href="http://localhost:8000/categories_pages">
-                    <input href="http://localhost:8000/categories_pages"class="vejaBtn btn-primary" type="reset" value="Veja Mais">
+                <a href="http://localhost:8000/products_bycategory/8">
+                    <input href="http://localhost:8000/products_bycategory/8"class="vejaBtn btn-primary" type="reset" value="Veja Mais">
                 </a>
             </div>    
         </nav>        

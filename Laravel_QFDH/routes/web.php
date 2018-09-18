@@ -99,6 +99,7 @@ Route::middleware(['auth'])->group (Function() {
 Auth::routes();
 
 Route::get('/perguntas', 'rotasController@perguntas')->name('perguntas');
+Route::get('/contato', 'rotasController@contato')->name('contato');
 // Route::get('/login', 'rotasController@login')->name('login');
 
 //para requerer autenticação
@@ -112,3 +113,4 @@ Route::get('/products_bybrand/{id?}','ProductController@indexBrand');
 Route::get('/products_bycategory/{id?}','ProductController@indexCategory');
 Route::get('/brands_pages','BrandController@index');
 Route::get('/product/show/{id?}','ProductController@show');
+Route::get('search','ProductsController@search');

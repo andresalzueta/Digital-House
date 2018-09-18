@@ -11,8 +11,20 @@ class rotasController extends Controller
         return view('perguntas');
     }
 
-    public function login(){
+    public function contato(){
 
-        return view('login');
+        return view('contato');
     }
+
+    //////////////////////tete para campo search//////////////////////////
+    // public function query(Request $request){
+    //     $dados = $request->dados;
+
+    //     $data= DB::table('products')->join('products.product_id')
+    //     ->where()
+    // }
+
+    // public function search(Request $request){
+    //     searchData = $request->searchData;
+    //////////////////////tete para campo search//////////////////////////
 }
