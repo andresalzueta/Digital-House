@@ -204,62 +204,62 @@
         <div class="cont-marcas">
             <section class="vip-marcas row">
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/2" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/2" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/adidas.jpg" alt="adidas">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/4" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/4" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/Chanel.jpg" alt="Chanel">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/3" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/3" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/asics.jpg" alt="asics">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/8" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/8" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/Giorgio-Armani.jpg" alt="Giogio Armani">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/5" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/5" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/colcci.jpg" alt="colcci">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/7" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/7" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/fossil.jpg" alt="fossil">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/10" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/10" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/guess.jpg" alt="guess">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/11" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/11" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/Louis-Vuitton-Logo.jpg" alt="Louis Vuitton">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/17" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/17" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/michael-kors.png" alt="michael-kors">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/13" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/13" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/nike.jpg" alt="nike">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/12" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/12" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/mormaii.jpg" alt="mormaii">
                     </a>
                 </article>
                 <article  class="marcas col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="http://localhost:8000/products_bybrand/5" class="shadow bottom" >
+                    <a href="http://localhost:8000/products_bybrand/5" class="marcasImg shadow bottom" >
                         <img class="sizeMarcas" src="img/Produtos/Marcas/Gucci.jpg" alt="Gucci">
                     </a>
                 </article>

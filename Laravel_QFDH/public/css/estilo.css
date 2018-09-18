@@ -221,11 +221,38 @@ top{
   .product{
     text-align: center;
     margin-top: 10px;
+    overflow: hidden;
   }
+
+  .product .sizeImgPromo{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .product:hover .sizeImgPromo{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
 
   .imgLink{
     padding-left: 0px !important;
     padding-right: 0px !important;
+    overflow: hidden;
+  }
+
+  .imgLink .sizeImg{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .imgLink:hover .sizeImg{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .vejaBtn{
@@ -265,14 +292,34 @@ top{
     height: 100px;
   }
 
-  .sizeMarcas:active{
+  sizeMarcas:active{
     transform: translateY(4px);
+  }
+
+  .marcasImg{
+    overflow: hidden;
+  }
+  
+  .marcasImg {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .marcasImg:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .vip-marcas{
     padding-right: 210px;
     padding-left: 210px;
     margin-right: 34px;
+  }
+
+  .marcasImg{
+    overflow: hidden;
   }
 
   .shadow{
@@ -298,6 +345,8 @@ top{
     height: 110px;
     margin-bottom: 30px;
   }
+
+  
 
   .promo{
     margin-top: 40px;

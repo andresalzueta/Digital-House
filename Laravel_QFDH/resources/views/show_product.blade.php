@@ -17,7 +17,7 @@
     <form class="form-group col-12" id="form" name="form_role" method="POST" action="{{$action}}" enctype="multipart/form-data">
         {{csrf_field()}}
         {{method_field($metodo)}}
-        <div class="form-group  {{ $msgclass }}" role="alert">
+        <div class="campoProduct form-group  {{ $msgclass }}" role="alert">
             <h2 align="center" class="Title2Product">{{ $msgstatus }}</h2>
         </div>
         <div class="row">

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container-fluid">
     <div class="col-lg-12">
       <div class="userBox center-block">
         <form action="https://www.linkli.com">
