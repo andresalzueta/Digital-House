@@ -130,7 +130,7 @@
                                 </div>
                             </li>
                             <!-- Dropdown -->
-                            <li class="nav-item dropdown">
+                            {{-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ url('/') }}/products" id="navbardrop" data-toggle="dropdown">
                                 Pedidos
                                 </a>
@@ -139,9 +139,9 @@
                                     <a class="dropdown-item" href="{{ url('/') }}/orders">Filtrar Pedidos</a>
                                     <a class="dropdown-item" href="{{ url('/') }}/order/new">Inserir Pedido</a>
                                 </div>
-                            </li>
+                            </li> --}}
                             <!-- Dropdown -->
-                            <li class="nav-item dropdown">
+                            {{-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ url('/') }}/movies" id="navbardrop" data-toggle="dropdown">
                                 Clientes
                                 </a>
@@ -150,10 +150,10 @@
                                     <a class="dropdown-item" href="{{ url('/') }}/customers">Filtrar Clientes</a>
                                     <a class="dropdown-item" href="{{ url('/') }}/customer/new">Inserir cliente</a>
                                 </div>
-                            </li>
+                            </li> --}}
 
                             <!-- Dropdown -->
-                            <li class="nav-item dropdown">
+                            {{-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ url('/') }}/users" id="navbardrop" data-toggle="dropdown">
                                 Usuários
                                 </a>
@@ -163,7 +163,7 @@
                                     <a class="dropdown-item" href="{{ url('/') }}/roles">Exibir Funções</a>
                                     <a class="dropdown-item" href="{{ url('/') }}/role/new">Inserir Função</a>
                                 </div>
-                            </li>
+                            </li> --}}
                         </ul>
 
                         <!-- Right Side Of Navbar -->
