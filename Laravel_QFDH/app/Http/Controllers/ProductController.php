@@ -20,7 +20,7 @@ class ProductController extends Controller
         $products = Product::orderBy('name')->paginate(8);
         //$products = Product::inRandomOrdery()->paginate(10);
         $metodo = "GET";
-        $msgtitulo = "Index dos Produtos";
+        $msgtitulo = "Nossos Produtos";
         $msgstatus = "Escolha um produto de sua preferência";
         
         return view('index_products')

@@ -37,7 +37,7 @@
     <div class="bug container-fluid">
         <nav class="navbarVeja row">
             <div class="c-widget__header col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <p class="font-weight-light">Variedades</p>
+                <p class="font-weight-light">O que você procura?</p>
             </div>
             <div class="botaoVejaMais col-6  col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
                 <a href="http://localhost:8000/categories_pages">

@@ -22,7 +22,7 @@ class BrandController extends Controller
         //$brands = Brand::inRandomOrdery()->paginate(10);
 
         $metodo = "GET";
-        $msgtitulo = "Index das Marcas";
+        $msgtitulo = "Nossas Marcas";
         $msgstatus = "Escolha uma marca de sua preferência";
         
         return view('index_brands')
