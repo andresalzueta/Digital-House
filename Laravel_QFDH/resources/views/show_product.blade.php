@@ -20,78 +20,34 @@
         <div class="campoProduct form-group  {{ $msgclass }}" role="alert">
             <h2 align="center" class="Title2Product">{{ $msgstatus }}</h2>
         </div>
-        <div class="row">
-            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                <label for="id">ID do Produto</label>
-                <input type="number" class="form-control disabled" id="id" name="id" min="0" step="1" value="{{ $product->id }}" placeholder="ID" readonly>
-            </div>
-            <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <label for="name">Nome do Produto</label>
-                <input type="text" class="form-control" name="name" id="name" value="{{ $product->name }}" placeholder="Insira Nome de Produto" readonly>
-            </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                <label for="product_id">Código do Produto</label>
-                <input type="text" class="form-control disabled" id="product_id" name="product_id" value="{{ $product->product_id }}" placeholder="Código">
-            </div>
-            <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <label for="description">Descrição do Produto</label>
-                <input type="text" class="form-control" id="description" name="description" value="{{ $product->description }}" placeholder="Insira descrição do Produto" readonly>            
-            </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <label for="category_id">Categoria</label>
-                <input type="text" class="form-control disabled" id="category_id" name="category_id" value="{{ $product->category['name']}}" placeholder="Categoria">
-            </div>
-            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <label for="brand_id">Marca</label>
-                <input type="text" class="form-control disabled" id="brand_id" name="brand_id" value="{{ $product->brand['name']}}" placeholder="Marca">
-            </div>
-            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <label for="price">Preço</label>
-                <input type="number" class="form-control disabled" id="price" name="price" min="0" value="{{ $product->price }}" placeholder="Preço">
-            </div>
-
-        </div>
 
         <div class="row">
-            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                <label for="active">Ativa (Sim/Não)</label>
-                <input type="hidden" class="form-control" id="active" name="active" value="0" readonly>
-                @if (isset($product->active) && $product->active)
-                    <input type="checkbox" class="form-control" id="active" name="active" value="1" checked="{{ $product->active }}" placeholder="Ativo" readonly>    
-                @else
-                    <input type="checkbox" class="form-control" id="active" name="active" value="1" placeholder="Ativo" readonly>    
-                @endif
+            <div class="col-3">
+                <img src="{{ url('/') }}/{{ $product->image }}" class="figure-img img-fluid rounded imgProduto" alt="{{ $product->name }}">
             </div>
-            <div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <label for="image">Imagem do Produto</label>
-                <img src="{{ url('/') }}/{{ $product->image }}" class="sizeImg" alt="{{ $product->name }}" width="265px" height="265px">
-            </div>
-        </div>
             
-        <div class="row">
-            <div class="form-group col-12">    
-            @if (count($errors) > 0 ) 
-                <div class="alert alert-danger">
-                    <ul> 
-                        @foreach($errors->all() as  $error)
-                        <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
-            </div>    
-        </div>
-        <div class="row"> 
-            <div class="form-group col-12 ">
-                <button type="submit" name="submit" class="btn btn-primary">{{ $msgbotao }}</button>	
+            <div class="col-1">
+                
+            </div>
+            
+            <div class="col-4">
+                    <h4 style="">{{ $product->name }}</h2>
+                    <p style="">Código: {{ $product->product_id }}</p>
+                    <p>Marca: {{ $product->brand['name']}}</p>    
+                    <p>Categoria: {{ $product->category['name']}}</p>
+            
+            </div>
+
+            <div class="col-3">
+                    <button type="submit" name="submit" class="btn btn-primary ">
+                                <h4 style="text-align: center;">R$ {{ $product->price }}</h2>
+                                <h6 style="text-align: center;">em até 5x sem juros</h6>
+                                <p class="textoEuQuero"><i class="fas fa-shopping-cart"></i>   Eu quero!</p
+                                
+                                {{ $msgbotao }}
+                    </button>           
             </div>
         </div>
-
-        <p>Criado em 09/09/2018.</p>
     </form>
 </div>
 </div>

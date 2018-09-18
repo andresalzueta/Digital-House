@@ -202,7 +202,8 @@ class ProductController extends Controller
         $msgtitulo = "Produto disponível, para inserí-lo no carrinho clique no botão comprar";
         $msgbotao = "Comprar ->";
         $sucesso = null;
-        $action=url('/')."/product/select/$product->id";
+        $action=url('/')."/register";
+        //$action=url('/')."/product/select/$product->id";
         $view="show_product";
 
         if ($product) {  
