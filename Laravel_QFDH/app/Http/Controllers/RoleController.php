@@ -17,7 +17,7 @@ class RoleController extends Controller
         //$roles = Role:inRandomOrdery()->paginate(10);
 
         $metodo = "GET";
-        $msgtitulo = "Index das Funções de Tipo de Usuário";
+        $msgtitulo = "Funções de Tipo de Usuário";
         $msgstatus = "Escolha Exibir, Editar ou Excluir";
         
         return view('index_roles')
