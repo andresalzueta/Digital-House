@@ -10,12 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home', function () {
+Route::get('/home2', function () {
     return view('home');
 });
 
@@ -98,6 +97,7 @@ Route::middleware(['auth'])->group (Function() {
 
 Auth::routes();
 
+
 Route::get('/perguntas', 'rotasController@perguntas')->name('perguntas');
 Route::get('/contato', 'rotasController@contato')->name('contato');
 // Route::get('/login', 'rotasController@login')->name('login');
@@ -106,7 +106,7 @@ Route::get('/contato', 'rotasController@contato')->name('contato');
 Route::get('/middleware','HomeController@index')->middleware('auth');
 
 //não requer autenticação
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'rotasController@home')->name('home');
 Route::get('/categories_pages','CategoryController@index');
 Route::get('/products_pages','ProductController@index');
 Route::get('/products_bybrand/{id?}','ProductController@indexBrand');
