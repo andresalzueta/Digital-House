@@ -103,8 +103,12 @@
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="{{ url('/') }}/brands_pages">Listar Marcas</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/brands">Filtrar Marcas</a>                                  
-                                    <a class="dropdown-item" href="{{ url('/') }}/brand/new">Inserir Marca</a>
+                                    @if ( auth()->check() )
+                                       @if (auth()->user()->hasRole('Admin'))
+                                            <a class="dropdown-item" href="{{ url('/') }}/brands">Filtrar Marcas</a>                                  
+                                            <a class="dropdown-item" href="{{ url('/') }}/brand/new">Inserir Marca</a>
+                                        @endif
+                                    @endif                                            
                                 </div>
                             </li>
                             <!-- Dropdown -->
@@ -114,8 +118,13 @@
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="{{ url('/') }}/categories_pages">Listar Categorias</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/categories">Filtrar Categorias</a>                                  
-                                    <a class="dropdown-item" href="{{ url('/') }}/category/new">Inserir Categoria</a>
+                                    @if ( auth()->check() )
+                                         @if (auth()->user()->hasRole('Admin'))
+                                            <a class="dropdown-item" href="{{ url('/') }}/categories">Filtrar Categorias</a>                                  
+                                            <a class="dropdown-item" href="{{ url('/') }}/category/new">Inserir Categoria</a>
+                                         @endif
+                                    @endif                                            
+
                                 </div>
                             </li>
                             <!-- Dropdown -->
@@ -125,45 +134,53 @@
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="{{ url('/') }}/products_pages">Listar Produtos</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/products">Filtrar Produtos</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/product/new">Inserir Produto</a>
-                                </div>
+                                    @if ( auth()->check() )
+                                         @if (auth()->user()->hasRole('Admin'))
+                                            <a class="dropdown-item" href="{{ url('/') }}/products">Filtrar Produtos</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/product/new">Inserir Produto</a>
+                                        @endif
+                                    @endif                                            
+                                    </div>
                             </li>
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/products" id="navbardrop" data-toggle="dropdown">
-                                Pedidos
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ url('/') }}/orders_pages">Listar Pedidos</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/orders">Filtrar Pedidos</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/order/new">Inserir Pedido</a>
-                                </div>
-                            </li>
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/movies" id="navbardrop" data-toggle="dropdown">
-                                Clientes
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ url('/') }}/customers_pages">Listar Clientes</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/customers">Filtrar Clientes</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/customer/new">Inserir cliente</a>
-                                </div>
-                            </li>
+                            @if ( auth()->check() )
+                                @if (auth()->user()->hasRole('Admin'))
+                                    <!-- Dropdown -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="{{ url('/') }}/products" id="navbardrop" data-toggle="dropdown">
+                                        Pedidos
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="{{ url('/') }}/orders_pages">Listar Pedidos</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/orders">Filtrar Pedidos</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/order/new">Inserir Pedido</a>
+                                        </div>
+                                    </li>
+                                    <!-- Dropdown -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="{{ url('/') }}/movies" id="navbardrop" data-toggle="dropdown">
+                                        Clientes
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="{{ url('/') }}/customers_pages">Listar Clientes</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/customers">Filtrar Clientes</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/customer/new">Inserir cliente</a>
+                                        </div>
+                                    </li>
 
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ url('/') }}/users" id="navbardrop" data-toggle="dropdown">
-                                Usuários
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ url('/') }}/users">Exibir Usuários</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/user/new">Inserir Usuário</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/roles">Exibir Funções</a>
-                                    <a class="dropdown-item" href="{{ url('/') }}/role/new">Inserir Função</a>
-                                </div>
-                            </li>
+                                    <!-- Dropdown -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="{{ url('/') }}/users" id="navbardrop" data-toggle="dropdown">
+                                        Usuários
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="{{ url('/') }}/users">Exibir Usuários</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/user/new">Inserir Usuário</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/roles">Exibir Funções</a>
+                                            <a class="dropdown-item" href="{{ url('/') }}/role/new">Inserir Função</a>
+                                        </div>
+                                    </li>
+                                @endif
+                            @endif
                         </ul>
 
                         <!-- Right Side Of Navbar -->
