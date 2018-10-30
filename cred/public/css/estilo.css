@@ -1,0 +1,1203 @@
+.video1{
+  margin-top: 41px;
+  width: 320px;
+  height: 182px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000d1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.bug{
+  width: 103% !important;
+}
+.Separador{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+/*banners*/
+.banner1{
+  background-color: #f8f8f800;
+}
+
+.img-fluid1{
+  background-image:   url(../img/banners/ex3.jpg);
+  
+  height: 528px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.img-fluid2{
+  background-image:   url(../img/banners/banner-Copia.jpg);
+
+  height: 393px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
+
+/*/////////////////////Header - Introduction//////////////////////// */
+  .contHeader{
+    position: fixed;
+    bottom: 609.587px;
+    top: 0px;
+    right: 0px;
+    background-color: #0000001f;
+    height: 151px;
+  }
+
+  .navbar{
+    background-color: #0000001c;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+  }
+  .textIntro{
+    top: 163px;
+  }
+  .textHeader{
+    color: #0f2055;
+  }
+  .dropdown-menu.show{
+    top: 34px;
+    background-color: #0000001c;
+  }
+  .menuheader{
+    margin-left: 275px;
+  }
+  
+
+  
+
+
+
+/*/////////////////////section about//////////////////////// */
+
+  .titles{
+    font-family: VeneerClean-soft, Arial, sans-serif;
+    font-size: 37px;
+    color: #102156;
+    margin-top: 22px;
+    padding-right: 19px;
+  }
+
+  .textAbout{
+    background-color: transparent;
+    color: #818181;
+    height: 240px;
+    left: -15px;
+    top: -47px;
+    text-align: center;
+  }
+
+  .titleAbout{
+    margin-top: 37px;
+  }
+
+
+/*/////////////////////section history//////////////////////// */
+
+  /*Nossa História*/
+  .boxHistory{
+    height: 681px;
+    background-color: #f7f7f7; 
+  }
+
+  .ourHistory{
+    /* background-color: #182142; */
+    height: 240px;
+    left: -15px;
+    top: -47px;
+    text-align: center;
+
+  }
+
+  .mainTitles2{
+    font-family: VeneerClean-Soft,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    color: black;
+    margin-bottom: 13px;
+    text-align: center;
+    
+  } 
+
+  .textsHistoryRight{ 
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 12px;
+    font-size: 1.00rem;
+    font-weight: 300;
+  }
+  .rowtextsHistoryRight{
+    top: 0px;
+    bottom: 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .textsHistoryLeft{ 
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 12px;
+    font-size: 1.00rem;
+    font-weight: 300;    
+  }
+  .rowtextsHistoryLeft{
+    left: 47px;
+    top: 0px;
+    bottom: 13px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .sizeImg{
+    width: 160px;
+    height: 150px;
+    margin-top: 17px;
+  }
+
+/*/////////////////////section business model//////////////////////// */
+  .businessCont{
+    background-color: #f1f2f4;
+    padding-bottom: 33px;
+  }
+
+  
+/*/////////////////////section howorks//////////////////////// */
+  .bannerCarrossel{
+    padding: 0;
+    margin-top: 30px;
+    /* margin-top: 126px; */
+  }
+
+  .textWhy{
+    background-color: transparent;
+    color: #818181;
+    height: 206px;
+    left: -15px;
+    top: -47px;
+    text-align: center;
+    padding: 29px;
+  }
+
+/*/////////////////////section world//////////////////////// */
+  .textWorld{
+    background-color: transparent;
+    color: #818181;
+    height: 40px;
+  }
+
+  .newsField{
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+
+  .sectionPhotos{
+    height: 450px;
+  }
+
+
+
+
+/*/////////////////////Footer//////////////////////// */
+  .social{
+    color:#102156;
+  }
+
+  .img-footer{
+    background-image:   url(../img/Banners/ex5.jpg);
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .logoFooter{
+    margin-left: 0;
+    width: 137px;
+    color: #102156;
+    text-align: center;
+    margin-top: 1px;
+    
+    
+  } 
+
+
+/*////////////////////////////////////////////////PÁGINA CONTATO/////////////////////////////////////////////////////////////*/
+
+  .userBox{
+    color: #102156;
+    background-color: #f1f5f8;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 130px;
+
+  }
+
+  .contactLabel{
+    margin-top: 25px;
+  }
+
+  .fieldLabel{
+    text-align: center;
+    border-right-width: 30px;
+    border-left-width: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+
+
+
+
+
+/*////////////////////////////////////////////////FIM CRED/////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*Font Style*/
+.img-fluid{
+  width: 100%
+}
+
+
+.main-header .logo{
+  height: 73px;
+  width: 121px;
+}
+
+/* HEADER */
+
+
+
+
+.botoesMenu{
+  
+    margin-right: 0px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+  margin-top: 23px;
+  text-align: right;
+  color:#0f2055;
+}
+
+.btnVender{
+  margin-left: 57px;
+  color: #007bff;
+  color: #007bff; border-color: #2700ff00;   
+  background-color: #007bff; 
+  width: 112px;  
+  height: 39px;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+  height: 37px;
+}
+
+
+.btn.btn-default{
+    /* border-bottom-width: 26px;
+    border-right-width: 15px; */
+    background-color: transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border: none;
+}
+
+.form-control{
+  margin-left: -20px;
+  font-size: 14px; 
+  background-color: #bfd3e940; 
+  border:none; width: 302px; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+}
+.linhaMenu{
+  background-color: white;
+}
+
+
+.MenuPrincipal{
+  background-color: transparent;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.04);
+  box-shadow: 0 2px 4px rgba(0,0,0,.04);
+  /* z-index: 10;  */
+}
+
+
+
+
+
+/* Botões Menu header */
+  .headerMenu{
+    padding: 0 !important;
+    /* position: fixed;  */
+    z-index: 100;
+    background-color: #eff4f9;
+  }
+
+ .btn-ps{
+    background-color: white;
+    background-image:   url(../img/menuProcura.jpg);
+    width: 10px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    padding: 18px;
+    border: none;
+ }
+
+ .home-img{
+   background-color: transparent;
+   background-image:   url(../img/home_tr2.png);
+   width: 10px;
+   background-size: 38px;
+   padding-bottom: 17px;
+   padding-top: 4px;
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-top: 27px;
+   padding-bottom: 11px;
+   background-repeat: no-repeat;
+   
+   border: none;
+ }
+
+ .duvida-img{
+   background-color: transparent;
+   background-image: url(../img/questionIcon_tr2.png);  /*url(../img/menuDuvida2.jpg)*/
+   width: 10px;
+   background-size: 38px;
+   background-repeat: no-repeat;
+   padding-bottom: 17px;
+   padding-top: 4px;
+   padding-right: 20px;
+   padding-left: 20px;
+   border: none;
+ }
+
+ .entrar-img{
+   background-color: transparent;
+   background-image: url(../img/userIcon_tr2.png);  ;/*url(../img/menuEntrar2.jpg)*/
+   width: 10px;
+   background-size: 38px;
+   background-repeat: no-repeat;
+   padding-bottom: 11px;
+   padding-top: 27px;
+   padding-right: 20px;
+   padding-left: 20px;
+   border: none;
+ }
+
+ .contato-img{
+    background-color: transparent;
+    background-image: url(../img/email_tr2.png);  ;/*url(../img/menuEntrar2.jpg)*/
+    width: 10px;
+    background-size: 182px;
+    background-repeat: no-repeat;
+    padding-bottom: 17px;
+    padding-top: 27px;
+    padding-right: 163px;
+    padding-left: 23px;
+    border: none;
+  }
+
+
+
+.fieldSearch{
+  font-size: 14px;
+  background-color: #bfd3e940;
+  border:none;
+  width: 400px;
+
+}
+
+.buttonSearch{
+  color: #007bff;
+  border:none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+
+.main-nav li{
+    width: 100%;
+    background-color: #bfd3e940;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 0px;
+    margin: 12px;
+    font-size: 14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+.product a{
+    /* color: #007bff; */
+    color:red!important;
+    background-color: #bfd3e940;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 11px 3px 15px;
+}
+
+
+
+/* FOOTER CSS */
+  .main-footer li{
+    display: inline-block;
+    text-transform: lowercase;
+    text-transform: none;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 1px;
+    font-size: 12px;
+    background-color: #bfd3e940;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 180px;
+    padding: 5px;
+
+    }
+
+
+/* BODY CONTAINER CSS */
+  .bodyCont{
+    padding: 0;
+    margin-top: -15px;
+    
+  }
+
+/*Carrossel*/
+  .bannerCarrossel{
+    padding: 0;
+    /* margin-top: 126px; */
+  }
+
+
+/* INDEX CSS - Anuncios Variados 1 */
+  .c-widget__title{
+    color: #007bff;
+    font-size: 27px;
+    font-weight: lighter;
+  }
+
+  
+
+
+  .product{
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+  .product .sizeImgPromo{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .product:hover .sizeImgPromo{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+  .imgLink{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow: hidden;
+  }
+
+  .imgLink .sizeImg{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .imgLink:hover .sizeImg{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .vejaBtn{
+    color: #007bff; 
+    border-color: #2700ff00;   
+    background-color: #bfd3e940; 
+    width: 112px;  height: 39px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    height: 37px; 
+    float: right;
+  }
+
+  
+
+ 
+  
+  .prop{
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 13px;
+  }
+  
+
+
+/*MARCAS FAVORITAS START*/
+  .sizeMarcas{
+    width: 100px;
+    height: 100px;
+  }
+
+  sizeMarcas:active{
+    transform: translateY(4px);
+  }
+
+  .marcasImg{
+    overflow: hidden;
+  }
+  
+  .marcasImg {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .marcasImg:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .vip-marcas{
+    padding-right: 210px;
+    padding-left: 210px;
+    margin-right: 34px;
+  }
+
+  .marcasImg{
+    overflow: hidden;
+  }
+
+  .shadow{
+    width: 100px;
+    margin: 0 auto;
+    height: 100px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+  }
+
+
+/*PROMOÇÕES START*/
+
+  .sizeImgPromo{
+    width: 110px;
+    height: 110px;
+    margin-bottom: 30px;
+  }
+
+  
+
+  .promo{
+    margin-top: 40px;
+  }
+
+  .textPromo{
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+
+
+
+
+
+/* FOOTER CSS COMEÇO*/
+
+  .hamburguer{
+    height: 20px;
+    width: 36px;
+  }
+
+  .footer .payment{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+  }
+
+  .footer .payment li{
+    list-style-type:none;
+  }
+
+  .footer .payment li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #102156;
+    /* float: left; */
+    font-size: 25px;
+    padding: 10px 10px;
+  }
+
+  
+
+
+
+  .footer {
+    padding: 50px 0 20px 0;
+    background-color: white;
+    color: #102156;
+  }
+  .footer .title{text-align: left;color:#102156;font-size:25px;}
+
+
+  .footer .social-icon{padding:0px;margin:0px;}
+  .footer .social-icon a{display:inline-block;color:##102156;font-size:25px;padding:5px;}
+  .footer .acount-icon a{display:block;color:#102156;font-size:18px;padding:5px;text-decoration:none;}
+  .footer .acount-icon .fa{margin-right:25px;}
+
+
+  .footer .category a {
+    text-decoration: none;
+    color: #102156;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 1px;
+    border-radius:4px;
+    margin-top: 6px;
+    background-color: #f5f5f5;
+
+}
+
+  .footer .payment{margin:0px;padding:0px;list-style-type:none}
+  .footer .payment li{list-style-type:none}
+  .footer .payment li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #102156;
+    font-size: 25px;
+    padding: 10px 10px;
+  }
+
+  .separadorFooter{
+    margin-bottom: -44px;
+  }
+
+
+
+/*CONTATO*/
+
+/* @media (max-width:576px) para Header.php */
+
+
+@media (max-width:575px){
+  
+  .todoSearch{
+    margin: auto;
+    margin-bottom: 11px;
+    left: 11px;
+  }
+
+  .botoesMenu{
+    /* margin: auto; */
+    margin-left: -10px;
+  }
+
+  .hambMenu{
+    position: relative;
+    left: 140px;
+  }
+
+  .variados1Anuncios{
+    margin-left: -11px;
+  }
+
+  .vip-marcas{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 34px;
+  }
+
+
+  .marcas{
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 13px;
+    width: 86px;
+  }
+
+  
+
+  .minhaContaFooter{
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .footerCategorias{
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .footerPagto{
+    text-align: center;
+    margin-top: 12px;
+  }
+
+
+
+
+  
+
+
+}
+@media (min-width:576px){
+
+  .headerSearch{
+    margin: 0 auto;
+    padding-top: 2px;
+  }
+
+  .campoSearch{
+    position: relative;
+    right: 127px;
+    margin: 0 auto;
+  }
+
+  .input-group{
+    position: relative;
+    left: 0px;
+    margin: auto;
+  }
+
+  .vip-marcas{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 34px;
+  }
+
+  .todoSearch{
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: -3px;
+    left: 32px;
+  }
+
+  .form-control{
+    margin-left: -10px;
+  }
+
+  .botoesMenu{
+    /* margin: auto; */
+    right: 132px;
+  }
+
+  .hambMenu{
+    position: relative;
+    left: 246px;
+  }
+
+
+}
+
+@media (min-width:768px){
+
+  .logo{
+    left: 15px;
+  }
+ 
+  .todoSearch{
+    top: 20px;
+    left: 23px;
+  }
+
+  .botoesMenu{
+    left: 0px;
+  }
+
+  .c-widget__header{
+    left: 32px;
+  }
+
+  .variados1Anuncios{
+    max-width: 100% !important;
+    position: relative;
+    right: 22px;
+  }
+  
+  .input-group{
+    position: relative;
+    left: 5px;
+    margin: 0 auto;
+  }
+
+  .nav-item{
+    position: relative;
+    left: 15px;
+  }
+
+  .cont-marcas{
+    margin-left: 65px;
+  }
+
+}
+
+
+
+@media (min-width:992px){
+
+.logo{
+  margin-left: -26px;
+}
+
+.c-widget__header{
+  left: 0px;
+}
+
+.vejaBtn{
+  position: relative;
+  right: 49px;
+}
+
+.cont-marcas{
+  /* position: relative;
+  right: 49px; */
+}
+
+}
+
+/* ////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////// */
+/*CONTATO*/
+
+/*PÁGINA MASCULINO/FEMININO*/
+
+.pagMasc{
+  margin-top: 3%;
+}
+
+.imgMasc{
+  width: 11%;
+  float: left;
+  margin: -3% 3% 5% 0;
+  border: double 2px;
+}
+
+.tituloCamisas{
+  font-size: 1.2em;
+  margin-left: 80%;
+}
+
+.tituloCamisasUn{
+  visibility:hidden;
+}
+
+.imgConfig{
+  margin-top: 3%;
+  margin-bottom: 15%;
+  padding: 2%;
+  border: solid 2px rgba(0, 123, 255, 0.2);
+}
+
+.efeitoImg{
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.efeitoImg:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*PÁGINA PRODUTO FEMININO*/
+
+.imgProdutoFeminino{
+  width: 30%;
+}
+
+/*PÁGINA PRODUTO MASCULINO/FEMININO*/
+
+.imgProduto{
+  margin-left: 10%;
+  border: double 2px rgba(189, 189, 189, 0.5);
+}
+
+.imgProdutoSocial{
+  width: 30%;
+  margin-left: 7%;
+  border: double 2px rgba(189, 189, 189, 0.5);
+}
+
+.imgProdutoOculos{
+  width: 30%;
+  margin-left: 7%;
+  border: double 2px rgba(189, 189, 189, 0.5);
+}
+
+.imgProdTexto{
+  margin: 0 0 20% 0;
+}
+
+.textoProduto{
+  margin-right: 45%;
+  margin-top: 3%;
+  float: right;
+}
+
+.produtoImg{
+  float: left;
+  margin-top: 1%;
+}
+
+.descricaoProduto{
+  height: 170px;
+  float: left;
+  background: rgba(214, 214, 214, 0.3);
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  padding: 1%;
+  margin-left: 5%;
+}
+
+.precoProduto{
+  float: right;
+  background: rgba(214, 214, 214, 0.3);
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  padding: 1%;
+  margin-right: 8%;
+  width: 280px;
+}
+
+.euQuero{
+  background: #007bff;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 80%;
+  margin: 5% auto 0 auto;
+  padding: 8% 1% 2% 1%;
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.euQuero:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.textoEuQuero{
+  margin-left: 10%;
+}
+
+/*PÁGINA CATEGORIAS*/
+
+  .divisorPagina{
+    width: 50%;
+    margin-left: 23%;
+    margin-bottom: -3%;
+  }
+
+  /*PÁGINA CATEGORIAS*/
+
+  #categorias{
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+
+  .categoriaMasc, .categoriaFem, .categoriaKids{
+    width: 20%;
+  }
+
+  .categoriaMasc{
+    float: left;
+    clear: both;
+    border: double 6px;
+    border-color: #BDBDBD;
+  }
+
+  .categoriaFem{
+    float: left;
+    margin-left: 0.5%;
+    border: double 6px;
+    border-color: #BDBDBD;
+  }
+
+  .categoriaKids{
+    float: left;
+    margin-left: 0.5%;
+    border: double 6px;
+    border-color: #BDBDBD;
+  }
+
+  .textoMasc{
+    float: left;
+    margin-left: 30%;
+  }
+  .textoFem{
+    float: left;
+    margin-left: 10%;
+  }
+  .textoKids{
+    float: left;
+    margin-left: 12%;
+  }
+
+/* ////////////////////////////////////////////////////////////// */
+
+/* PÁGINA LOGIN */
+  .campoLogin{
+    font-size: .9rem;
+    color: #007bff !important;
+    background-color: #eff4f9 !important;
+  }
+
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS PRODUTOS */
+  .Title1Product{
+    font-size: 30px;
+    color: #007bff !important;
+  }
+
+  .Title2Product{
+    font-size: 25px;
+    color: #007bff !important;
+  }
+
+  .campoProduct{
+    background-color: #eff4f9 !important;
+    border-color: transparent !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS CATEGORIAS */
+  .Title1Category{
+    font-size: 30px;
+    color: #007bff !important;
+  }
+
+  .Title2Category{
+    font-size: 25px;
+    color: #007bff !important;
+  }
+
+  .campoCategory{
+    background-color: #eff4f9 !important;
+    border-color: transparent !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINAS CATEGORIAS */
+  .Title1Brand{
+    font-size: 30px;
+    color: #007bff !important;
+  }
+
+  .Title2Brand{
+    font-size: 25px;
+    color: #007bff !important;
+  }
+
+  .campoBrand{
+    background-color: #eff4f9 !important;
+    border-color: transparent !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/* PÁGINA REGISTER */
+  .TitleRegister{
+    font-size: .9rem;
+    color: #007bff !important;
+    background-color: #eff4f9 !important;
+    border-color: transparent !important;
+  }
+/* ////////////////////////////////////////////////////////////// */
+/*PERGUNTAS*/
+  .lista_perguntas{
+    list-style-type:none;
+  }
+
+  .card-header{
+    background-color: #eff4f9 !important;
+  }
